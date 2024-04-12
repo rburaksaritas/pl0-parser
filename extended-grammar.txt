@@ -51,22 +51,20 @@ Relation → "="
 
 Expression → Term AddSubOperator Term
             | Term ModOperator Term
-            | Expression AddSubOperator Term
-            | Expression ModOperator Term
 
 AddSubOperator → "+"
-                | "-"
+               | "-"
 
-Term → Factor MulDivOperator Factor
+Term → Factor
      | Term MulDivOperator Factor
 
 MulDivOperator → "*"
                | "/"
 
 Factor → identifier
-        | ArrayAccess
         | number
         | "(" Expression ")"
+        | ArrayAccess
 
 ##################################
 ##### Extended Grammar Rules #####
