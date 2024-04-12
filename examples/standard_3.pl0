@@ -1,0 +1,19 @@
+var num, fact;
+
+procedure factorial;
+var temp;
+begin
+  if num = 0 then
+    fact := 1
+  else begin
+    temp := num;
+    num := num - 1;
+    call factorial;
+    fact := temp * fact;
+  end;
+end;
+
+begin
+  num := 5;
+  call factorial;
+end.
