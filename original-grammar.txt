@@ -40,7 +40,9 @@ Relation → "="
           | "<="
           | ">="
 
-Expression → Term AddSubOperator Term
+Expression → Term 
+           | AddSubOperator Term
+           | Term ModOperator Term
 
 AddSubOberator → "+"
                | "-"
