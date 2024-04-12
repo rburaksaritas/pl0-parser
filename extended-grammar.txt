@@ -7,6 +7,7 @@ Program → Block "."
 Block → ConstDecl VarDecl ProcDecl FuncDecl Statement
 
 ConstDecl → "const" ConstAssignmentList ";"
+          | ε
 
 ConstAssignmentList → identifier "=" number
                     | ConstAssignmentList "," identifier "=" number
@@ -80,6 +81,7 @@ ForLoop → "for" identifier ":=" Expression "to" Expression "do" Statement
 BreakStmt → "break"
 
 ArrayDecl → "var" identifier "[" number "]" ";"
+          | ε
 
 ArrayAccess → identifier "[" Expression "]"
 
