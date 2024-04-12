@@ -41,3 +41,19 @@ Relation → "="
           | ">="
 
 Expression → Term AddSubOperator Term
+
+AddSubOberator → "+"
+               | "-"
+
+Term → Factor
+     | Term MulDivOperator Factor
+
+MulDivOperator → "*"
+               | "/"
+
+Factor → identifier
+       | number
+       | "(" Expression ")"
+
+      
+
