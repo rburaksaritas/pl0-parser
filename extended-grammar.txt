@@ -49,8 +49,9 @@ Relation → "="
           | "<="
           | ">="
 
-Expression → Term AddSubOperator Term
-            | Term ModOperator Term
+Expression → Term 
+           | AddSubOperator Term
+           | Term ModOperator Term
 
 AddSubOperator → "+"
                | "-"
@@ -107,9 +108,9 @@ ReadWriteStmt → ReadStmt
               | WriteStmt
               | WriteLineStmt
 
-ReadStmt → "read" "(" identifier ")"
+ReadStmt → "read" "(" Expression ")"
 
-WriteStmt → "write" "(" identifier ")"
+WriteStmt → "write" "(" Expression ")"
 
-WriteLineStmt → "writeline" "(" identifier ")"
+WriteLineStmt → "writeline" "(" Expression ")"
 
