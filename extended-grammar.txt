@@ -72,7 +72,7 @@ Factor → identifier
 ##### Extended Grammar Rules #####
 ##################################
 
-Comments → "/*" AnySequenceOfCharacters "*/"
+Comments → "/*" anySequenceOfCharacters "*/"
 
 IfThenElseStmt → "if" Condition "then" Statement "else" Statement
 
