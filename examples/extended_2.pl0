@@ -1,0 +1,14 @@
+function add(x, y);
+var result;
+begin
+  result := x + y;
+  return result;
+end;
+
+var a, b, sum;
+begin
+  a := 15;
+  b := 10;
+  sum := add(a, b);
+  write(sum);
+end.
