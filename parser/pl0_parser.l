@@ -31,6 +31,7 @@
 "-"              { return MINUS; }
 "*"              { return TIMES; }
 "/"              { return DIVIDE; }
+"%"              { return MOD; }
 ":="             { return ASSIGN; }
 ";"              { return SEMICOLON; }
 ","              { return COMMA; }
