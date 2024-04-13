@@ -11,13 +11,14 @@ extern int yylineno; // current line number
 %token CONST VAR PROCEDURE FUNCTION IF THEN ELSE WHILE DO CALL BEGIN END RETURN BREAK FOR TO READ WRITE WRITELINE ODD
 %token <num> NUMBER
 %token <id> IDENTIFIER
+%token MOD
 
 %type <num> Expression Term Factor
 %type <stmt> Statement StatementList Block
 %type <id> IdentifierList ArrayAccess
 
 %left '-' '+'
-%left '*' '/'
+%left '*' '/' 'MOD'
 %left ASSIGN
 %right ELSE
 
@@ -90,6 +91,7 @@ Term:
     Factor
     | Term '*' Factor
     | Term '/' Factor
+    | Term 'MOD' Factor
     ;
 
 Factor:
@@ -117,7 +119,7 @@ void yyerror(const char *s) {
 
 int main(void) {
     printf("Starting parser...\n");
-    if (yyparse() == 0) { // returns 0 if parsing is successful.
+    if (yyparse() == 0) { // returns 0 if parsing is successful
         printf("Parsing complete!\n");
     } else {
         printf("Parsing failed.\n");
