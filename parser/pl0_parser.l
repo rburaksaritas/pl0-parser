@@ -6,6 +6,7 @@
 
 "const"          { return CONST; }
 "var"            { return VAR; }
+"odd"            { return ODD; }
 "procedure"      { return PROCEDURE; }
 "function"       { return FUNCTION; }
 "if"             { return IF; }
