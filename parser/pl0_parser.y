@@ -98,10 +98,9 @@ StatementList:
     ;
 
 Expression:
-    Term { $$ = $1; }
-    | Expression PLUS Term { $$ = $1 + $3; }
+    Expression PLUS Term { $$ = $1 + $3; } 
     | Expression MINUS Term { $$ = $1 - $3; }
-    | ArrayAccess
+    | Term { $$ = $1; }
     ;
 
 Term:
