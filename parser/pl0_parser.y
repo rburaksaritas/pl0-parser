@@ -11,20 +11,21 @@ extern int yylineno; // current line number
 %token CONST VAR PROCEDURE FUNCTION IF THEN ELSE WHILE DO CALL BEGIN END RETURN BREAK FOR TO READ WRITE WRITELINE ODD
 %token <num> NUMBER
 %token <id> IDENTIFIER
-%token MOD
+%token PLUS MINUS TIMES DIVIDE MOD ASSIGN SEMICOLON COMMA DOT LBRACKET RBRACKET LPAREN RPAREN EQ NEQ LT GT LE GE
 
 %type <num> Expression Term Factor
 %type <stmt> Statement StatementList Block
 %type <id> IdentifierList ArrayAccess
 
-%left '-' '+'
-%left '*' '/' 'MOD'
-%left ASSIGN
+%left MINUS PLUS
+%left TIMES DIVIDE MOD
+%left EQ NEQ LT LE GT GE
+%right ASSIGN
 %right ELSE
 
 %%
 Program:
-    Block '.'
+    Block DOT
     ;
 
 Block:
@@ -33,33 +34,33 @@ Block:
 
 ConstDecl:
     /* Empty */
-    | CONST ConstAssignmentList ';'
+    | CONST ConstAssignmentList SEMICOLON
     ;
 
 ConstAssignmentList:
-    IDENTIFIER '=' NUMBER
-    | ConstAssignmentList ',' IDENTIFIER '=' NUMBER
+    IDENTIFIER ASSIGN NUMBER
+    | ConstAssignmentList COMMA IDENTIFIER ASSIGN NUMBER
     ;
 
 VarDecl:
     /* Empty */
-    | VAR IdentifierList ';'
+    | VAR IdentifierList SEMICOLON
     | ArrayDecl
     ;
 
 IdentifierList:
     IDENTIFIER
-    | IdentifierList ',' IDENTIFIER
+    | IdentifierList COMMA IDENTIFIER
     ;
 
 ProcDecl:
     /* Empty */
-    | PROCEDURE IDENTIFIER ';' Block ';' ProcDecl
+    | PROCEDURE IDENTIFIER SEMICOLON Block SEMICOLON ProcDecl
     ;
 
 FuncDecl:
     /* Empty */
-    | FUNCTION IDENTIFIER '(' ParamList ')' ';' Block ';' FuncDecl
+    | FUNCTION IDENTIFIER LPAREN ParamList RPAREN SEMICOLON Block SEMICOLON FuncDecl
     ;
 
 Statement:
@@ -69,47 +70,51 @@ Statement:
     | IF Condition THEN Statement ELSE Statement
     | WHILE Condition DO Statement
     | FOR IDENTIFIER ASSIGN Expression TO Expression DO Statement
-    | RETURN Expression ';'
-    | READ '(' Expression ')'
-    | WRITE '(' Expression ')'
-    | WRITELINE '(' Expression ')'
+    | RETURN Expression SEMICOLON
+    | READ LPAREN Expression RPAREN
+    | WRITE LPAREN Expression RPAREN
+    | WRITELINE LPAREN Expression RPAREN
     | /* Empty */
     ;
 
 StatementList:
     Statement
-    | StatementList ';' Statement
+    | StatementList SEMICOLON Statement
     ;
 
 Expression:
     Term
-    | Expression '+' Term
-    | Expression '-' Term
+    | Expression PLUS Term
+    | Expression MINUS Term
     ;
 
 Term:
     Factor
-    | Term '*' Factor
-    | Term '/' Factor
-    | Term 'MOD' Factor
+    | Term TIMES Factor
+    | Term DIVIDE Factor
+    | Term MOD Factor
     ;
 
 Factor:
     NUMBER
     | IDENTIFIER
-    | IDENTIFIER '(' ArgList ')'
-    | '(' Expression ')'
+    | IDENTIFIER LPAREN ArgList RPAREN
+    | LPAREN Expression RPAREN
     ;
 
 Condition:
     ODD Expression
-    | Expression '=' Expression
-    | Expression '<>' Expression
+    | Expression EQ Expression
+    | Expression NEQ Expression
+    | Expression LT Expression
+    | Expression LE Expression
+    | Expression GT Expression
+    | Expression GE Expression
     ;
 
 ArgList:
     Expression
-    | ArgList ',' Expression
+    | ArgList COMMA Expression
     ;
 
 %%
