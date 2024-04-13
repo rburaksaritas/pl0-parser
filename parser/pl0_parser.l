@@ -2,6 +2,8 @@
 #include "pl0.tab.h"
 %}
 
+%x COMMENT
+
 %%
 
 "const"          { return CONST; }
@@ -51,9 +53,8 @@
 
 "/*"             { BEGIN(COMMENT); }
 <COMMENT>"*/"    { BEGIN(INITIAL); }
-<COMMENT>[^*]+   { /* Consume non-star characters */ }
+<COMMENT>[^*\n]+ { /* Consume non-star characters */ }
 <COMMENT>"*"     { /* Consume stars that might not end the comment */ }
-<COMMENT>"*"+"/" { BEGIN(INITIAL); }  /* Exit comment mode on closing */ 
 <COMMENT>\n      { /* Consume newlines explicitly to maintain line numbers */ }
 
 [ \t\n]+         { /* Ignore whitespaces */ }
