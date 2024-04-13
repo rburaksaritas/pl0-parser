@@ -5,7 +5,7 @@
 
 void yyerror(const char *s);
 int yylex(void);
-extern int yylineno; // current line number
+extern int yylineno; // Current line number
 %}
 
 %token CONST VAR PROCEDURE FUNCTION IF THEN ELSE WHILE DO CALL BEGIN END RETURN BREAK FOR TO READ WRITE WRITELINE ODD
@@ -48,6 +48,14 @@ VarDecl:
     | ArrayDecl
     ;
 
+ArrayDecl:
+    VAR IDENTIFIER LBRACKET NUMBER RBRACKET SEMICOLON
+    ;
+
+ArrayAccess:
+    IDENTIFIER LBRACKET Expression RBRACKET
+    ;
+
 IdentifierList:
     IDENTIFIER
     | IdentifierList COMMA IDENTIFIER
@@ -63,6 +71,12 @@ FuncDecl:
     | FUNCTION IDENTIFIER LPAREN ParamList RPAREN SEMICOLON Block SEMICOLON FuncDecl
     ;
 
+ParamList:
+    /* Empty */
+    | IDENTIFIER
+    | ParamList COMMA IDENTIFIER
+    ;
+
 Statement:
     IDENTIFIER ASSIGN Expression
     | CALL IDENTIFIER
@@ -71,10 +85,10 @@ Statement:
     | WHILE Condition DO Statement
     | FOR IDENTIFIER ASSIGN Expression TO Expression DO Statement
     | RETURN Expression SEMICOLON
-    | READ LPAREN Expression RPAREN
-    | WRITE LPAREN Expression RPAREN
-    | WRITELINE LPAREN Expression RPAREN
-    | /* Empty */
+    | READ LPAREN IDENTIFIER RPAREN
+    | WRITE LPAREN IDENTIFIER RPAREN
+    | WRITELINE LPAREN IDENTIFIER RPAREN
+    | /* Empty */ { $$ = NULL; }
     ;
 
 StatementList:
