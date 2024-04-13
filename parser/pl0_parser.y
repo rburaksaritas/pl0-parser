@@ -38,8 +38,8 @@ Block:
     ;
 
 ConstDecl:
-    /* Empty */
-    | CONST ConstAssignmentList SEMICOLON
+    /* Empty */ { $$ = 0; }
+    | CONST ConstAssignmentList SEMICOLON { $$ = 0; }
     ;
 
 ConstAssignmentList:
