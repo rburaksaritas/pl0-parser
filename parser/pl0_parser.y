@@ -78,9 +78,9 @@ ParamList:
     ;
 
 Statement:
-    IDENTIFIER ASSIGN Expression
+    IDENTIFIER ASSIGN Expression 
     | CALL IDENTIFIER
-    | BEGIN StatementList END
+    | BEGIN StatementList END     { $$ = $2;}
     | IF Condition THEN Statement ELSE Statement
     | WHILE Condition DO Statement
     | FOR IDENTIFIER ASSIGN Expression TO Expression DO Statement
@@ -88,8 +88,9 @@ Statement:
     | READ LPAREN IDENTIFIER RPAREN
     | WRITE LPAREN IDENTIFIER RPAREN
     | WRITELINE LPAREN IDENTIFIER RPAREN
-    | /* Empty */ { $$ = NULL; }
+    | /* Empty */                { $$ = NULL; }
     ;
+
 
 StatementList:
     Statement
@@ -114,6 +115,7 @@ Factor:
     | IDENTIFIER
     | IDENTIFIER LPAREN ArgList RPAREN
     | LPAREN Expression RPAREN
+    | ArrayAccess
     ;
 
 Condition:
