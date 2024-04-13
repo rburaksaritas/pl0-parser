@@ -6,6 +6,10 @@
 void yyerror(const char *s);
 int yylex(void);
 extern int yylineno; // Current line number
+
+void init_symbol_table(); 
+int get_array_value(const char *id, int index);
+int* lookup(const char *id);  
 %}
 
 %token CONST VAR PROCEDURE FUNCTION IF THEN ELSE WHILE DO CALL BEGIN END RETURN BREAK FOR TO READ WRITE WRITELINE ODD
@@ -13,9 +17,10 @@ extern int yylineno; // Current line number
 %token <id> IDENTIFIER
 %token PLUS MINUS TIMES DIVIDE MOD ASSIGN SEMICOLON COMMA DOT LBRACKET RBRACKET LPAREN RPAREN EQ NEQ LT GT LE GE
 
-%type <num> Expression Term Factor
+%type <num> Expression Term Factor ArrayAccess
 %type <stmt> Statement StatementList Block
-%type <id> IdentifierList ArrayAccess
+%type <id> IdentifierList
+%type <exprs> ArgList
 
 %left MINUS PLUS
 %left TIMES DIVIDE MOD
@@ -52,10 +57,6 @@ ArrayDecl:
     VAR IDENTIFIER LBRACKET NUMBER RBRACKET SEMICOLON
     ;
 
-ArrayAccess:
-    IDENTIFIER LBRACKET Expression RBRACKET
-    ;
-
 IdentifierList:
     IDENTIFIER
     | IdentifierList COMMA IDENTIFIER
@@ -78,59 +79,63 @@ ParamList:
     ;
 
 Statement:
-    IDENTIFIER ASSIGN Expression 
-    | CALL IDENTIFIER
-    | BEGIN StatementList END     { $$ = $2;}
-    | IF Condition THEN Statement ELSE Statement
-    | WHILE Condition DO Statement
-    | FOR IDENTIFIER ASSIGN Expression TO Expression DO Statement
-    | RETURN Expression SEMICOLON
-    | READ LPAREN IDENTIFIER RPAREN
-    | WRITE LPAREN IDENTIFIER RPAREN
-    | WRITELINE LPAREN IDENTIFIER RPAREN
-    | /* Empty */                { $$ = NULL; }
+    IDENTIFIER ASSIGN Expression { $$ = $3; }
+    | CALL IDENTIFIER LPAREN ArgList RPAREN { $$ = 0; } // no value returned from a call
+    | BEGIN StatementList END    { $$ = $2; }
+    | IF Condition THEN Statement ELSE Statement { $$ = $6; }
+    | WHILE Condition DO Statement { $$ = $4; }
+    | FOR IDENTIFIER ASSIGN Expression TO Expression DO Statement { $$ = $8; }
+    | RETURN Expression SEMICOLON { $$ = $2; }
+    | READ LPAREN IDENTIFIER RPAREN { $$ = 0; } // read modifies the identifier directly
+    | WRITE LPAREN IDENTIFIER RPAREN { $$ = 0; } // write outputs the identifier's value
+    | WRITELINE LPAREN IDENTIFIER RPAREN { $$ = 0; } // writeline outputs the identifier's value
+    | /* Empty */ { $$ = 0; }
     ;
-
 
 StatementList:
     Statement
-    | StatementList SEMICOLON Statement
+    | StatementList SEMICOLON Statement { $$ = $3; }
     ;
 
 Expression:
-    Term
-    | Expression PLUS Term
-    | Expression MINUS Term
-    ;
-
-Term:
-    Factor
-    | Term TIMES Factor
-    | Term DIVIDE Factor
-    | Term MOD Factor
-    ;
-
-Factor:
-    NUMBER
-    | IDENTIFIER
-    | IDENTIFIER LPAREN ArgList RPAREN
-    | LPAREN Expression RPAREN
+    Term { $$ = $1; }
+    | Expression PLUS Term { $$ = $1 + $3; }
+    | Expression MINUS Term { $$ = $1 - $3; }
     | ArrayAccess
     ;
 
+Term:
+    Factor { $$ = $1; }
+    | Term TIMES Factor { $$ = $1 * $3; }
+    | Term DIVIDE Factor { $$ = $1 / $3; }
+    | Term MOD Factor { $$ = $1 % $3; }
+    ;
+
+Factor:
+    NUMBER { $$ = $1; }
+    | IDENTIFIER { $$ = *lookup($1); } // dereference the pointer to get the value
+    | LPAREN Expression RPAREN { $$ = $2; }
+    | IDENTIFIER LPAREN ArgList RPAREN { $$ = call_function($1, $3); } // function returns an int
+    | ArrayAccess
+    ;
+
+ArrayAccess:
+    IDENTIFIER LBRACKET Expression RBRACKET { $$ = get_array_value($1, $3); }
+    ;
+
 Condition:
-    ODD Expression
-    | Expression EQ Expression
-    | Expression NEQ Expression
-    | Expression LT Expression
-    | Expression LE Expression
-    | Expression GT Expression
-    | Expression GE Expression
+    ODD Expression { $$ = $2 % 2 != 0; }
+    | Expression EQ Expression { $$ = $1 == $3; }
+    | Expression NEQ Expression { $$ = $1 != $3; }
+    | Expression LT Expression { $$ = $1 < $3; }
+    | Expression LE Expression { $$ = $1 <= $3; }
+    | Expression GT Expression { $$ = $1 > $3; }
+    | Expression GE Expression { $$ = $1 >= $3; }
     ;
 
 ArgList:
-    Expression
-    | ArgList COMMA Expression
+    Expression { $$ = create_arg_list($1); }
+    | ArgList COMMA Expression { $$ = add_to_arg_list($1, $3); }
     ;
 
 %%
@@ -139,6 +144,7 @@ void yyerror(const char *s) {
 }
 
 int main(void) {
+    init_symbol_table();
     printf("Starting parser...\n");
     if (yyparse() == 0) { // returns 0 if parsing is successful
         printf("Parsing complete!\n");
