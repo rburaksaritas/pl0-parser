@@ -42,6 +42,13 @@
 "("              { return LPAREN; }
 ")"              { return RPAREN; }
 
+"="              { return EQ; }
+"<>"             { return NEQ; }
+"<"              { return LT; }
+">"              { return GT; }
+"<="             { return LE; }
+">="             { return GE; }
+
 "/*"             { BEGIN(COMMENT); }
 <COMMENT>"*/"    { BEGIN(INITIAL); }
 <COMMENT>[^*]+   { /* Consume non-star characters */ }
