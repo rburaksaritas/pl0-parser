@@ -42,7 +42,7 @@ typedef struct {
 
 %%
 
-program : block '.' 
+program : block '.'
         | error '.' { fprintf(stderr, "Syntax error in program\n"); exit(1); }
 
 block : constDecl varDecl procDecl funcDecl statementList
@@ -94,7 +94,9 @@ non_if_stmt : IDENTIFIER ASSIGN expression
             | BREAK
             | arrayAssignment
             | funcCall
-            | readWriteStmt;
+            | readWriteStmt
+            | RETURN expression
+            | RETURN;
 
 arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
 
@@ -121,6 +123,7 @@ condition : ODD expression
 expression : term
            | expression ADD term
            | expression SUB term
+           | UMINUS expression %prec UMINUS;
 
 term : factor
      | term MUL factor
@@ -130,7 +133,7 @@ term : factor
 factor : IDENTIFIER
        | NUMBER
        | LPAREN expression RPAREN
-       | arrayIndex
+       | arrayIndex;
 
 arrayIndex : IDENTIFIER LBRACKET expression RBRACKET
 
