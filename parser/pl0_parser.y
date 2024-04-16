@@ -43,7 +43,18 @@ typedef struct {
 program : block '.' 
         | error '.' { fprintf(stderr, "Syntax error in program\n"); exit(1); }
 
-block : constDecl varDecl procDecl funcDecl statementList
+block : constDecl varDecl procDecl funcDecl statementList END
+      | constDecl varDecl procDecl funcDecl END
+      | constDecl varDecl procDecl END
+      | constDecl varDecl END
+      | constDecl END
+      | END
+      ;
+
+statementList : statement SEMICOLON
+              | statementList statement SEMICOLON
+              ;
+
 
 constDecl : CONST constAssignmentList SEMICOLON
           | /* empty */
