@@ -9,8 +9,8 @@
 "var"                   { return VAR; }
 "procedure"             { return PROCEDURE; }
 "function"              { return FUNCTION; }
-"begin"                 { return BEGIN; }
-"end"                   { return END; }
+"begin"                 { return T_BEGIN; }
+"end"                   { return T_END; }
 "call"                  { return CALL; }
 "if"                    { return IF; }
 "then"                  { return THEN; }
