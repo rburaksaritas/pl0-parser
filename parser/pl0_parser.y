@@ -77,24 +77,24 @@ paramDecl : VAR IDENTIFIER
 statementList : statement SEMICOLON
               | statementList statement SEMICOLON
 
-statement : matched_stmt
-          | unmatched_stmt;
+statement : open_if_stmt
+          | other_stmt;
 
-matched_stmt : IF condition THEN statement ELSE matched_stmt
-             | non_if_stmt;
+open_if_stmt : IF condition THEN statement else_part
+             | IF condition THEN statement; 
 
-unmatched_stmt : IF condition THEN matched_stmt
-               | IF condition THEN unmatched_stmt ELSE matched_stmt;
+else_part : ELSE statement
+          | ELSE open_if_stmt;
 
-non_if_stmt : IDENTIFIER ASSIGN expression
-            | CALL IDENTIFIER
-            | BEGIN statementList END
-            | WHILE condition DO statement
-            | FOR IDENTIFIER ASSIGN expression TO expression DO statement
-            | BREAK
-            | arrayAssignment
-            | funcCall
-            | readWriteStmt;
+other_stmt : IDENTIFIER ASSIGN expression
+           | CALL IDENTIFIER
+           | BEGIN statementList END
+           | WHILE condition DO statement
+           | FOR IDENTIFIER ASSIGN expression TO expression DO statement
+           | BREAK
+           | arrayAssignment
+           | funcCall
+           | readWriteStmt;
 
 arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
 
