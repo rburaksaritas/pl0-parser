@@ -30,7 +30,7 @@ typedef struct {
 %token <str> IDENTIFIER
 %token <num> NUMBER
 
-%token CONST VAR PROCEDURE FUNCTION BEGIN END CALL IF THEN ELSE WHILE DO FOR BREAK READ WRITE WRITELINE RETURN ODD TO
+%token CONST VAR PROCEDURE FUNCTION T_BEGIN T_END CALL IF THEN ELSE WHILE DO FOR BREAK READ WRITE WRITELINE RETURN ODD TO
 %token EQ NE LT GT LE GE LPAREN RPAREN LBRACKET RBRACKET COMMA SEMICOLON ASSIGN ADD SUB MUL DIV MOD
 
 %left ADD SUB
@@ -88,7 +88,7 @@ unmatched_stmt : IF condition THEN statement
 
 non_if_stmt : IDENTIFIER ASSIGN expression
             | CALL IDENTIFIER
-            | BEGIN statementList END
+            | T_BEGIN statementList T_END
             | WHILE condition DO statement
             | FOR IDENTIFIER ASSIGN expression TO expression DO statement
             | BREAK
