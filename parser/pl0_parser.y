@@ -80,11 +80,11 @@ statementList : statement SEMICOLON
 statement : matched_stmt
           | unmatched_stmt;
 
-matched_stmt : IF condition THEN matched_stmt ELSE matched_stmt
+matched_stmt : IF condition THEN statement ELSE matched_stmt
              | non_if_stmt;
 
-unmatched_stmt : IF condition THEN statement
-               | IF condition THEN matched_stmt ELSE unmatched_stmt;
+unmatched_stmt : IF condition THEN matched_stmt
+               | IF condition THEN unmatched_stmt ELSE matched_stmt;
 
 non_if_stmt : IDENTIFIER ASSIGN expression
             | CALL IDENTIFIER
