@@ -7,9 +7,11 @@ begin
     result := 1
   else
     result := 0;
-end;
+end
+;
 
 begin
   x := 11;
   call check;
-end.
+end
+.

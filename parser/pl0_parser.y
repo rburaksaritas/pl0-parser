@@ -15,6 +15,8 @@ void yyerror(const char *s) {
 
 #define MAX_IDENTIFIER_LENGTH 50
 
+%}
+
 %union {
     int num;     
     char* str;   
@@ -38,7 +40,8 @@ void yyerror(const char *s) {
 program : block DOT
         | error DOT { fprintf(stderr, "Syntax error in program\n"); exit(1); }
 
-block : constDecl varDecl procDecl funcDecl statementList
+block : constDecl varDecl procDecl funcDecl statement
+      | constDecl varDecl procDecl funcDecl
 
 constDecl : CONST constAssignmentList SEMICOLON
           | /* empty */
@@ -71,13 +74,13 @@ statementList : statement SEMICOLON
               | statementList statement SEMICOLON
 
 statement : matched_stmt
-          | unmatched_stmt;
+          | unmatched_stmt
 
 matched_stmt : IF condition THEN matched_stmt ELSE matched_stmt
-             | non_if_stmt;
+             | non_if_stmt
 
 unmatched_stmt : IF condition THEN statement
-               | IF condition THEN matched_stmt ELSE unmatched_stmt;
+               | IF condition THEN matched_stmt ELSE unmatched_stmt
 
 non_if_stmt : IDENTIFIER ASSIGN expression
             | CALL IDENTIFIER
@@ -89,7 +92,8 @@ non_if_stmt : IDENTIFIER ASSIGN expression
             | funcCall
             | readWriteStmt
             | RETURN expression
-            | RETURN;
+            | RETURN
+            | /* empty */
 
 arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
 
@@ -116,7 +120,7 @@ condition : ODD expression
 expression : term
            | expression ADD term
            | expression SUB term
-           | UMINUS expression %prec UMINUS;
+           | UMINUS expression %prec UMINUS
 
 term : factor
      | term MUL factor
@@ -126,7 +130,7 @@ term : factor
 factor : IDENTIFIER
        | NUMBER
        | LPAREN expression RPAREN
-       | arrayIndex;
+       | arrayIndex
 
 arrayIndex : IDENTIFIER LBRACKET expression RBRACKET
 
@@ -137,6 +141,8 @@ argList : expression
 %%
 
 int main() {
+    printf("Parsing begins...\n");
     yyparse();
+    printf("Parsing complete.\n");
     return 0;
 }

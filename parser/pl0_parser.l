@@ -5,47 +5,47 @@
 
 %%
 
-"const"                 { return CONST; }
-"var"                   { return VAR; }
-"procedure"             { return PROCEDURE; }
-"function"              { return FUNCTION; }
-"begin"                 { return T_BEGIN; }
-"end"                   { return T_END; }
-"call"                  { return CALL; }
-"if"                    { return IF; }
-"then"                  { return THEN; }
-"else"                  { return ELSE; }
-"while"                 { return WHILE; }
-"do"                    { return DO; }
-"for"                   { return FOR; }
-"break"                 { return BREAK; }
-"read"                  { return READ; }
-"write"                 { return WRITE; }
-"writeline"             { return WRITELINE; }
-"return"                { return RETURN; }
-"odd"                   { return ODD; }
-"to"			{ return TO; }
-"="                     { return EQ; }
-"<>"                    { return NE; }
-"<"                     { return LT; }
-">"                     { return GT; }
-"<="                    { return LE; }
-">="                    { return GE; }
-"("                     { return LPAREN; }
-")"                     { return RPAREN; }
-"["                     { return LBRACKET; }
-"]"                     { return RBRACKET; }
-","                     { return COMMA; }
-";"                     { return SEMICOLON; }
-":="                    { return ASSIGN; }
-"+"                     { return ADD; }
-"-"                     { return SUB; }
-"*"                     { return MUL; }
-"/"                     { return DIV; }
-"%"                     { return MOD; }
-"."			{ return DOT; }
-[0-9]+                  { yylval.num = atoi(yytext); return NUMBER; }
-[a-zA-Z][a-zA-Z0-9]*    { yylval.str = strdup(yytext); return IDENTIFIER; }
+"const"                 { printf("TOKEN: CONST\n"); return CONST; }
+"var"                   { printf("TOKEN: VAR\n"); return VAR; }
+"procedure"             { printf("TOKEN: PROCEDURE\n"); return PROCEDURE; }
+"function"              { printf("TOKEN: FUNCTION\n"); return FUNCTION; }
+"begin"                 { printf("TOKEN: T_BEGIN\n"); return T_BEGIN; }
+"end"                   { printf("TOKEN: T_END\n"); return T_END; }
+"call"                  { printf("TOKEN: CALL\n"); return CALL; }
+"if"                    { printf("TOKEN: IF\n"); return IF; }
+"then"                  { printf("TOKEN: THEN\n"); return THEN; }
+"else"                  { printf("TOKEN: ELSE\n"); return ELSE; }
+"while"                 { printf("TOKEN: WHILE\n"); return WHILE; }
+"do"                    { printf("TOKEN: DO\n"); return DO; }
+"for"                   { printf("TOKEN: FOR\n"); return FOR; }
+"break"                 { printf("TOKEN: BREAK\n"); return BREAK; }
+"read"                  { printf("TOKEN: READ\n"); return READ; }
+"write"                 { printf("TOKEN: WRITE\n"); return WRITE; }
+"writeline"             { printf("TOKEN: WRITELINE\n"); return WRITELINE; }
+"return"                { printf("TOKEN: RETURN\n"); return RETURN; }
+"odd"                   { printf("TOKEN: ODD\n"); return ODD; }
+"to"			        { printf("TOKEN: TO\n"); return TO; }
+"="                     { printf("TOKEN: EQ\n"); return EQ; }
+"<>"                    { printf("TOKEN: NE\n"); return NE; }
+"<"                     { printf("TOKEN: LT\n"); return LT; }
+">"                     { printf("TOKEN: GT\n"); return GT; }
+"<="                    { printf("TOKEN: LE\n"); return LE; }
+">="                    { printf("TOKEN: GE\n"); return GE; }
+"("                     { printf("TOKEN: LPAREN\n"); return LPAREN; }
+")"                     { printf("TOKEN: RPAREN\n"); return RPAREN; }
+"["                     { printf("TOKEN: LBRACKET\n"); return LBRACKET; }
+"]"                     { printf("TOKEN: RBRACKET\n"); return RBRACKET; }
+","                     { printf("TOKEN: COMMA\n"); return COMMA; }
+";"                     { printf("TOKEN: SEMICOLON\n"); return SEMICOLON; }
+":="                    { printf("TOKEN: ASSIGN\n"); return ASSIGN; }
+"+"                     { printf("TOKEN: ADD\n"); return ADD; }
+"-"                     { printf("TOKEN: SUB\n"); return SUB; }
+"*"                     { printf("TOKEN: MUL\n"); return MUL; }
+"/"                     { printf("TOKEN: DIV\n"); return DIV; }
+"%"                     { printf("TOKEN: MOD\n"); return MOD; }
+"."			            { printf("TOKEN: DOT\n"); return DOT; }
+[0-9]+                  { printf("TOKEN: NUMBER\n"); yylval.num = atoi(yytext); return NUMBER; }
+[a-zA-Z][a-zA-Z0-9]*    { printf("TOKEN: IDENTIFIER\n"); yylval.str = strdup(yytext); return IDENTIFIER; }
 "/*"([^*]|\*+[^*/])*"*"+"/" { /* ignore comments */ }
 
 [ \t\n\r]               { /* ignore whitespace */ }
