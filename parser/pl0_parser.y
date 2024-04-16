@@ -6,7 +6,7 @@
 #define YYSTYPE_IS_DECLARED
 #define YYSTYPE struct _tagYYSTYPE
 
-#include "pl0lexer.tab.h"
+#include "pl0_lexer.tab.h"
 
 extern int yylex();
 extern int yylineno;
