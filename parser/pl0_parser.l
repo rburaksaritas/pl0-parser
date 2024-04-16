@@ -24,6 +24,7 @@
 "writeline"             { return WRITELINE; }
 "return"                { return RETURN; }
 "odd"                   { return ODD; }
+"to"			{ return TO; }
 "="                     { return EQ; }
 "<>"                    { return NE; }
 "<"                     { return LT; }
