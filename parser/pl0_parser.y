@@ -72,8 +72,8 @@ paramList : paramDecl
 
 paramDecl : VAR IDENTIFIER
 
-statementList : statement
-              | statementList SEMICOLON statement
+statementList : statement SEMICOLON
+              | statementList statement SEMICOLON
 
 statement : IDENTIFIER ASSIGN expression
           | CALL IDENTIFIER
@@ -82,11 +82,10 @@ statement : IDENTIFIER ASSIGN expression
           | IF condition THEN statement
           | WHILE condition DO statement
           | FOR IDENTIFIER ASSIGN expression TO expression DO statement
-          | BREAK SEMICOLON
+          | BREAK
           | arrayAssignment
           | funcCall
           | readWriteStmt
-          | /* empty */
 
 arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
 
@@ -122,7 +121,9 @@ term : factor
 factor : IDENTIFIER
        | NUMBER
        | LPAREN expression RPAREN
-       | IDENTIFIER LBRACKET expression RBRACKET
+       | arrayIndex
+
+arrayIndex : IDENTIFIER LBRACKET expression RBRACKET
 
 argList : expression
         | argList COMMA expression
