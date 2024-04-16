@@ -110,9 +110,7 @@ Factor → identifier
 
 Comment → "/*" CommentContent "*/"
 
-CommentContent → "*" CommentContent 
-               | "/" CommentContent 
-               | (any character except "*" and "/") CommentContent 
-               | ε
+CommentContent → | {any combination of characters that does not include "*/"}
+                 | ε
 
 
