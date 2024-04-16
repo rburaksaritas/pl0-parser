@@ -37,6 +37,8 @@ typedef struct {
 %left MUL DIV MOD
 %left EQ NE LT GT LE GE
 %nonassoc UMINUS
+%nonassoc THEN
+%nonassoc ELSE
 
 %%
 
@@ -75,17 +77,24 @@ paramDecl : VAR IDENTIFIER
 statementList : statement SEMICOLON
               | statementList statement SEMICOLON
 
-statement : IDENTIFIER ASSIGN expression
-          | CALL IDENTIFIER
-          | BEGIN statementList END
-          | IF condition THEN statement ELSE statement
-          | IF condition THEN statement
-          | WHILE condition DO statement
-          | FOR IDENTIFIER ASSIGN expression TO expression DO statement
-          | BREAK
-          | arrayAssignment
-          | funcCall
-          | readWriteStmt
+statement : matched_stmt
+          | unmatched_stmt;
+
+matched_stmt : IF condition THEN matched_stmt ELSE matched_stmt
+             | non_if_stmt;
+
+unmatched_stmt : IF condition THEN statement
+               | IF condition THEN matched_stmt ELSE unmatched_stmt;
+
+non_if_stmt : IDENTIFIER ASSIGN expression
+            | CALL IDENTIFIER
+            | BEGIN statementList END
+            | WHILE condition DO statement
+            | FOR IDENTIFIER ASSIGN expression TO expression DO statement
+            | BREAK
+            | arrayAssignment
+            | funcCall
+            | readWriteStmt;
 
 arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
 
