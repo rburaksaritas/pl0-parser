@@ -20,12 +20,12 @@ void yyerror(const char *s) {
 
 #define MAX_IDENTIFIER_LENGTH 50
 
+%}
+
 %union {
     int num;     
     char* str;   
 }
-
-%}
 
 %token <str> IDENTIFIER
 %token <num> NUMBER
