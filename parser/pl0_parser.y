@@ -1,154 +1,136 @@
 %{
 #include <stdio.h>
 #include <stdlib.h>
-#include "pl0.tab.h"
+#include <string.h>
 
-void yyerror(const char *s);
-int yylex(void);
-extern int yylineno; // Current line number
+#define YYSTYPE_IS_DECLARED
+#define YYSTYPE struct _tagYYSTYPE
 
-void init_symbol_table(); 
-int get_array_value(const char *id, int index);
-int* lookup(const char *id);  
-%}
+#include "pl0lexer.tab.h"
 
-%token CONST VAR PROCEDURE FUNCTION IF THEN ELSE WHILE DO CALL BEGIN END RETURN BREAK FOR TO READ WRITE WRITELINE ODD
-%token <num> NUMBER
-%token <id> IDENTIFIER
-%token PLUS MINUS TIMES DIVIDE MOD ASSIGN SEMICOLON COMMA DOT LBRACKET RBRACKET LPAREN RPAREN EQ NEQ LT GT LE GE
+extern int yylex();
+extern int yylineno;
+extern char* yytext;
 
-%type <num> Expression Term Factor ArrayAccess
-%type <stmt> Statement StatementList Block
-%type <id> IdentifierList
-%type <exprs> ArgList
+int yyparse();
 
-%left MINUS PLUS
-%left TIMES DIVIDE MOD
-%left EQ NEQ LT LE GT GE
-%right ASSIGN
-%right ELSE
-
-%%
-Program:
-    Block DOT
-    ;
-
-Block:
-    ConstDecl VarDecl ProcDecl FuncDecl Statement
-    ;
-
-ConstDecl:
-    /* Empty */ { $$ = 0; }
-    | CONST ConstAssignmentList SEMICOLON { $$ = 0; }
-    ;
-
-ConstAssignmentList:
-    IDENTIFIER ASSIGN NUMBER
-    | ConstAssignmentList COMMA IDENTIFIER ASSIGN NUMBER
-    ;
-
-VarDecl:
-    /* Empty */
-    | VAR IdentifierList SEMICOLON
-    | ArrayDecl
-    ;
-
-ArrayDecl:
-    VAR IDENTIFIER LBRACKET NUMBER RBRACKET SEMICOLON
-    ;
-
-IdentifierList:
-    IDENTIFIER
-    | IdentifierList COMMA IDENTIFIER
-    ;
-
-ProcDecl:
-    /* Empty */
-    | PROCEDURE IDENTIFIER SEMICOLON Block SEMICOLON ProcDecl
-    ;
-
-FuncDecl:
-    /* Empty */
-    | FUNCTION IDENTIFIER LPAREN ParamList RPAREN SEMICOLON Block SEMICOLON FuncDecl
-    ;
-
-ParamList:
-    /* Empty */
-    | IDENTIFIER
-    | ParamList COMMA IDENTIFIER
-    ;
-
-Statement:
-    IDENTIFIER ASSIGN Expression { $$ = $3; }
-    | CALL IDENTIFIER LPAREN ArgList RPAREN { $$ = 0; } // no value returned from a call
-    | BEGIN StatementList END    { $$ = $2; }
-    | IF Condition THEN Statement ELSE Statement { $$ = $6; }
-    | WHILE Condition DO Statement { $$ = $4; }
-    | FOR IDENTIFIER ASSIGN Expression TO Expression DO Statement { $$ = $8; }
-    | RETURN Expression SEMICOLON { $$ = $2; }
-    | READ LPAREN IDENTIFIER RPAREN { $$ = 0; } // read modifies the identifier directly
-    | WRITE LPAREN IDENTIFIER RPAREN { $$ = 0; } // write outputs the identifier's value
-    | WRITELINE LPAREN IDENTIFIER RPAREN { $$ = 0; } // writeline outputs the identifier's value
-    | /* Empty */ { $$ = 0; }
-    ;
-
-StatementList:
-    Statement
-    | StatementList SEMICOLON Statement { $$ = $3; }
-    ;
-
-Expression:
-    Expression PLUS Term { $$ = $1 + $3; } 
-    | Expression MINUS Term { $$ = $1 - $3; }
-    | Term { $$ = $1; }
-    ;
-
-Term:
-    Factor { $$ = $1; }
-    | Term TIMES Factor { $$ = $1 * $3; }
-    | Term DIVIDE Factor { $$ = $1 / $3; }
-    | Term MOD Factor { $$ = $1 % $3; }
-    ;
-
-Factor:
-    NUMBER { $$ = $1; }
-    | IDENTIFIER { $$ = *lookup($1); } // dereference the pointer to get the value
-    | LPAREN Expression RPAREN { $$ = $2; }
-    | IDENTIFIER LPAREN ArgList RPAREN { $$ = call_function($1, $3); } // function returns an int
-    | ArrayAccess
-    ;
-
-ArrayAccess:
-    IDENTIFIER LBRACKET Expression RBRACKET { $$ = get_array_value($1, $3); }
-    ;
-
-Condition:
-    ODD Expression { $$ = $2 % 2 != 0; }
-    | Expression EQ Expression { $$ = $1 == $3; }
-    | Expression NEQ Expression { $$ = $1 != $3; }
-    | Expression LT Expression { $$ = $1 < $3; }
-    | Expression LE Expression { $$ = $1 <= $3; }
-    | Expression GT Expression { $$ = $1 > $3; }
-    | Expression GE Expression { $$ = $1 >= $3; }
-    ;
-
-ArgList:
-    Expression { $$ = create_arg_list($1); }
-    | ArgList COMMA Expression { $$ = add_to_arg_list($1, $3); }
-    ;
-
-%%
 void yyerror(const char *s) {
-    fprintf(stderr, "Error: %s at line %d\n", s, yylineno);
+    fprintf(stderr, "Parser error at line %d: %s\n", yylineno, s);
 }
 
-int main(void) {
-    init_symbol_table();
-    printf("Starting parser...\n");
-    if (yyparse() == 0) { // returns 0 if parsing is successful
-        printf("Parsing complete!\n");
-    } else {
-        printf("Parsing failed.\n");
-    }
+typedef struct {
+    char* identifier;
+    int num;
+} YYSTYPE;
+
+#define MAX_IDENTIFIER_LENGTH 50
+
+%}
+
+%token <str> IDENTIFIER
+%token <num> NUMBER
+
+%token CONST VAR PROCEDURE FUNCTION BEGIN END CALL IF THEN ELSE WHILE DO FOR BREAK READ WRITE WRITELINE RETURN ODD
+%token EQ NE LT GT LE GE LPAREN RPAREN LBRACKET RBRACKET COMMA SEMICOLON ASSIGN ADD SUB MUL DIV MOD
+
+%left '+' '-'
+%left '*' '/' '%'
+%left EQ NE LT GT LE GE
+%nonassoc UMINUS
+
+%%
+
+program : block '.' 
+        | error '.' { fprintf(stderr, "Syntax error in program\n"); exit(1); }
+
+block : constDecl varDecl procDecl funcDecl statementList
+
+constDecl : CONST constAssignmentList SEMICOLON
+          | /* empty */
+
+constAssignmentList : IDENTIFIER ASSIGN NUMBER
+                    | constAssignmentList COMMA IDENTIFIER ASSIGN NUMBER
+
+varDecl : VAR identifierList SEMICOLON
+        | VAR arrayDecl SEMICOLON
+        | /* empty */
+
+identifierList : IDENTIFIER
+               | identifierList COMMA IDENTIFIER
+
+arrayDecl : IDENTIFIER LBRACKET NUMBER RBRACKET
+
+procDecl : PROCEDURE IDENTIFIER SEMICOLON block SEMICOLON
+         | /* empty */
+
+funcDecl : FUNCTION IDENTIFIER LPAREN paramList RPAREN SEMICOLON block SEMICOLON
+         | /* empty */
+
+paramList : paramDecl
+          | paramList COMMA paramDecl
+          | /* empty */
+
+paramDecl : VAR IDENTIFIER
+
+statementList : statement
+              | statementList SEMICOLON statement
+
+statement : IDENTIFIER ASSIGN expression
+          | CALL IDENTIFIER
+          | BEGIN statementList END
+          | IF condition THEN statement ELSE statement
+          | IF condition THEN statement
+          | WHILE condition DO statement
+          | FOR IDENTIFIER ASSIGN expression TO expression DO statement
+          | BREAK SEMICOLON
+          | arrayAssignment
+          | funcCall
+          | readWriteStmt
+          | /* empty */
+
+arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
+
+funcCall : IDENTIFIER LPAREN argList RPAREN
+
+readWriteStmt : readStmt
+              | writeStmt
+              | writeLineStmt
+
+readStmt : READ LPAREN IDENTIFIER RPAREN
+
+writeStmt : WRITE LPAREN expression RPAREN
+
+writeLineStmt : WRITELINE LPAREN expression RPAREN
+
+condition : ODD expression
+          | expression EQ expression
+          | expression NE expression
+          | expression LT expression
+          | expression GT expression
+          | expression LE expression
+          | expression GE expression
+
+expression : term
+           | expression ADD term
+           | expression SUB term
+
+term : factor
+     | term MUL factor
+     | term DIV factor
+     | term MOD factor
+
+factor : IDENTIFIER
+       | NUMBER
+       | LPAREN expression RPAREN
+       | IDENTIFIER LBRACKET expression RBRACKET
+
+argList : expression
+        | argList COMMA expression
+        | /* empty */
+
+%%
+
+int main() {
+    yyparse();
     return 0;
 }
