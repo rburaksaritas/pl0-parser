@@ -18,12 +18,12 @@ void yyerror(const char *s) {
     fprintf(stderr, "Parser error at line %d: %s\n", yylineno, s);
 }
 
-typedef struct {
-    char* identifier;
-    int num;
-} YYSTYPE;
-
 #define MAX_IDENTIFIER_LENGTH 50
+
+%union {
+    int num;     
+    char* str;   
+}
 
 %}
 
