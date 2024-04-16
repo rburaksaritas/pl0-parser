@@ -1,12 +1,15 @@
 #################################
 ##### Extended PL/0 Grammar #####
 #################################
+okay. then, is this ok?
 
-Program → Block "."
+can you see if any epsilon ambiguity here??
 
-Block → ConstDecl VarDecl ProcDecl FuncDecl Statement
+Program → Block '.'
 
-ConstDecl → "const" ConstAssignmentList ";"
+Block → [Comment] ConstDecl VarDecl ProcDecl FuncDecl StatementList
+
+ConstDecl → "const" ConstAssignmentList ";" 
           | ε
 
 ConstAssignmentList → identifier "=" number
@@ -22,63 +25,32 @@ IdentifierList → identifier
 ProcDecl → ProcDecl "procedure" identifier ";" Block ";"
          | ε
 
-Statement → identifier ":=" Expression
-          | "call" identifier
-          | "begin" StatementList "end"
-          | "if" Condition "then" Statement
-          | "while" Condition "do" Statement
-          | Comments Statement
-          | IfThenElseStmt
-          | ForLoop
-          | BreakStmt
-          | ArrayAssignment
-          | FuncCall
-          | ReturnStmt
-          | ReadWriteStmt
-          | ε
+FuncDecl → FuncDecl "function" identifier "(" ParamList ")" ";" Block ";"
+         | ε
 
 StatementList → Statement
               | StatementList ";" Statement
 
-Condition → "odd" Expression
-           | Expression Relation Expression
-
-Relation → "="
-          | "<>"
-          | "<"
-          | ">"
-          | "<="
-          | ">="
-
-Expression → Term 
-           | AddSubOperator Term
-           | Term ModOperator Term
-
-AddSubOperator → "+"
-               | "-"
-
-Term → Factor
-     | Term MulDivOperator Factor
-
-MulDivOperator → "*"
-               | "/"
-
-Factor → identifier
-        | number
-        | "(" Expression ")"
-        | ArrayAccess
-
-##################################
-##### Extended Grammar Rules #####
-##################################
-
-Comments → "/*" anySequenceOfCharacters "*/"
+Statement → identifier ":=" Expression
+          | "call" identifier
+          | "begin" StatementList "end"
+          | IfThenElseStmt
+          | WhileStmt
+          | ForLoop
+          | BreakStmt
+          | ArrayAssignment
+          | FuncCall
+          | ReadWriteStmt
+          | ε
 
 IfThenElseStmt → "if" Condition "then" Statement "else" Statement
+               | "if" Condition "then" Statement
+
+WhileStmt → "while" Condition "do" Statement
 
 ForLoop → "for" identifier ":=" Expression "to" Expression "do" Statement
 
-BreakStmt → "break"
+BreakStmt → "break" ";"
 
 ArrayDecl → "var" identifier "[" number "]" ";"
           | ε
@@ -86,9 +58,6 @@ ArrayDecl → "var" identifier "[" number "]" ";"
 ArrayAccess → identifier "[" Expression "]"
 
 ArrayAssignment → ArrayAccess ":=" Expression
-
-FuncDecl → FuncDecl 'function' identifier "(" ParamList ")" ";" Block ";"
-          | ε
 
 ParamList → ParamDecl
            | ParamList "," ParamDecl
@@ -101,18 +70,52 @@ FuncCall → identifier "(" ArgList ")"
 ArgList → Expression
          | ArgList "," Expression
          | ε
-         
+
 ReturnStmt → "return" Expression ";"
 
-ModOperator → "%"
-
-ReadWriteStmt → ReadStmt 
+ReadWriteStmt → ReadStmt
               | WriteStmt
               | WriteLineStmt
 
-ReadStmt → "read" "(" Expression ")"
+ReadStmt → "read" "(" identifier ")"
 
 WriteStmt → "write" "(" Expression ")"
 
 WriteLineStmt → "writeline" "(" Expression ")"
+
+Condition → "odd" Expression
+           | Expression Relation Expression
+
+Relation → "="
+          | "<>"
+          | "<"
+          | ">"
+          | "<="
+          | ">="
+
+Expression → Term 
+           | Expression AddSubOperator Term
+
+Term → Factor
+     | Term MulDivModOperator Factor
+
+MulDivModOperator → "*"
+                  | "/"
+                  | "%"
+
+AddSubOperator → "+"
+               | "-"
+
+Factor → identifier
+       | number
+       | "(" Expression ")"
+       | ArrayAccess
+
+Comment → "/*" CommentContent "*/"
+
+CommentContent → "*" CommentContent 
+               | "/" CommentContent 
+               | (any character except "*" and "/") CommentContent 
+               | ε
+
 
