@@ -110,7 +110,7 @@ Factor → identifier
 
 Comment → "/*" CommentContent "*/"
 
-CommentContent → | [^*/] character
+CommentContent → | [^*/] anyString
                  | ε
 
 
