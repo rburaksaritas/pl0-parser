@@ -1,9 +1,6 @@
 #################################
 ##### Extended PL/0 Grammar #####
 #################################
-okay. then, is this ok?
-
-can you see if any epsilon ambiguity here??
 
 Program → Block '.'
 
