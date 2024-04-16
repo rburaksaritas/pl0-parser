@@ -3,11 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define YYSTYPE_IS_DECLARED
-#define YYSTYPE struct _tagYYSTYPE
-
-#include "pl0_parser.tab.h"
-
 extern int yylex();
 extern int yylineno;
 extern char* yytext;
@@ -15,12 +10,10 @@ extern char* yytext;
 int yyparse();
 
 void yyerror(const char *s) {
-    fprintf(stderr, "Parser error at line %d: %s\n", yylineno, s);
+    fprintf(stderr, "Parser error at line %d near %s: %s\n", yylineno, yytext, s);
 }
 
 #define MAX_IDENTIFIER_LENGTH 50
-
-%}
 
 %union {
     int num;     
@@ -30,7 +23,7 @@ void yyerror(const char *s) {
 %token <str> IDENTIFIER
 %token <num> NUMBER
 
-%token CONST VAR PROCEDURE FUNCTION T_BEGIN T_END CALL IF THEN ELSE WHILE DO FOR BREAK READ WRITE WRITELINE RETURN ODD TO
+%token CONST VAR PROCEDURE FUNCTION T_BEGIN T_END CALL IF THEN ELSE WHILE DO FOR BREAK READ WRITE WRITELINE RETURN ODD TO DOT
 %token EQ NE LT GT LE GE LPAREN RPAREN LBRACKET RBRACKET COMMA SEMICOLON ASSIGN ADD SUB MUL DIV MOD
 
 %left ADD SUB
@@ -42,8 +35,8 @@ void yyerror(const char *s) {
 
 %%
 
-program : block '.'
-        | error '.' { fprintf(stderr, "Syntax error in program\n"); exit(1); }
+program : block DOT
+        | error DOT { fprintf(stderr, "Syntax error in program\n"); exit(1); }
 
 block : constDecl varDecl procDecl funcDecl statementList
 

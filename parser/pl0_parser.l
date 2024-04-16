@@ -43,6 +43,7 @@
 "*"                     { return MUL; }
 "/"                     { return DIV; }
 "%"                     { return MOD; }
+"."			{ return DOT; }
 [0-9]+                  { yylval.num = atoi(yytext); return NUMBER; }
 [a-zA-Z][a-zA-Z0-9]*    { yylval.str = strdup(yytext); return IDENTIFIER; }
 "/*"([^*]|\*+[^*/])*"*"+"/" { /* ignore comments */ }
