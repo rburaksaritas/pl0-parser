@@ -1,11 +1,12 @@
-function add(x, y);
+var a, b, sum;
+
+function add(var x, var y);
 var result;
 begin
   result := x + y;
   return result;
 end;
 
-var a, b, sum;
 begin
   a := 15;
   b := 10;

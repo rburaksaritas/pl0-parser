@@ -1,10 +1,10 @@
 var age;
 
 begin
-  write("Enter your age: ");
+  write(age);
   read(age);
   if age >= 18 then
-    writeln("You are an adult.")
+    writeln(age)
   else
-    writeln("You are a minor.");
+    writeln(0);
 end.
