@@ -1,0 +1,12 @@
+var i, n;
+
+begin
+  n := 15;
+  i := 1;
+  while i <= n do
+    if i % 3 = 0 then
+      write(i);
+    i := i + 1;
+  else
+    write(0);  /* Improperly placed else statement. */
+end.
