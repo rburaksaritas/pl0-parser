@@ -44,8 +44,8 @@
 "/"                     { printf("TOKEN: DIV\n"); return DIV; }
 "%"                     { printf("TOKEN: MOD\n"); return MOD; }
 "."			            { printf("TOKEN: DOT\n"); return DOT; }
-[0-9]+                  { printf("TOKEN: NUMBER\n"); yylval.num = atoi(yytext); return NUMBER; }
-[a-zA-Z][a-zA-Z0-9]*    { printf("TOKEN: IDENTIFIER\n"); yylval.str = strdup(yytext); return IDENTIFIER; }
+[0-9]+                  { printf("TOKEN: NUMBER (%s)\n", yytext); yylval.num = atoi(yytext); return NUMBER; }
+[a-zA-Z][a-zA-Z0-9]*    { printf("TOKEN: IDENTIFIER (%s)\n", yytext); yylval.str = strdup(yytext); return IDENTIFIER; }
 "/*"([^*]|\*+[^*/])*"*"+"/" { /* ignore comments */ }
 
 [ \t\n\r]               { /* ignore whitespace */ }

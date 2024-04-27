@@ -121,6 +121,7 @@ expression : term
            | expression ADD term
            | expression SUB term
            | UMINUS expression %prec UMINUS
+           | funcCall
 
 term : factor
      | term MUL factor

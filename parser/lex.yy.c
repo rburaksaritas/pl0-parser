@@ -991,12 +991,12 @@ YY_RULE_SETUP
 case 40:
 YY_RULE_SETUP
 #line 47 "pl0_parser.l"
-{ printf("TOKEN: NUMBER\n"); yylval.num = atoi(yytext); return NUMBER; }
+{ printf("TOKEN: NUMBER (%s)\n", yytext); yylval.num = atoi(yytext); return NUMBER; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
 #line 48 "pl0_parser.l"
-{ printf("TOKEN: IDENTIFIER\n"); yylval.str = strdup(yytext); return IDENTIFIER; }
+{ printf("TOKEN: IDENTIFIER (%s)\n", yytext); yylval.str = strdup(yytext); return IDENTIFIER; }
 	YY_BREAK
 case 42:
 /* rule 42 can match eol */
