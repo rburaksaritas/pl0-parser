@@ -8,7 +8,7 @@ begin
       if i % 3 = 0 then
         write(i)
       else
-        write(0);  /* Correctly placed inside the loop. */
+        write(n);  /* Correctly placed inside the loop. */
       i := i + 1;
     end;
 end.
