@@ -49,8 +49,8 @@ constDecl : CONST constAssignmentList SEMICOLON
 constAssignmentList : IDENTIFIER ASSIGN NUMBER
                     | constAssignmentList COMMA IDENTIFIER ASSIGN NUMBER
 
-varDecl : VAR identifierList SEMICOLON
-        | VAR arrayDecl SEMICOLON
+varDecl : VAR identifierList SEMICOLON varDecl
+        | VAR arrayDecl SEMICOLON varDecl
         | /* empty */
 
 identifierList : IDENTIFIER
@@ -105,9 +105,9 @@ readWriteStmt : readStmt
 
 readStmt : READ LPAREN IDENTIFIER RPAREN
 
-writeStmt : WRITE LPAREN expression RPAREN
+writeStmt : WRITE LPAREN IDENTIFIER RPAREN
 
-writeLineStmt : WRITELINE LPAREN expression RPAREN
+writeLineStmt : WRITELINE LPAREN IDENTIFIER RPAREN
 
 condition : ODD expression
           | expression EQ expression
