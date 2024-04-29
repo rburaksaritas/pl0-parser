@@ -48,7 +48,8 @@
 [a-zA-Z][a-zA-Z0-9]*    { printf("TOKEN: IDENTIFIER (%s)\n", yytext); yylval.str = strdup(yytext); return IDENTIFIER; }
 "/*"([^*]|\*+[^*/])*"*"+"/" { /* ignore comments */ }
 
-[ \t\n\r]               { /* ignore whitespace */ }
+[ \t\r]+               { /* ignore whitespace */ }
+\n                     { ++yylineno; /* increment line number on new line */ }
 .                       { fprintf(stderr, "Invalid character: %s\n", yytext); }
 
 %%

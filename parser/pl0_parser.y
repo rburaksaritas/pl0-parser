@@ -38,30 +38,31 @@ void yyerror(const char *s) {
 %%
 
 program : block DOT
-        | error DOT { fprintf(stderr, "Syntax error in program\n"); exit(1); }
-
+        
 block : constDecl varDecl procDecl funcDecl statement
-      | constDecl varDecl procDecl funcDecl
 
 constDecl : CONST constAssignmentList SEMICOLON
           | /* empty */
 
-constAssignmentList : IDENTIFIER ASSIGN NUMBER
+constAssignmentList : IDENTIFIER EQ NUMBER
                     | constAssignmentList COMMA IDENTIFIER ASSIGN NUMBER
-
+                    | error { yyerror("Invalid constant declaration"); }
+                    
 varDecl : VAR identifierList SEMICOLON varDecl
         | VAR arrayDecl SEMICOLON varDecl
         | /* empty */
+        | error { yyerror("Invalid variable declaration"); }
 
 identifierList : IDENTIFIER
                | identifierList COMMA IDENTIFIER
+               | error { yyerror("Invalid identifier list"); }
 
 arrayDecl : IDENTIFIER LBRACKET NUMBER RBRACKET
 
-procDecl : PROCEDURE IDENTIFIER SEMICOLON block SEMICOLON
+procDecl : procDecl PROCEDURE IDENTIFIER SEMICOLON block SEMICOLON
          | /* empty */
 
-funcDecl : FUNCTION IDENTIFIER LPAREN paramList RPAREN SEMICOLON block SEMICOLON
+funcDecl : funcDecl FUNCTION IDENTIFIER LPAREN paramList RPAREN SEMICOLON block SEMICOLON
          | /* empty */
 
 paramList : paramDecl
@@ -69,31 +70,35 @@ paramList : paramDecl
           | /* empty */
 
 paramDecl : VAR IDENTIFIER
+          | error { yyerror("Invalid parameter declaration"); }
 
-statementList : statement SEMICOLON
-              | statementList statement SEMICOLON
+statementList : statement
+              | statementList SEMICOLON statement
+              | error { yyerror("Invalid statement list"); }
 
-statement : matched_stmt
-          | unmatched_stmt
+statement : matched_statement
+          | unmatched_statement
 
-matched_stmt : IF condition THEN matched_stmt ELSE matched_stmt
-             | non_if_stmt
+matched_statement : IF condition THEN matched_statement ELSE matched_statement
+                  | non_if_statement
+                  | WHILE condition DO matched_statement
+                  | FOR IDENTIFIER ASSIGN expression TO expression DO matched_statement
 
-unmatched_stmt : IF condition THEN statement
-               | IF condition THEN matched_stmt ELSE unmatched_stmt
+unmatched_statement : IF condition THEN statement
+                    | IF condition THEN matched_statement ELSE unmatched_statement
+                    | WHILE condition DO unmatched_statement
+                    | FOR IDENTIFIER ASSIGN expression TO expression DO unmatched_statement
 
-non_if_stmt : IDENTIFIER ASSIGN expression
-            | CALL IDENTIFIER
-            | T_BEGIN statementList T_END
-            | WHILE condition DO statement
-            | FOR IDENTIFIER ASSIGN expression TO expression DO statement
-            | BREAK
-            | arrayAssignment
-            | funcCall
-            | readWriteStmt
-            | RETURN expression
-            | RETURN
-            | /* empty */
+non_if_statement : IDENTIFIER ASSIGN expression
+                 | CALL IDENTIFIER
+                 | T_BEGIN statementList T_END
+                 | BREAK
+                 | arrayAssignment
+                 | funcCall
+                 | readWriteStmt
+                 | RETURN expression
+                 | RETURN
+                 | /* empty */
 
 arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
 
@@ -117,7 +122,7 @@ condition : ODD expression
           | expression LE expression
           | expression GE expression
 
-expression : term
+expression : term|ADD term|SUB term
            | expression ADD term
            | expression SUB term
            | UMINUS expression %prec UMINUS
