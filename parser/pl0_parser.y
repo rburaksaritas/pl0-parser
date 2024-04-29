@@ -45,7 +45,7 @@ constDecl : CONST constAssignmentList SEMICOLON
           | /* empty */
 
 constAssignmentList : IDENTIFIER EQ NUMBER
-                    | constAssignmentList COMMA IDENTIFIER ASSIGN NUMBER
+                    | constAssignmentList COMMA IDENTIFIER EQ NUMBER
                     | error { yyerror("Invalid constant declaration"); }
                     
 varDecl : VAR identifierList SEMICOLON varDecl
