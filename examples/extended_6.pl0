@@ -1,18 +1,16 @@
+const zero = 0;
 var x, y;
 
 begin
   x := 10;
   y := 20;
   if x > 5 then
-    begin
-      while y > 0 do
-        begin
-          if y % 2 = 0 then
-            write(y)
-          else
-            write(x);
-        end;
-    end
+    while y > 0 do
+      if y % 2 = 0 then
+        write(y)
+      else
+        write(x)
   else
-    write(0);
-end.
+    write(zero)
+end
+.

@@ -1,0 +1,6 @@
+const A = 5, B = 3;
+var X, Y;
+begin
+    X := A + B * 2;
+    Y := (A - B) * 3 + X / 2
+end.
