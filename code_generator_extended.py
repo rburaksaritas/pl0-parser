@@ -95,7 +95,7 @@ def generate_statement(recursion_depth=0):
     if recursion_depth > MAX_RECURSION_DEPTH/100 + 2:
         return generate_simple_statement(recursion_depth + 1)
     
-    statement_types = ["assignment", "call", "compound", "conditional", "conditional2", "loop", "loop2", "break", "return", "read", "write", "writeline"]
+    statement_types = ["assignment", "call", "compound", "conditional", "conditional2", "loop", "loop2", "break", "return", "read", "write", "writeline", "comment"]
     statement_type = random.choice(statement_types)
     
     if statement_type == "assignment":
@@ -149,6 +149,10 @@ def generate_statement(recursion_depth=0):
     elif statement_type == "writeline":
         statement = generate_writeline_stmt(recursion_depth + 1)
         return statement
+
+    elif statement_type == "comment":
+        comment = generate_comment(recursion_depth + 1)
+        return comment + generate_simple_statement(recursion_depth + 1)
 
 def generate_condition(recursion_depth=0):
     print("generating condition...", recursion_depth)
@@ -301,7 +305,7 @@ def generate_programs(num, prefix, corrupt = False):
             program = introduce_errors(program)
 
         # save the program to destination folder
-        with open(f"./examples/generated/extended_corrupt/{prefix}_{i}.txt", "w") as f:
+        with open(f"./examples/generated/extended/{prefix}_{i}.txt", "w") as f:
             f.write(program)
 
-generate_programs(100, "extended_corrupt", True)
+generate_programs(100, "extended", False)
