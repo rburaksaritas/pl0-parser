@@ -1,7 +1,6 @@
 
+#### CMPE 425: Compiler Design @ Department of Computer Engineering, Boğaziçi University, Spring 2024
 ## Extended PL/0 Parser
-### CMPE 425: Compiler Design
-#### Department of Computer Engineering, Boğaziçi University, Spring 2024
 
 ### Introduction
 This project enhances the PL/0 language by integrating new features such as multi-line comments, advanced control structures, functions, and arrays, among others. These enhancements required modifications to the grammar and the development of an updated lexer and parser.
