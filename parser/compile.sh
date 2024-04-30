@@ -53,7 +53,7 @@ if [ -f pl0_parser ]; then
 fi
 
 # Compile the lexer and parser
-flex pl0_parser.l
+flex pl0_lexer.l
 bison -d $DEBUG_FLAG pl0_parser.y
 
 # Compile the C code
