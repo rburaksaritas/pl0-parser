@@ -1,0 +1,6 @@
+const MAX = 10;
+var num;
+begin
+    if num >= MAX then
+    else
+end.

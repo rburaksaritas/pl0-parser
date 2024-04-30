@@ -1,0 +1,9 @@
+const  RDGTY  =99,Z =   59,  MZa  = 42;  
+
+var  KNijCfz,   eNrZEmfwvD,  MccDIojh, npVbgdKnFD, Rtwg;  
+
+if 40%Eiy()   >= TqYqsE()then  
+begin   read(CAQe);      
+if  JKZVFjYG()  - mWhSKuBI[oYOOgBNf()] * AGvofuEyXj()   >  nzv[mAgczbOrqv[hmmvlM()] %  NAr[HABqdiHO *  (fld())]]%   kTwe[FIrGCAY()]then call   tPFo  elsewrite(FO);   
+writeline(w);
+writeline(mm)   end.  

@@ -1,0 +1,3 @@
+const pvsJGqr = 9;
+
+if 69 >= (jTFeKm()) then read(TfversDFzr) else /* This is a comment */qn := 63.

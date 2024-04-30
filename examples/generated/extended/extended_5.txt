@@ -1,0 +1,4 @@
+procedure ULa;
+    read(inspWBjfCz);
+
+writeline(E).

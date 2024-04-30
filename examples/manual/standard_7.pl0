@@ -1,0 +1,27 @@
+const
+  MAX_VALUE = 100;
+var
+  x, y, z;
+procedure AddNumbers;
+  var
+    a, b, sum;
+  begin
+    a := 10;
+    b := 20;
+    sum := a + b;
+    z := sum;
+  end;
+procedure SubtractNumbers;
+  var
+    c, d, diff;
+  begin
+    c := 30;
+    d := 15;
+    diff := c - d;
+    y := diff;
+  end;
+begin
+  call AddNumbers;
+  call SubtractNumbers;
+  x := MAX_VALUE;
+end.

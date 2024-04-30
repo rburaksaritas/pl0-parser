@@ -1,0 +1,3 @@
+var KpGw, PaZcSSh, KTw, PlbE;
+
+if pLbAnI() = ZMdztwIfU() - mnZElco() then sy := 100 - jpzdnaNq() else read(lFIYTLCH).

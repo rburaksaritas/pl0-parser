@@ -1,0 +1,7 @@
+const LIMIT = 5;
+var counter;
+begin
+    counter := 1;
+    while counter <= LIMIT do
+        counter := counter + 1
+end.

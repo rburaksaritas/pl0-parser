@@ -1,0 +1,65 @@
+var UbvmSHvIf, iwgfIwWKXq, IcwQrt, ryUnrJr;
+
+function x(var xLZNuKjQH, var uYHsV) ;
+    var aMgE;
+    
+    procedure yPl;
+        var hTeT, zYzXYoy;
+        
+        begin call Cm;
+        /* This is a comment */GisddCepd := 4;
+        while odd c() do 
+        xkhwSey := 62;
+        for YF:=uzGSuN() to qe() do 
+        WVQoKAwA := 42;
+        read(X) end;
+    
+    procedure YJ;
+        var ZeBDLKYa;
+        
+        function uyGQc(var yIOTwwgsd) ;
+            function McUKZxXuVr(var YUCEEH, var jsZO) ;
+                var x; x := 1 ;
+            
+            W := 12 ;
+        
+        function SzZGwX(var kDzRA, var fNMQVq) ;
+            const MJBA = 20, pCY = 94;
+            
+            var zUppuIwMTk, cwkmyy;
+            
+            procedure oflDS;
+                var x; x := 1;
+            
+            procedure pC;
+                var x; x := 1;
+            
+            procedure m;
+                var x; x := 1;
+            
+            function dcoPt(var tx, var gUll, var cArX) ;
+                var x; x := 1 ;
+            
+            function pEzNN(var pkkPKDehil, var SEOOnHqSw, var Ys) ;
+                var x; x := 1 ;
+            
+            function G(var xRu, var CPmWuT, var hRVqXhotG) ;
+                var x; x := 1 ;
+            
+            JOetSlfzJ := 50 ;
+        
+        read(CMOBgJvAB);
+    
+    begin E := c() + ddfMRaLmrB;
+    write(bs);
+    pSGtDG := 56 - FXtg();
+    call owXf end ;
+
+function JfBzus(var KMdOsZT, var bUYg) ;
+    const aYdjsBg = 4, d = 88, J = 46, JnHE = 99, XqTtBddVjD = 86;
+    
+    var qGqNZlPT, ilhyLWX;
+    
+    read(PdzVBa) ;
+
+write(cJCoTrZ).

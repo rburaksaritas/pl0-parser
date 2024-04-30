@@ -1,0 +1,3 @@
+const   CpVMP = 50,   zOqjx =  28,ud  =  73;
+
+writeline(ReG).   

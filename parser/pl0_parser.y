@@ -1,154 +1,202 @@
 %{
 #include <stdio.h>
 #include <stdlib.h>
-#include "pl0.tab.h"
+#include <string.h>
 
-void yyerror(const char *s);
-int yylex(void);
-extern int yylineno; // Current line number
+extern int yylex();
+extern int yylineno;
+extern char* yytext;
 
-void init_symbol_table(); 
-int get_array_value(const char *id, int index);
-int* lookup(const char *id);  
-%}
+int yyparse();
 
-%token CONST VAR PROCEDURE FUNCTION IF THEN ELSE WHILE DO CALL BEGIN END RETURN BREAK FOR TO READ WRITE WRITELINE ODD
-%token <num> NUMBER
-%token <id> IDENTIFIER
-%token PLUS MINUS TIMES DIVIDE MOD ASSIGN SEMICOLON COMMA DOT LBRACKET RBRACKET LPAREN RPAREN EQ NEQ LT GT LE GE
+#define MAX_IDENTIFIER_LENGTH 50
+#define ANSI_COLOR_RED "\x1b[31m"
+#define ANSI_COLOR_GREEN "\x1b[32m"
+#define ANSI_COLOR_RESET "\x1b[0m"
 
-%type <num> Expression Term Factor ArrayAccess
-%type <stmt> Statement StatementList Block
-%type <id> IdentifierList
-%type <exprs> ArgList
+int parser_error_count = 0;
+extern int lexer_error_count;
 
-%left MINUS PLUS
-%left TIMES DIVIDE MOD
-%left EQ NEQ LT LE GT GE
-%right ASSIGN
-%right ELSE
-
-%%
-Program:
-    Block DOT
-    ;
-
-Block:
-    ConstDecl VarDecl ProcDecl FuncDecl Statement
-    ;
-
-ConstDecl:
-    /* Empty */ { $$ = 0; }
-    | CONST ConstAssignmentList SEMICOLON { $$ = 0; }
-    ;
-
-ConstAssignmentList:
-    IDENTIFIER ASSIGN NUMBER
-    | ConstAssignmentList COMMA IDENTIFIER ASSIGN NUMBER
-    ;
-
-VarDecl:
-    /* Empty */
-    | VAR IdentifierList SEMICOLON
-    | ArrayDecl
-    ;
-
-ArrayDecl:
-    VAR IDENTIFIER LBRACKET NUMBER RBRACKET SEMICOLON
-    ;
-
-IdentifierList:
-    IDENTIFIER
-    | IdentifierList COMMA IDENTIFIER
-    ;
-
-ProcDecl:
-    /* Empty */
-    | PROCEDURE IDENTIFIER SEMICOLON Block SEMICOLON ProcDecl
-    ;
-
-FuncDecl:
-    /* Empty */
-    | FUNCTION IDENTIFIER LPAREN ParamList RPAREN SEMICOLON Block SEMICOLON FuncDecl
-    ;
-
-ParamList:
-    /* Empty */
-    | IDENTIFIER
-    | ParamList COMMA IDENTIFIER
-    ;
-
-Statement:
-    IDENTIFIER ASSIGN Expression { $$ = $3; }
-    | CALL IDENTIFIER LPAREN ArgList RPAREN { $$ = 0; } // no value returned from a call
-    | BEGIN StatementList END    { $$ = $2; }
-    | IF Condition THEN Statement ELSE Statement { $$ = $6; }
-    | WHILE Condition DO Statement { $$ = $4; }
-    | FOR IDENTIFIER ASSIGN Expression TO Expression DO Statement { $$ = $8; }
-    | RETURN Expression SEMICOLON { $$ = $2; }
-    | READ LPAREN IDENTIFIER RPAREN { $$ = 0; } // read modifies the identifier directly
-    | WRITE LPAREN IDENTIFIER RPAREN { $$ = 0; } // write outputs the identifier's value
-    | WRITELINE LPAREN IDENTIFIER RPAREN { $$ = 0; } // writeline outputs the identifier's value
-    | /* Empty */ { $$ = 0; }
-    ;
-
-StatementList:
-    Statement
-    | StatementList SEMICOLON Statement { $$ = $3; }
-    ;
-
-Expression:
-    Expression PLUS Term { $$ = $1 + $3; } 
-    | Expression MINUS Term { $$ = $1 - $3; }
-    | Term { $$ = $1; }
-    ;
-
-Term:
-    Factor { $$ = $1; }
-    | Term TIMES Factor { $$ = $1 * $3; }
-    | Term DIVIDE Factor { $$ = $1 / $3; }
-    | Term MOD Factor { $$ = $1 % $3; }
-    ;
-
-Factor:
-    NUMBER { $$ = $1; }
-    | IDENTIFIER { $$ = *lookup($1); } // dereference the pointer to get the value
-    | LPAREN Expression RPAREN { $$ = $2; }
-    | IDENTIFIER LPAREN ArgList RPAREN { $$ = call_function($1, $3); } // function returns an int
-    | ArrayAccess
-    ;
-
-ArrayAccess:
-    IDENTIFIER LBRACKET Expression RBRACKET { $$ = get_array_value($1, $3); }
-    ;
-
-Condition:
-    ODD Expression { $$ = $2 % 2 != 0; }
-    | Expression EQ Expression { $$ = $1 == $3; }
-    | Expression NEQ Expression { $$ = $1 != $3; }
-    | Expression LT Expression { $$ = $1 < $3; }
-    | Expression LE Expression { $$ = $1 <= $3; }
-    | Expression GT Expression { $$ = $1 > $3; }
-    | Expression GE Expression { $$ = $1 >= $3; }
-    ;
-
-ArgList:
-    Expression { $$ = create_arg_list($1); }
-    | ArgList COMMA Expression { $$ = add_to_arg_list($1, $3); }
-    ;
-
-%%
 void yyerror(const char *s) {
-    fprintf(stderr, "Error: %s at line %d\n", s, yylineno);
+
+    static int last_error_line = -1;
+    static char last_text[MAX_IDENTIFIER_LENGTH] = "";
+    
+    // Check if the error location is the same as the last error
+    if (yylineno == last_error_line && strcmp(last_text, yytext) == 0) {
+        // Skip printing the error message if it's for the same location
+        return;
+    } 
+
+    if (strcmp(s, "syntax error") == 0) {
+       fprintf(stderr, ANSI_COLOR_RED "Parser error at line %d at token \"%s\": syntax error\n" ANSI_COLOR_RESET, yylineno, yytext);
+    } else {
+        fprintf(stderr, ANSI_COLOR_RED "Parser error at line %d near token \"%s\": %s\n" ANSI_COLOR_RESET, yylineno, yytext, s);
+    }
+
+    last_error_line = yylineno;
+    parser_error_count++;
+    strncpy(last_text, yytext, MAX_IDENTIFIER_LENGTH);
+    last_text[MAX_IDENTIFIER_LENGTH - 1] = '\0';
 }
 
-int main(void) {
-    init_symbol_table();
-    printf("Starting parser...\n");
-    if (yyparse() == 0) { // returns 0 if parsing is successful
-        printf("Parsing complete!\n");
+%}
+
+%union {
+    int num;     
+    char* str;   
+}
+
+%token <str> IDENTIFIER
+%token <num> NUMBER
+
+%token CONST VAR PROCEDURE FUNCTION T_BEGIN T_END CALL IF THEN ELSE WHILE DO FOR BREAK READ WRITE WRITELINE RETURN ODD TO DOT
+%token EQ NE LT GT LE GE LPAREN RPAREN LBRACKET RBRACKET COMMA SEMICOLON ASSIGN ADD SUB MUL DIV MOD
+
+%left ADD SUB
+%left MUL DIV MOD
+%left EQ NE LT GT LE GE
+%nonassoc UMINUS
+%nonassoc THEN
+%nonassoc ELSE
+
+%%
+
+program : block DOT
+
+block : constDecl varDecl procDecl funcDecl statement
+
+constDecl : CONST constAssignmentList SEMICOLON
+          | /* empty */
+
+constAssignmentList : IDENTIFIER EQ NUMBER
+                    | constAssignmentList COMMA IDENTIFIER EQ NUMBER
+                    | error { yyerror("invalid constant assigment list"); yyclearin; }
+
+varDecl : VAR identifierList SEMICOLON varDecl
+        | VAR arrayDecl SEMICOLON varDecl
+        | /* empty */
+        | error identifierList SEMICOLON { yyerror("invalid statement"); }
+        | error arrayDecl SEMICOLON { yyerror("invalid statement"); }
+
+identifierList : IDENTIFIER
+                | identifierList COMMA IDENTIFIER
+
+arrayDecl : IDENTIFIER LBRACKET NUMBER RBRACKET
+           | IDENTIFIER LBRACKET error RBRACKET { yyerror("invalid array declaration"); }
+
+procDecl : PROCEDURE IDENTIFIER SEMICOLON block SEMICOLON procDecl
+         | /* empty */
+
+funcDecl : FUNCTION IDENTIFIER LPAREN paramList RPAREN SEMICOLON block SEMICOLON funcDecl
+         | /* empty */
+
+paramList : paramDecl
+           | paramList COMMA paramDecl
+           | /* empty */
+
+paramDecl : VAR IDENTIFIER
+
+statementList : statement
+              | statementList SEMICOLON statement
+              | error SEMICOLON statement { yyerror("invalid statement"); yyclearin; }
+
+statement : matched_statement
+           | unmatched_statement
+           | IF error THEN { yyerror("invalid if statement"); yyclearin; } statement
+           | WHILE error DO { yyerror("invalid while loop statement"); yyclearin;  } statement
+           | FOR error DO { yyerror("invalid for loop statement"); yyclearin; } statement
+
+matched_statement : IF condition THEN matched_statement ELSE matched_statement
+                  | non_if_statement
+                  | WHILE condition DO matched_statement
+                  | FOR IDENTIFIER ASSIGN expression TO expression DO matched_statement
+
+unmatched_statement : IF condition THEN statement
+                    | IF condition THEN matched_statement ELSE unmatched_statement
+                    | WHILE condition DO unmatched_statement
+                    | FOR IDENTIFIER ASSIGN expression TO expression DO unmatched_statement
+
+
+non_if_statement : IDENTIFIER ASSIGN expression
+                 | CALL IDENTIFIER
+                 | T_BEGIN statementList T_END
+                 | BREAK
+                 | arrayAssignment
+                 | funcCall
+                 | readWriteStmt
+                 | RETURN expression
+                 | RETURN
+                 | /* empty */
+
+arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
+
+readWriteStmt : readStmt
+              | writeStmt
+              | writeLineStmt
+
+readStmt : READ LPAREN IDENTIFIER RPAREN
+         | READ error RPAREN { yyerror("invalid read statement"); yyclearin; }
+
+writeStmt : WRITE LPAREN IDENTIFIER RPAREN
+          | WRITE error RPAREN { yyerror("invalid write statement"); yyclearin; }
+
+writeLineStmt : WRITELINE LPAREN IDENTIFIER RPAREN
+          | WRITELINE error RPAREN { yyerror("invalid writeline statement"); yyclearin; }
+
+condition : ODD expression
+          | expression EQ expression
+          | expression NE expression
+          | expression LT expression
+          | expression GT expression
+          | expression LE expression
+          | expression GE expression
+
+expression : term|ADD term|SUB term
+           | expression ADD term
+           | expression SUB term
+           | UMINUS expression %prec UMINUS
+
+funcCall : IDENTIFIER LPAREN argList RPAREN
+
+argList : expression
+         | argList COMMA expression
+         | /* empty */
+
+term : factor
+      | term MUL factor
+      | term DIV factor
+      | term MOD factor
+
+factor : IDENTIFIER
+        | NUMBER
+        | LPAREN expression RPAREN
+        | arrayIndex
+        | funcCall
+
+arrayIndex : IDENTIFIER LBRACKET expression RBRACKET
+        
+%%
+
+int main() {
+    printf(ANSI_COLOR_GREEN "Parsing begins..." ANSI_COLOR_RESET);
+    printf("\n line %d: ", yylineno);
+    yyparse();
+    printf(ANSI_COLOR_GREEN "\nParsing completed.\n" ANSI_COLOR_RESET);
+   
+   // Print parser error count in green if zero, otherwise in red
+    if (parser_error_count == 0) {
+        printf(ANSI_COLOR_GREEN "Parser (syntax) errors: %d\n" ANSI_COLOR_RESET, parser_error_count);
     } else {
-        printf("Parsing failed.\n");
+        printf(ANSI_COLOR_RED "Parser (syntax) errors: %d\n" ANSI_COLOR_RESET, parser_error_count);
     }
+
+    // Print lexer error count in green if zero, otherwise in red
+    if (lexer_error_count == 0) {
+        printf(ANSI_COLOR_GREEN "Lexer (lexical) errors: %d\n" ANSI_COLOR_RESET, lexer_error_count);
+    } else {
+        printf(ANSI_COLOR_RED "Lexer (lexical) errors: %d\n" ANSI_COLOR_RESET, lexer_error_count);
+    }
+    
     return 0;
 }

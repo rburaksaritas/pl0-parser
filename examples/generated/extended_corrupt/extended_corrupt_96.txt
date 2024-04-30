@@ -1,0 +1,50 @@
+var NiHTOB,    AnzGetR,  GIVt, oW,  YqMK; 
+
+procedureRtnngJK; 
+const   yq=39,TsuN =   23;   
+
+procedure   VEDbQA; 
+procedure   ECwihKxmZ;
+const   oduTwQPN  =  80,  c   #=  84,   QGubAFtl =   45,   UyErDi= 69;   
+
+procedure  foaiYmmgK;
+varx;x:=  1; 
+
+rl:=   1;
+
+procedure mnOAjJxV;  
+constONwwsvynsT  =   70,   iemGKNq   =   39, BxpHsY   =95,Pfcf=  48,Y= 97;
+
+procedure G; 
+var  x; x := 1;  
+
+procedure  x;  
+varx;x:=    1; 
+
+function  PNlxVFZ(var JQ,   var  wgUyzVIZ)   ;   
+varx;x   :=  1   ; 
+
+function   bex(var   KEJ,varQ)   ;   
+var x;x  :#=1  ;  
+
+function LUx(var  dM)    ; 
+var  x;  x  :=1   ;
+
+ttY :=  40; 
+
+begin  while  odd lvq()do
+KD!VOdp:= 70;   
+ifoddWjBrTbgUyM() then 
+return   QzicL();   
+beginJ  :=  84;  
+oKJnxLBG   :=  56end;
+whileodd  jgvwnbYhQ()  do  
+xrukETwEa  := 30 end; 
+
+for  EAlLaJn:=(DQiqnBC())/  nMQS()  +   MRWBFDnbj()  to PmfETCN()  do
+begin begin  read(oKqhKic);   
+/*This   is acomment   */BKE  := 61; 
+ifgRai()   <=  NfkxNO()   then
+if   Gp[V?QKZVyc/   gkDOBaOsi()]    *  ITh()    <  ue%  WYNpphmjw()   thenvW :=  83   else  xUXBw   :=  96 end   end;   
+
+writeline(GR).  

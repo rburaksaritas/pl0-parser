@@ -1,0 +1,16 @@
+const eMOg=89,   eSWTaLwb  =   25,  fwKF = 28,SuVdyzFQ =   15, X     =56;   
+
+procedure  laKoESHU;
+var RrhQYs; 
+
+function ew(var smfju) ;   
+var x,pnKnC, tZF,   bLNnXK,    PUpXYG;
+
+hMl    := hNEP[EkB()]   % wYEa() ;   
+
+call NLjCfHiHHj;
+
+procedure  wqArLfsxoU;  
+write(Wiibi); 
+
+break. 

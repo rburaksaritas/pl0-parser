@@ -1,0 +1,3 @@
+var   jimvIcRfwt,  hganRQc,HHtQg,  FLT;   
+
+read(bgU).  

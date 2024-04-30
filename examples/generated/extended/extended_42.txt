@@ -1,0 +1,16 @@
+var cHsPymA;
+
+procedure pm;
+    const RbuWk = 9;
+    
+    var xRmhen, dwGhWQdX;
+    
+    while odd pqFV do 
+    if odd fvQc() then while ZsRdiCks() >= EMpLHZcFgZ() do 
+    writeline(BBIgd) else while JG() > U do 
+    read(sZfEsMEPe);
+
+procedure LaAu;
+    write(tr);
+
+write(QBnEik).

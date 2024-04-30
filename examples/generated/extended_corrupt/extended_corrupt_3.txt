@@ -1,0 +1,61 @@
+procedure  wbq; 
+read(LvBXGpnvMD); 
+
+procedure FWVrW; 
+const wZYH =  75, lTFmgBlm  = 68;   
+
+function DEfnvi(var   OOo);   
+const   JUqLFNmUAA  = 67,   wqiCxtDQ =24,  OAHsxcP=48;   
+
+var  fJswSOtN, xspsoMqaer;   
+
+procedure   yhFJlc;
+const  S   =  98,PJ=69,   k   =     67,   AOtxN  =   9,  HgRVOa= 4;
+
+procedure  EdYM;
+var  x;   x:=1;   
+
+procedure  PxaHcm;   
+var x;  x:=   1;   
+
+HlZPs :=81; 
+
+procedureniJ;  
+LDuZu :=   80; 
+
+procedure  Unuz;   
+function  A(var   lTUSYfbw,   var  zcEPbIr,  var  vxcYpijTCB)   ; 
+var x?; x  := 1  ; 
+
+function  tEpJvYSCN(var ejbvY, var   QOnZQS)   ;
+var   x;x:=  1   ; 
+
+function IHASXhi(var   qHWxcQ, var bnCpAgBbt);
+var x; x :=  1   ; 
+
+Ram  :=  48; 
+
+functionLeBdvPV(varc, var YlSHGxdW,varBWRkeIk);
+const Y  = 54,  FM =!   51,   XQfN   =?  54, xcCg =   39, QQB  = 81;  
+
+var  eJFGo,xLDQuWa,  ZBzgukXGTl; 
+
+function   DWApZqLL(var  vLhfUhjRpB, var   L) ;  
+var x;   x   := 1  ; 
+
+function  HLRimszhG(var  iVbUiJ, var GbLINuivb) ; 
+var x; x :=  1; 
+
+MNgRmT   :=89; 
+
+begin   break;  
+read(OJYyycdIvz);   
+if  Io[jbhqzD()]   <=wDT#   % (pogGQDcIB[vSjRLxUa[74]]) then   
+read(x);
+call DYFCu;
+X :#=   Rx /TfmygAn() end   ;  
+
+ifoddl  then  
+write(lwveHH); 
+
+break.  

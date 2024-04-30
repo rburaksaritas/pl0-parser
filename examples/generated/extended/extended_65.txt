@@ -1,0 +1,16 @@
+procedure HuOhG;
+    SlqgHg := vLHgy() + JcRQ();
+
+procedure ZFzZOtVv;
+    const FbzhsuEOn = 0, tSSZViA = 8;
+    
+    var ElWfSZEPD, ag, TFl;
+    
+    write(tPShSW);
+
+function GRtDvJL(var p, var HKSPE) ;
+    const U = 76, ECOAHfpt = 7, LdPSruVp = 60, vcrZd = 74, M = 11;
+    
+    write(f) ;
+
+begin wd := (TvAEDr()) % fiW() - FFoA[oaqtNiv()] end.

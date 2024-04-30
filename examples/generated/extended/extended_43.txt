@@ -1,0 +1,5 @@
+const jFDeJEPicx = 30;
+
+var yBpektYUR, ORAoe;
+
+writeline(ynKTCRnsoF).

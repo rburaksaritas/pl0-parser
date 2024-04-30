@@ -1,0 +1,60 @@
+const JsYwbbA = 27, OnZ = 26, o = 66, Foh = 60;
+
+procedure gNUxx;
+    onpeXDC := s * ugC() - gggnfVA();
+
+procedure nsrOat;
+    var BXFGCwnxfA, qROxv, f, qyfFUQd, BqlZETrqh;
+    
+    /* This is a comment */VxWfec := 19;
+
+procedure YKB;
+    function KFFglqbG(var I, var dmECNQy) ;
+        procedure qfmZBIv;
+            var Dftz, WFP, MgAfXK;
+            
+            function YOfLui(var mRu, var THcBtt, var RvbsX) ;
+                var x; x := 1 ;
+            
+            function GAEKgrRi(var fpkOhf, var f, var yXVlW) ;
+                var x; x := 1 ;
+            
+            LU := 3;
+        
+        function HxShfxomF(var qfi, var maIyUxv) ;
+            var aF, YN;
+            
+            function sXSO(var iDW) ;
+                var x; x := 1 ;
+            
+            UfRvflNj := 18 ;
+        
+        function PPRvLHvvT(var sQoOTaStRp) ;
+            const KFb = 19, lAB = 64, bioPzbfwWW = 50;
+            
+            var UXcCYQmql, gODt, EF, G;
+            
+            procedure iEuCyfXLmI;
+                var x; x := 1;
+            
+            fycNYAb := 81 ;
+        
+        if odd ZoIFXv() then write(WhawyE) else call Y ;
+    
+    function bdRDOWY(var fQ, var fqRMw) ;
+        const MEHW = 58, AhAaQmZ = 99, nr = 82, gMigLq = 4, AcyL = 17;
+        
+        var wrBCPuMYYW;
+        
+        function g(var kfEByBkaq) ;
+            const qpGhWu = 17, VKPjma = 7;
+            
+            var P, b, VfOzJrVKVR, LbsjFVaF;
+            
+            o := 70 ;
+        
+        return A() ;
+    
+    read(GyVd);
+
+if sP * yfyFPu() > WhSoLBlCR() then read(uZGWAk) else /* This is a comment */qOwAcK := 36.

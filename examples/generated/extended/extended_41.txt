@@ -1,0 +1,45 @@
+procedure xmzFzHJMp;
+    const JFj = 13, aQzgAzwu = 77, X = 12, ol = 82;
+    
+    procedure Buikpzj;
+        const jyYfhu = 48, DvHYsVFoVL = 8, yiVXbdTHT = 57, j = 38, MaGn = 51;
+        
+        /* This is a comment */lwvjnmu := 54;
+    
+    procedure bpeqp;
+        var giErhnrppr, zJkMiEozkQ, dDxBhHtSV, GCvUPY;
+        
+        procedure lpUEOCFOn;
+            const rVnnoJGT = 60, ESdXu = 11, qoYaBOL = 87, GPSeXdsQCr = 58, WpB = 15;
+            
+            var MqOSUUlVBC, MqM, kK, eLQvv;
+            
+            pWqarOALFC := 15;
+        
+        procedure zxGwYgvqLr;
+            function N(var JQ, var glkKuMOWle, var GbGVa) ;
+                var x; x := 1 ;
+            
+            function PDTQWSIqbx(var taLammY, var aHDnGS) ;
+                var x; x := 1 ;
+            
+            function nY(var a) ;
+                var x; x := 1 ;
+            
+            FzynP := 88;
+        
+        procedure LLN;
+            const KK = 34, Z = 54, dyx = 62;
+            
+            GD := 68;
+        
+        return 100 + B();
+    
+    read(U);
+
+procedure MLGPO;
+    var O, XafTLsPj;
+    
+    write(bLyYixqzkC);
+
+writeline(magXMqOLAh).

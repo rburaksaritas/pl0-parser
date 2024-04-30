@@ -1,0 +1,20 @@
+function oSylZG(varHTFu)  ; 
+const   nuwCek = 54,  TDdR=  5,   pRaLftPZA   =   34;   
+
+varsCdBHy,  lVli;
+
+function eBeNwqL(var   cyprm,varHDHgcbA,   var DjTyfpl);   
+constrV=  40,  E=  91;  
+
+var  nFaYOkToTS,  utAGbX,BkMPvDDIWZ,  fUKbgUJae,   MeuIkkEebT; 
+
+begin  call xMSBa;  
+ifodd  RJXodbaMz() then   TwKHNMvcL :=75else   a  := 73;
+callDwPirc;  
+for   dFzMkb:=49  to bxK[iXnHdzwlnd()]    / RuobWVE()do 
+QpPVhcUMO:=     86;   
+write(qROMPp) end  ; 
+
+writeline(K);   
+
+write(QJBIiX). 

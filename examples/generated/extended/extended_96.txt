@@ -1,0 +1,5 @@
+const KuGER = 54, S = 8;
+
+var YyYKOiek, YNqH, lPy, fQTBi;
+
+break.

@@ -1,0 +1,91 @@
+var RWCnds, HA, dSnQBs, zSYFKir;
+
+procedure QjxThMNp;
+    var qSdlNx, pjcuaK, zdiKSAbIL, pyPlQ;
+    
+    procedure LG;
+        const uezPAL = 31, j = 86, AG = 97, c = 79, xYUsWv = 79;
+        
+        var VxAEJZIt, qvmz;
+        
+        procedure meXMd;
+            procedure qI;
+                var x; x := 1;
+            
+            gRSzYxiKev := 66;
+        
+        function NQlRlzG(var tVVGAySXuC, var LOKZdtRq) ;
+            procedure NLbJKxLcbd;
+                var x; x := 1;
+            
+            procedure TcJ;
+                var x; x := 1;
+            
+            ywqF := 48 ;
+        
+        call aHBJpFk;
+    
+    procedure w;
+        var shTLkPwOUO, B, crxhmqd;
+        
+        procedure dg;
+            var rKbVufH, RrRRyboWj, CyZFCrnKjA;
+            
+            FoazbPK := 63;
+        
+        procedure hW;
+            const O = 5, Yz = 4, WcF = 78, AzzSlxeG = 32, FUu = 80;
+            
+            var hPl, Jwu;
+            
+            procedure Etmtv;
+                var x; x := 1;
+            
+            kHxe := 81;
+        
+        function nuoVkG(var nIaUFs) ;
+            procedure lHTncWIB;
+                var x; x := 1;
+            
+            procedure wZGFKg;
+                var x; x := 1;
+            
+            procedure RWkKTB;
+                var x; x := 1;
+            
+            function xADlqCLCuW(var C) ;
+                var x; x := 1 ;
+            
+            function m(var pWPEaLY, var r, var MSdu) ;
+                var x; x := 1 ;
+            
+            function UxU(var DJtQFeKkT) ;
+                var x; x := 1 ;
+            
+            OaKZqm := 25 ;
+        
+        function npnF(var SnZixxz) ;
+            var JVnYO, mNUmKs, cAJuZHma, bzrolpW, g;
+            
+            procedure InCGGDQg;
+                var x; x := 1;
+            
+            procedure FguMy;
+                var x; x := 1;
+            
+            function D(var gjUP, var pJGR, var jLb) ;
+                var x; x := 1 ;
+            
+            wUSdQZ := 49 ;
+        
+        function YzmM(var IANZjzD, var DqGpnV) ;
+            const XHp = 44, bncUunqI = 17, zclZCzTHER = 48, h = 84, iioafdIwX = 49;
+            
+            pomsfmzm := 33 ;
+        
+        writeline(GtGpHBmXy);
+    
+    for vpAf:=LReYjn() + HmKqNQwSWK() to sSCx() do 
+    writeline(SB);
+
+write(CWvCkov).

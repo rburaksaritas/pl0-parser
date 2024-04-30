@@ -1,9 +1,0 @@
-var numbers[10];
-
-begin
-  for i := 0 to 9 do
-    numbers[i] := i * i;
-
-  for i := 0 to 9 do
-    write(numbers[i]);
-end.

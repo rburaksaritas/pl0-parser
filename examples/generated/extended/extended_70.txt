@@ -1,0 +1,6 @@
+const gZ = 15, OMPbIea = 29;
+
+var uEYyypdcea, CFQ, Y;
+
+for aBD:=VAbCVoW * gHVOQgOaR() to vhTyO() do 
+read(aI).

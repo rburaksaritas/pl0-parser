@@ -1,0 +1,10 @@
+var age;
+
+begin
+  write(age);
+  read(age);
+  if age >= 18 then
+    writeln(age)
+  else
+    writeln(0);
+end.
