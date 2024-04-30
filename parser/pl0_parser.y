@@ -14,27 +14,28 @@ int yyparse();
 #define ANSI_COLOR_GREEN "\x1b[32m"
 #define ANSI_COLOR_RESET "\x1b[0m"
 
+int parser_error_count = 0;
+extern int lexer_error_count;
+
 void yyerror(const char *s) {
 
-    // Skip printing the error message if it's a generic syntax error
-    if (strcmp(s, "syntax error") == 0) {
-       fprintf(stderr, ANSI_COLOR_RED "Parser error at line %d at token \"%s\": syntax error\n" ANSI_COLOR_RESET, yylineno, yytext);
-       return;
-    }
-
-    static int last_line = -1;
+    static int last_error_line = -1;
     static char last_text[MAX_IDENTIFIER_LENGTH] = "";
-
+    
     // Check if the error location is the same as the last error
-    if (yylineno == last_line) {
+    if (yylineno == last_error_line && strcmp(last_text, yytext) == 0) {
         // Skip printing the error message if it's for the same location
         return;
+    } 
+
+    if (strcmp(s, "syntax error") == 0) {
+       fprintf(stderr, ANSI_COLOR_RED "Parser error at line %d at token \"%s\": syntax error\n" ANSI_COLOR_RESET, yylineno, yytext);
+    } else {
+        fprintf(stderr, ANSI_COLOR_RED "Parser error at line %d near token \"%s\": %s\n" ANSI_COLOR_RESET, yylineno, yytext, s);
     }
 
-    fprintf(stderr, ANSI_COLOR_RED "Parser Error at line %d at token \"%s\": %s\n" ANSI_COLOR_RESET, yylineno, yytext, s);
-
-    // Update the last error location
-    last_line = yylineno;
+    last_error_line = yylineno;
+    parser_error_count++;
     strncpy(last_text, yytext, MAX_IDENTIFIER_LENGTH);
     last_text[MAX_IDENTIFIER_LENGTH - 1] = '\0';
 }
@@ -62,24 +63,25 @@ void yyerror(const char *s) {
 %%
 
 program : block DOT
-        | block { yyerror("unexpected end of file, expected \".\""); }
+        | block SEMICOLON { yyerror("invalid statement"); }
 
 block : constDecl varDecl procDecl funcDecl statement
 
 constDecl : CONST constAssignmentList SEMICOLON
+          | error constAssignmentList SEMICOLON { yyerror("invalid constant declaration"); }
           | /* empty */
-
+          | CONST error SEMICOLON { yyerror("invalid constant assigment list"); }
+                                 
 constAssignmentList : IDENTIFIER EQ NUMBER
                     | constAssignmentList COMMA IDENTIFIER EQ NUMBER
-                    | error { yyerror("invalid constant declaration"); }
-                    
+
 varDecl : VAR identifierList SEMICOLON varDecl
         | VAR arrayDecl SEMICOLON varDecl
         | /* empty */
+        | VAR error SEMICOLON { yyerror("invalid variable declaration"); }
 
 identifierList : IDENTIFIER
                | identifierList COMMA IDENTIFIER
-               | error { yyerror("invalid variable declaration"); }
 
 arrayDecl : IDENTIFIER LBRACKET NUMBER RBRACKET
           | IDENTIFIER LBRACKET error { yyerror("invalid array declaration"); }
@@ -95,26 +97,22 @@ paramList : paramDecl
           | /* empty */
 
 paramDecl : VAR IDENTIFIER
-          | error { yyerror("invalid parameter declaration"); }
 
 statementList : statement
               | statementList SEMICOLON statement
 
 statement : matched_statement
           | unmatched_statement
-          | error { yyerror("invalid statement"); }
 
 matched_statement : IF condition THEN matched_statement ELSE matched_statement
                   | non_if_statement
                   | WHILE condition DO matched_statement
                   | FOR IDENTIFIER ASSIGN expression TO expression DO matched_statement
-                  | FOR error DO matched_statement { yyerror("invalid for statement"); }
 
 unmatched_statement : IF condition THEN statement
                     | IF condition THEN matched_statement ELSE unmatched_statement
                     | WHILE condition DO unmatched_statement
                     | FOR IDENTIFIER ASSIGN expression TO expression DO unmatched_statement
-                    | FOR error DO unmatched_statement { yyerror("invalid for statement"); }
 
 non_if_statement : IDENTIFIER ASSIGN expression
                  | CALL IDENTIFIER
@@ -128,8 +126,6 @@ non_if_statement : IDENTIFIER ASSIGN expression
                  | /* empty */
 
 arrayAssignment : IDENTIFIER LBRACKET expression RBRACKET ASSIGN expression
-
-funcCall : IDENTIFIER LPAREN argList RPAREN
 
 readWriteStmt : readStmt
               | writeStmt
@@ -156,30 +152,48 @@ expression : term|ADD term|SUB term
            | expression ADD term
            | expression SUB term
            | UMINUS expression %prec UMINUS
-           | funcCall
 
-term : factor
-     | term MUL factor
-     | term DIV factor
-     | term MOD factor
-
-factor : IDENTIFIER
-       | NUMBER
-       | LPAREN expression RPAREN
-       | arrayIndex
-
-arrayIndex : IDENTIFIER LBRACKET expression RBRACKET
+funcCall : IDENTIFIER LPAREN argList RPAREN
 
 argList : expression
         | argList COMMA expression
         | /* empty */
         
+term : factor
+     | term MUL factor
+     | term DIV factor
+     | term MOD factor
+
+
+factor : IDENTIFIER
+       | NUMBER
+       | LPAREN expression RPAREN
+       | arrayIndex
+       | funcCall
+       
+arrayIndex : IDENTIFIER LBRACKET expression RBRACKET
+        
 %%
 
 int main() {
-    printf(ANSI_COLOR_GREEN "Parsing begins...\n" ANSI_COLOR_RESET);
+    printf(ANSI_COLOR_GREEN "Parsing begins..." ANSI_COLOR_RESET);
     printf("\n line %d: ", yylineno);
     yyparse();
     printf(ANSI_COLOR_GREEN "\nParsing completed.\n" ANSI_COLOR_RESET);
+   
+   // Print parser error count in green if zero, otherwise in red
+    if (parser_error_count == 0) {
+        printf(ANSI_COLOR_GREEN "Parser (syntax) errors: %d\n" ANSI_COLOR_RESET, parser_error_count);
+    } else {
+        printf(ANSI_COLOR_RED "Parser (syntax) errors: %d\n" ANSI_COLOR_RESET, parser_error_count);
+    }
+
+    // Print lexer error count in green if zero, otherwise in red
+    if (lexer_error_count == 0) {
+        printf(ANSI_COLOR_GREEN "Lexer (lexical) errors: %d\n" ANSI_COLOR_RESET, lexer_error_count);
+    } else {
+        printf(ANSI_COLOR_RED "Lexer (lexical) errors: %d\n" ANSI_COLOR_RESET, lexer_error_count);
+    }
+    
     return 0;
 }
