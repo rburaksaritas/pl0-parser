@@ -1,210 +1,287 @@
-const   yvu   =  53,PbOglc=55, XbtxtB=  52, ePBMub  =   77;
+const  bN  =87,  uBur =82;   
 
-varyMRe, DHNMYKC,  AIX;   
+function  qyv(varoLxxNs, varVND);   
+co?nstLPoV   = 68,LwxultK  =  42,  TJIhMnxh= 45,  txYUaTFJR=  94;
 
-function   uRPiCGbRi(var ZGa,   varuLgCRV)? ; 
-function   biwAvTrOFc(var Kb, var   uTPWvSd,var  Kzr);  
-var   CMVeRJueps,   JMHlkuK,  buYsQz,TdTdqsKAzz;   
+procedure  wqTisNLcR;
+procedureXtIxRWZd;  
+varMP,   QPdpOR,  VvqXHW,SjutEk;  
 
-function M(var dWYB,  var CpS)   ;   
-varUnZAk;    
+proceduref;  
+varx;x := 1;  
 
-procedure   fKIaj;  
-varx; x := 1;  
+procedurecZUaUwjSa;   
+varx;   x := 1;  
 
-procedure   pkHu;
-var   x;   x :=   1;  
+functionqtDEFieVHv(var RcRhrRq, var  ppYNB,   var  kMSFqFnmxs)  ;
+var   x;x:=1  ;  
 
-procedure  qwXNpfQXrF;
-var  x;   x :=  1;   
+functionKfpAOci(var h, var  mB,   var  MKdGUwlhGb);   
+var x;  x :=   1 ; 
 
-eUDRFy := 37;
+functionVlRMRffgG(var   lvx,   var   sYpBjcZgFw);  
+var     x;x   :=1;   
 
-function  UdtYzRC(vari,  var  RdA)  ;   
-const xj  = 43;
+VAOVK  :=72;   
 
-function jRCrSA(var   d,var ASOeZmK,var   fpnvB)  ;   
-var x;   x    :=   1 ;  
+procedure   alLBPMM;
+const  ADk   =54,   ahDNVGS  =   69, LYRlo  =   7,h = 0,   FcJZoGwkb   =  79; 
 
-function hjQyma(var rXphRpNz,varwljMWboGy)   ;
-varx;   x  :=   1  ;
+var caSc; 
 
-function  SlECyITz(var   qmPu,var  jkk#A, var vud)  ;   
-var   x; x:=  1 ;   
+procedurecUbaRtTJ;   
+varx;   x   :=1;
 
-Fn :=  96;   
+procedure   EghuiK;   
+var x;x:=1;
 
-if  odd(afijGK[37])   /  15  % KHoinmJCI  %   #Je() thenif  odd   (ZtHaKltvUq())  then   
-if   AyL[OAMtNBmjd()] >=  9 then 
-ifodd  (gP())  then   
-PsSDPgehGi :=   gFiTl() else while  vibbkFuWt()   <     PuYYA() do  
-jqU   :=   51 ;
+procedure  AFV;  
+var x;   x:=   1; 
 
-function jSsojhBaun(var OSovZp, var  HXtJDV,var KJlyF)  ;  
-varPQ,GqfhXclp,n,  MjHbkOVg;   
+funct?ion LJFAotiYYr(vare,   varhmAajrTyED)  #;
+var x;x   :=  1  #;   
 
-u:=pHGJE()  ;   
+functionIELEZQ(var QcQ,var  ouUXWg);
+var     x; x:= 1    ;
 
-begin   call eiQ; 
-ca?ll   kzL;   
-read(yvJGKeeVI); 
-write(hnJWaI);   
-return  54end  ;    
+OXsM :=77;   
 
-function   rzIl(varogAJIfwe,var   rR);
-procedure   x;   
-var zG, fCRxDovmp,  moK,  !bSvkz; 
+function    aLy(var   Z,   var  MTV)  ;  
+const  Cyd   =    18,  CEJ=  97,   l   =5,   GyJlnW  =   47;  
 
-procedure   eDYxGG;
-const   kyueQQuKRY=   86, XxQLeqb = 29,   MJEY= 76;  
+procedureCcj;
+var   x;   x :=   1;
 
-functionbC(var   Rha,   var   ubVWvUTtpS,var   As)   ;  
-var x; x :=1?   ; 
+procedurelmm; 
+var x;  x:=   1;   
 
-function   HVSQ(var  pDAxtf)  ; 
-v?ar   x;x :=   1;   
+procedureccmXDV; 
+var   x;x:=   1;  
 
-function uS(var  qniSlFC,  var   ia, varsgKccb)    ; 
-varx; x   :=   1  ;   
+function   xqnQAC(var WlGBew,   varF)   ;   
+var  x;x :=1   ;
 
-obCyYEJbWk   := 7;  
+function  RxsrfAjB(var   TCKMHlSC,var   jHA)  ;   
+var   x; x   :=  1   ;
 
-procedure hKaFjlLis;  
-const  oCx  = 70,mhJwWD =  0,   PcqgZWKYTy=  34,   QKycXaq   =  85,  zXdiqIO=  1; 
+WUxk:=   63  ;
 
-varxdZo,   eHgWWuxa,inbs; 
+functioniBFKKmpg(var  QRBnZB,  var lasGbu, varDppcKgSZ);  
+const  tZkI=  33,   UCr =   21,   hsGv  =78, lDBDMp   =  92, sdwGp= 56;  
 
-procedure     ReFy; 
-varx;   x:=  1;  
+JeQijMNsO   :=   79  ;   
 
-proceduredwG!roeV; 
-var x; x   := 1; 
+iPsjdFrK  := U   *   muwbJnmLj[eCqqCbiAfp()] %!   e()+ uEW;   
 
-function  Akt(var  spXNskLOql, varhIKrrGy, varZcFATWO)  ; 
-varx;   x :=  1   ;   
+function  oeRZns(varwAFf, var   klpkhkgX,   var  Uk)  ; 
+var  pHdPSn,  CPcM,   AZWHLOEaH,   olgTsvyZB;   
 
-functiondUvUZ(var  sGzFOvY, varoYEXgzQg); 
-var x;x := 1   ;
+call GUCV  ;
 
-function  bOFkolBn(var edhLVn,  var iADY)   ;
-varx;x:=1;
+function MLTmGs(var r);
+constVm   =  3,InFpV   = 72,  EcUYScS   = 83,  aCRWD   = 19,   qkhXXLFVh   =   4;  
 
-wGuzuGTLxm   :=  86;  
+procedureJ;
+constIjyzZcdtcz   = 3, UeXHd=   92,   rwbZs  =46,oiACwtw =   66,  Eak   =   89;  
 
-procedureHZEYiHqu;   
-var  gnkmeZ,  xM,   u, YjljSkSws;
+var   IaiPLYW,hvlLtAFZKz, wuoEi;  
 
-procedure FiakjJZnI;
-varx; x:=  1;  
+p!rocedure   F;   
+varx; x  := 1; 
 
-procedureEABka;  
-varx;  x   :=  1; 
+pMOukYHvHj  :=   95;   
 
-xEV :=  19; 
+break ; 
 
-function SNgQWKgKd(varvG, var  c,   var  Pjis)  ;  
-const   kaoeEqS  =  0,  QYnRKZp =  29,FSJdHwtdks   =   19?;   
+function   X(varWXmDqnxB)  ;  
+const dPdCkQz   =   7, gV=   30,   mwjfJgmb=31,  JvqdUbNPzd=100;   
 
-xyLKESDDC :=  16   ;  
+procedure ZJK; 
+functionFNeUFuxf(varaeOGxHCEC,var ZUZaTeeIf)   ;
+var   x;x  :=1; 
 
-ifodd   BrqWyf[(Og())   /   KpwzIwXT()]  then   break  else writeline(mD);   
+function   K(var   WkXJ,   varU,  varWy)   ;   
+#var   x;  x  :=   1;   
 
-procedurerqAyhVy;
-const   UFYY   =   84;   
+function  y(var   EA)   ;
+var x;   x   :=   1 ;  
 
-function   U(varuJjZKiIp)   ;
-procedurek;
-var  x;  x  :=  1;
+yK   := 13;   
 
-function  llkkMccI(var  neIdpzZ, var Nh);  
-var   x; x  := 1 ; 
+procedure  uebPXOw;  
+procedure   dqzUjHJMA;
+varx;x :=1;
 
-SBiNsqB :=73  ;   
+function  wur(varQEJ)  ; 
+varx;  x   :=  1? ;
 
-function  qEEpqa(varwq)?   ;
-procedureULhZKGcaN;
-varx;  x  :=  1;
+dziluSD  :=    59; 
 
-procedurezKDHQGvddC;   
-var x; x  :=   1;  
+procedurexPOzJaicN;  
+var   MHu;
 
-procedure   srznA;   
-varx;  x   := 1;
+function  vK(varDyJm,  varIoLheJH)  ;   
+varx;x?   :=  1!   ;
 
-func#tion cwK(var   KcGWF)   ;  
-var x; x:=1  ?;   
+Rm :=   82;
 
-functionX(var  jQIpwniMvr)  ;
-var   x;  x:=  1  ;   
+beginread(HCrYPwMujj);
+break;
+read(YXshWU); 
+ifrtAkfhpI[wKypItaqr()]   /   BYOZ[aHs()] >tzrRXlI() then  
+/* Thisisa  comment   */yRyIrrn  := 83;   
+if(100)%hrYyTnNPGt()  <  vqK() thenGjYBRa :=  33   else EsbvdvxKD   := 30  end;   
 
-mjJhW:=!  78   ;   
+break  ;   
 
-function  GpGlzx(varsiLRT,   varwBuRQS)  ;  
-const  gqymKmXN=38;  
+function   CuZynOgeu(varIxNB!eaNds,  varpWeHT, var   bZ)  ;   
+constnyI#qdAS   = 87,RxFnvedLj=74;   
 
-z   :=  45  ;  
+procedure inWaE;   
+constW   =20;
 
-begin ifoddp() then  
-begin  PYmgm:=  22;
-OFalTCc   :=29;
-DHSGLWROx  :=   61; 
-CUn  := 90;   
-pHLuJq:=18end;   
-if  oddiH()then   kMldBdSmtN:=   !15else  pVCX :=  96; 
-!if ((q[tkAwYQop()])) >=   AtMfoUSG()   then  
-read(t)end;   
+var  A;  
 
-writeline(rNwDtRD)   ;
+procedure pg; 
+var   V,YuxMypS,uDnByKcfGv, Ui;
 
-functionaxMkazqsp(var  eTLNN,   varIJhVtump,   var   pFwu)   ;   
-function   ltYyyYJ(var  bTEKJYnRz,   varGikg)!;      
-vartCLXEGiiL,  egkqMrcRGE,   jQnm, NAcwdXOrD; 
+function   zAiqNwUvv(var   Q,varXZodCukpH)  ; 
+var   x;   x:!=  1 ;   
 
-proceduresL;   
-var   yvdpcErW,   JXt,  MdLSMbFH, vuAWMJKbM;   
+qiH:=   46;  
 
-procedureOdprFfLxqF;
-var   x; x:=   1;  
+procedure   uPXhFw; 
+x:=  47;   
 
-procedure  SguzRSuN;  
-var x;  x :=  1;  
+procedurepgmqsGJSZ;
+procedure   OdVCPkv; 
+var  x; x := 1;
 
-procedurem; 
-var  x;  x  :=1;   
+procedure  f;   
+varx; x  := 1;   
 
-WHePV:=!   86;   
+procedure  FbbhMe; 
+varx; x   :=   1;
 
-pr?ocedureEgzyk;  
-constPQFF  = 22; 
+BByy   :=   45; 
 
-varD;  
+read(MFHeF); 
 
-procedure xo;  
-var   x;x:=  1; 
+procedure  gkFBk;   
+function  UUMIvJpFD(var PQqs,var  SOEoEtY,varVhIkcOnxyM) ; 
+const   Ajz =91,ert   =5,rFNRrYqmH   =  29,   cJeca =  50;   
 
-function  AReYvJJtI(var HNDimiA,  varU,   var  U)  ; 
-var   x; x :=1  ;? 
+var  bRZENasF;
 
-MlorkFmiRc :=  59;
+procedure YgJe;  
+var  x;    x   :=   1; 
 
-proced?ure YrBvl;  
-procedure  Uzqq; 
-var  x; x :=!   1;  
+proc#edurew;   
+var x; x:=  1;
 
-procedure   NYRsPe; 
-var x;   x := 1;
+procedure  jfonAQr;  
+var  x;  x  :=  1; 
 
-KvRqgwoa  := 98;  
+functionEFs(var E, var lHw)  ;  
+var  x;x   := 1 ;   
 
-function CVNKVz(var a)   ; 
-varXafeXR;
+function   IZDcByzDi(var  e,var   W,  var  UEizxpQAmB); 
+var x;   x  :=  1 ; 
 
-VJ   :=  64;
+JgxdzxV  :=  78 ;   
 
-begin  call   kQB; 
-KsfRd   :=  INuoIgZROs;  
-returnSwdYxgkhWe()   end   ;
+function  mn(var  TqDyU,   var xobgkpUVK)  ;  
+var   lqe,  r;   
 
-write(caMZsqWAv)   ;   
+procedure AIejlQOd; 
+varx;x:=1;   
 
-return   zFZekiNS() - UBAPSfeUdw().
+JdJrH  :=  51; 
+
+begin read(qnNtdIGs);   
+/* This  isa  comment*/MGhFzJd:=   46;  
+while (nzxqIp()) =  (XYok())  do 
+uSDJvxXyh  :=  0;  
+write(OnxOJwIAr) end;  
+
+procedureOZs;
+varOsdNaixAq, gYewtrAg,   ejegCOejz,  wmrYEoErW,  SOjDUK;   
+
+procedure   cdYWeA;   
+const  I=   1!5,  pHiXMh=97;   
+
+var   GzPiMXs;
+
+procedure  XGBADQFZP;   
+var   x;   x:=  1;  
+
+procedure  CBVmxmlNM;  
+var   x; x   :=  1;   
+
+procedure FUMP;   
+var  x;   x   :=!1; 
+
+function   vrfyYnaDU(var   sQwVooP,   var  A,  var   EAQeKd) ; 
+varx;x :=  1 ;
+
+functionWW(var gHGhrrnrG)  ; 
+varx;x  :=  1 ;
+
+functionHtxQoCwA(varIY,  var  ImS,var   TIkiNjh)    ;  
+varx;  x  := 1;  
+
+iknALXCcCT  :=      17;
+
+procedure   m; 
+var  UTv, LGos, BSBLbl;  
+
+procedure  zMaP;   
+var  x;  x :=1;   
+
+functionfG(var  hPQyGfpMK)  ;  
+var   x;x  :=   1      ; 
+
+function  XSFeQodhW(varzclkwGXlBA,varVxUifQg,var  fuofwQb)   ;   
+var x;x  :=1  ;   
+
+function   dEQxG(variF,   varNWALdht,   v?ar   UgG)   ;   
+var   x;   x  :=      1  ; 
+
+trK  := 30;  
+
+procedure rAuvC;  
+const  beD   = 35;
+
+function vCIRS(var   CLQ, var  VrVY,#   var  Y)  ;  
+varx;   x :=  1  ;  
+
+function  IsIrHk(var   qubdDDVqD); 
+varx;x:=1   ;   
+
+MJzySQVp   := 61; 
+
+function  XEdb(var  Tjj);   
+procedure  cAqi;
+var  x;   x  := 1; 
+
+procedure  USLg;   
+varx;  x:=  1;   
+
+procedure p;   
+var x;  x  :=     1;     
+
+OhSsJ  :?=48; 
+
+if ?oddK()   then
+/* This  is a   comment*/JUAZgjPqa :=32;   
+
+write(xMjyzPTx)  ;
+
+function   ZrktzaL(var  CbJnvof)   ;   
+writeline(bxRWNI)  ; 
+
+while odd CumVjm%  66  *  NqnzKl[keGzdEfu()]-   72do 
+ifodd   ikzxe()   +   vtERS[wYVEgssTo[JkYcWqAA()]] then   write(UusKQZGViJ) else  begin  if   odd   BlpQMSs()   +20  then  return (QCXax())  else  EtE:=   tW /  66*  kvfWbr()- pvKGTBReJe();
+/* Thisis   a comment  */GrOkW :#=   61;   
+for  ppNe:=54  % 54to  tomm()   +   kAfc() do
+vNzyFJaY :=   dcknlm()  -lNbdE()end.  

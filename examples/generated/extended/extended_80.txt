@@ -1,51 +1,5 @@
-procedure FWjkvC;
-    function DQ(var SBlcz) ;
-        var xuHunPW, Z, SFxsDV;
-        
-        read(aDhCq) ;
-    
-    function JGqIc(var lIcTMJaH) ;
-        const khaIgPEOO = 84;
-        
-        var DcyPDn, daPaqqO;
-        
-        procedure hVDE;
-            var bYaywnQ, tLEz, ZuyOhLzV;
-            
-            procedure asJ;
-                var x; x := 1;
-            
-            procedure bYtwRBCkM;
-                var x; x := 1;
-            
-            procedure IOaqNvIq;
-                var x; x := 1;
-            
-            nlXfpqnd := 87;
-        
-        procedure qJfnfeHZiL;
-            const hpsWsFsWS = 17;
-            
-            function HEIqRdtbbC(var vafyjKTw, var PMCgnrQj, var W) ;
-                var x; x := 1 ;
-            
-            QZpEJGyprn := 79;
-        
-        procedure fyOBRljU;
-            const OPyp = 33, d = 12, FQrvfzO = 19, j = 14, JSfAdiU = 67;
-            
-            var dGBBXsNK, XXohFGnVFs;
-            
-            procedure x;
-                var x; x := 1;
-            
-            procedure FT;
-                var x; x := 1;
-            
-            fU := 77;
-        
-        if odd wuj() then return gjZsOT() else write(QK) ;
-    
-    writeline(TKCyb);
+const gU = 77, Au = 13, myutvruB = 28, GdNjj = 50;
 
-read(GZQdVxyIA).
+var oECKCdKWS, BVJazjYj;
+
+/* This is a comment */JmyRfUAIz := 37.

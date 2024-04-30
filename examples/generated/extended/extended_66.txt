@@ -1,204 +1,65 @@
-var HkeIXs, RpoOpOfg;
+var UbvmSHvIf, iwgfIwWKXq, IcwQrt, ryUnrJr;
 
-procedure cPEWvkbl;
-    const ubnSX = 95;
+function x(var xLZNuKjQH, var uYHsV) ;
+    var aMgE;
     
-    var SVTG, tLUTCBqQw;
+    procedure yPl;
+        var hTeT, zYzXYoy;
+        
+        begin call Cm;
+        /* This is a comment */GisddCepd := 4;
+        while odd c() do 
+        xkhwSey := 62;
+        for YF:=uzGSuN() to qe() do 
+        WVQoKAwA := 42;
+        read(X) end;
     
-    if odd pVLVmdj() then 
-    if odd vns + N() then call KRsjXs else return Pni() + b % 32;
+    procedure YJ;
+        var ZeBDLKYa;
+        
+        function uyGQc(var yIOTwwgsd) ;
+            function McUKZxXuVr(var YUCEEH, var jsZO) ;
+                var x; x := 1 ;
+            
+            W := 12 ;
+        
+        function SzZGwX(var kDzRA, var fNMQVq) ;
+            const MJBA = 20, pCY = 94;
+            
+            var zUppuIwMTk, cwkmyy;
+            
+            procedure oflDS;
+                var x; x := 1;
+            
+            procedure pC;
+                var x; x := 1;
+            
+            procedure m;
+                var x; x := 1;
+            
+            function dcoPt(var tx, var gUll, var cArX) ;
+                var x; x := 1 ;
+            
+            function pEzNN(var pkkPKDehil, var SEOOnHqSw, var Ys) ;
+                var x; x := 1 ;
+            
+            function G(var xRu, var CPmWuT, var hRVqXhotG) ;
+                var x; x := 1 ;
+            
+            JOetSlfzJ := 50 ;
+        
+        read(CMOBgJvAB);
+    
+    begin E := c() + ddfMRaLmrB;
+    write(bs);
+    pSGtDG := 56 - FXtg();
+    call owXf end ;
 
-procedure SuuvQDRox;
-    const SGhJHYyyO = 25, XsQrxMDEvO = 42, ZMJmtQHbr = 60;
+function JfBzus(var KMdOsZT, var bUYg) ;
+    const aYdjsBg = 4, d = 88, J = 46, JnHE = 99, XqTtBddVjD = 86;
     
-    procedure l;
-        var JGEu, MaiSD, KTVBOcvsZN;
-        
-        if odd rbOtP() then 
-        write(YtHcvjmUCM);
+    var qGqNZlPT, ilhyLWX;
     
-    procedure EcdbB;
-        const tD = 20, Qn = 24, YIEeEs = 62, if = 12;
-        
-        procedure WzLmH;
-            const yVAezKQh = 44;
-            
-            procedure wI;
-                var x; x := 1;
-            
-            fHmkVylVVb := 91;
-        
-        procedure vdJZlB;
-            const uWL = 44, KXdVXZ = 51, lxiJoB = 57, WvMhuN = 80;
-            
-            var WVld;
-            
-            procedure Uj;
-                var x; x := 1;
-            
-            procedure mxqvRLq;
-                var x; x := 1;
-            
-            function dfpliRJv(var fwAuvWQe, var lqRPMW) ;
-                var x; x := 1 ;
-            
-            function iMoPLHzsMT(var GDKuAcUc, var NgqPzlX, var ERysNa) ;
-                var x; x := 1 ;
-            
-            ccrIt := 23;
-        
-        procedure cjrOTxSSc;
-            var wEN, gWyxLz, uO;
-            
-            function vG(var ubpZ, var rWcCWHd) ;
-                var x; x := 1 ;
-            
-            pCcCEiP := 6;
-        
-        return aQvDl[hAZq()] * 12;
-    
-    if odd wWTugvbJHR[uLF()] then return WkuizH() - VBC[YPz[KmBGTU()]] / cNlHhLdsUy[NHwJnviNnW()] else return (cbmFz[jIFwI()]) / 7 - PBceB[53 * ZfQmctCmg()] * QdHSwSTME();
+    read(PdzVBa) ;
 
-function wAf(var wEmZG) ;
-    const lPByEX = 91, vCrgr = 7, TETuLqoqP = 62;
-    
-    procedure Lw;
-        function P(var okhNXz, var gnmEK) ;
-            var kRqovxw, vKVyfp, UM, eUEOM, GpJotm;
-            
-            function HQFveF(var TltFB) ;
-                var x; x := 1 ;
-            
-            function gazgzvrnuA(var raZjJXVCUg, var J) ;
-                var x; x := 1 ;
-            
-            vF := 83 ;
-        
-        function TJctw(var iYibRbMhjy, var QudgUY, var xJdVQ) ;
-            const wvC = 56, UaCFkVEhu = 91, HHCPmG = 32, ATBec = 60, eUd = 83;
-            
-            function LMrEoOEc(var wNDN) ;
-                var x; x := 1 ;
-            
-            function LlOfSmjASs(var WsxA) ;
-                var x; x := 1 ;
-            
-            UTIOMqEKgz := 83 ;
-        
-        write(i);
-    
-    procedure coYqJRM;
-        var IfoBBDeDj, XyhGJms;
-        
-        procedure Ch;
-            const j = 57, r = 46, tL = 49, bkeUHr = 0, IBOkjf = 39;
-            
-            wHWnpA := 56;
-        
-        procedure AYsOX;
-            const wa = 10, iMR = 88, XnL = 76;
-            
-            AMIqTQiwGd := 100;
-        
-        function cT(var G, var uZ, var gSxlJmPTU) ;
-            const LABZdXE = 34, zU = 38, xkhAh = 52, JrjwgmZql = 80;
-            
-            procedure ibcon;
-                var x; x := 1;
-            
-            procedure GiZSjZbQn;
-                var x; x := 1;
-            
-            procedure UfE;
-                var x; x := 1;
-            
-            QqR := 13 ;
-        
-        function yVhPwQd(var tEvmUP) ;
-            D := 57 ;
-        
-        begin call bG;
-        if odd OcaH() then VaDyRrDT := 11 else lfe := 42 end;
-    
-    begin return qJrjii() + rvEcThN[ry()] % IH();
-    while odd GJ * gClSzsMC / RC() do 
-    break;
-    if 1 * LrboMmOg() >= HjBXZnh() + ((mPop())) then writeline(zddVkDZcms) else write(roQ);
-    while odd (sT()) / ibhoqCTd() do 
-    if qgH() = ZJIBD() then 
-    break end ;
-
-function YywBkuHd(var RgeZp, var GbCLCX, var HteEh) ;
-    const YpKDRIHCx = 53, voWuxDzd = 20, VqP = 85;
-    
-    function sPEejiVsA(var KWmzqKsG, var nHSPAEK, var wTIrqn) ;
-        var jOUPui, WPQQjvre, cMGZhry;
-        
-        function JJXGqcEQcO(var svtZGjL) ;
-            var edQhsh, eGuusj, GtWdGtIXkd;
-            
-            procedure NCvX;
-                var x; x := 1;
-            
-            procedure AILu;
-                var x; x := 1;
-            
-            zUk := 27 ;
-        
-        KHUR := XpX + u() ;
-    
-    function vwW(var cAKoyt) ;
-        var fI;
-        
-        procedure KknyYTr;
-            const T = 84, MhrpbPZ = 22, KXM = 52, xaxNFovc = 56;
-            
-            var RLy, pcYWCSHnbL, xjzkZhDS, F, G;
-            
-            function EsNCsz(var cMXHq, var vbSN) ;
-                var x; x := 1 ;
-            
-            function wi(var R) ;
-                var x; x := 1 ;
-            
-            function f(var jH, var MoUDLBJ, var vGvU) ;
-                var x; x := 1 ;
-            
-            iHsAXJrv := 53;
-        
-        procedure Po;
-            const dqBovsFow = 61, PhyQXjLtj = 79, fKebuPl = 18, cAqVSQE = 23, EjuahK = 90;
-            
-            var HPNvfwl, gNw;
-            
-            MKv := 71;
-        
-        YupwMNJt := 73 + (tfDmQx()) ;
-    
-    if cv[1] * DiJZJBwjj() = Cpfb() then 
-    begin if (BTXXU()) % vSnY = 92 / iMYv() then 
-    writeline(SjfQ);
-    begin break;
-    break;
-    return WA() + iSGIy();
-    begin for bHkAPNwM:=(NfA % wmwm()) to WtMCXF() do 
-    Iu := 93;
-    while C[SgV()] < 96 do 
-    g := 82;
-    begin O := 43;
-    rRh := 73;
-    nn := 3 end;
-    read(m);
-    begin THFOEUlqT := 21;
-    acuV := 40;
-    ptXU := 57;
-    UGH := 7;
-    rM := 39 end end;
-    begin writeline(sThVFmhtv);
-    if odd PVNk() then 
-    call Qsi;
-    JHwwCMt := TMQbeMR[cPWFRs()];
-    call yTxLPqKG end end;
-    read(IL) end ;
-
-oRuBfCZGIn := gjXTtCTIu() + edtQwy[GM] / eGDu().
+write(cJCoTrZ).

@@ -1,15 +1,15 @@
-const qwe=1;
-var num x;
-var numbers[a]; 
+const q = 1;
+var x, a;
+var numbers[not_number]; 
 
 begin
   for i := 0 to 9 
     numbers[i] := i * i;
-  ?
-  for i := 0 to 9 do
+  
+  for i := 0 9 do
     begin
-      num : numbers[i];
-      write(102);
+      num := numbers[i];
+      write(12);
     end;
 end
 .

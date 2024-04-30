@@ -1,37 +1,3 @@
-const AM = 17, LOYFF = 27, VNR = 7, nYxr = 51, eDc = 47;
+var ZXaB;
 
-var tZ;
-
-procedure LYxyfWWJ;
-    const Fy = 50;
-    
-    procedure yWmPfULEC;
-        const VHAisbNIpy = 86, YVLujVhNb = 56, HdDOHe = 79, J = 53, Fl = 5;
-        
-        for IamllTRUb:=st[GvwGD % YJloIWErEI()] * vBZ() to RsIhkarzv[(89 * g % cDouYez())] - HK() do 
-        if eLIWfx() < VSRjJ() then mcaPvhxo := 70 else slcY := 22;
-    
-    procedure n;
-        var jzYkMPpuu, nCtqhpgcx, aHMcF, yRHXK;
-        
-        procedure mh;
-            const V = 76, klGQYOeeXG = 75;
-            
-            var FxhK;
-            
-            function UhzqVmsiw(var KadoQzYX) ;
-                var x; x := 1 ;
-            
-            function UTwScjUs(var r, var og) ;
-                var x; x := 1 ;
-            
-            function wvi(var P, var lvbhALCxav, var j) ;
-                var x; x := 1 ;
-            
-            JBsQLAWnj := 4;
-        
-        return 14 % mlquj() + HF();
-    
-    if UtQd() > lwF() then write(DYZ) else read(CAqUKOH);
-
-if odd 39 then read(c) else begin writeline(ZokKlmzKRI) end.
+return PTrA() - zWFTxUQS / OF().

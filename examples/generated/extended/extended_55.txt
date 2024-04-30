@@ -1,31 +1,3 @@
-var AAo, OaNb, SX, thuZSj;
+var HmMv;
 
-procedure SfqVE;
-    const ACpJlCJ = 5;
-    
-    var gvTjyQw, xEpzBM, zC;
-    
-    while wHFLOZIhJR() + GXyK() <= Bo() do 
-    begin begin write(Y) end;
-    begin if odd ejdqWvK() then S := 53 else ArUzLURRQ := 36;
-    begin uoyS := 58;
-    xih := 68;
-    v := 50;
-    EiMq := 100;
-    qx := 95 end;
-    if odd cFql() then JKDIMvxIXk := 31 else BZYFOFNP := 21 end end;
-
-function JXinVgyX(var FMY, var wC) ;
-    var Rym, fjmE, dCHjjxnxs, YDcWE;
-    
-    read(nX) ;
-
-function ekFwie(var XVazIn, var At, var hCRHPihUD) ;
-    const GITKVALS = 95, GYmCev = 14, ElTVRXp = 34, Iu = 19;
-    
-    if odd Sw[BLFc()] then 
-    if (V()) % VgnPEFp - QAVHxEnZU() < maxZK - Sds % ov() then 
-    for gtqhd:=35 to GE[GVdhtOgVms()] + XUguo() do 
-    read(FPvFDesXLQ) ;
-
-return ACWyYjBvG() + (YuE()) / rKoPU[NPUf()].
+call VYtBu.

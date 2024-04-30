@@ -1,371 +1,50 @@
-var DjEuMnS,   ES, yBdBC; 
+var NiHTOB,    AnzGetR,  GIVt, oW,  YqMK; 
 
-functionAxX(var   ruwE,var dX);  
-functionRzt(var   foWABzzjI, varSjckulka);
-functionvMhVXcXsQ(var stpwT,   var RaGyHXfSB,   var   FOKbKn); 
-procedure GKUXpAd; 
-varx;x :=   1;   
+procedureRtnngJK; 
+const   yq=39,TsuN =   23;   
 
-procedure   etdL;
-var   x;x := 1;   
+procedure   VEDbQA; 
+procedure   ECwihKxmZ;
+const   oduTwQPN  =  80,  c   #=  84,   QGubAFtl =   45,   UyErDi= 69;   
 
-procedure  mjSh;  
-var  x;   x:=   1; 
+procedure  foaiYmmgK;
+varx;x:=  1; 
 
-function FqaLdW(var  moEeQMjI,  var   wIIzEFRh) ;  
-var   x;   x  := 1  ;    
+rl:=   1;
 
-function   tk(var   Sn,   var   fvuHAMuIR,   vareqtHUfjTD) ;
-varx; x :=  1   ;
+procedure mnOAjJxV;  
+constONwwsvynsT  =   70,   iemGKNq   =   39, BxpHsY   =95,Pfcf=  48,Y= 97;
 
-LBRKgnUrX  := 28 ;  
+procedure G; 
+var  x; x := 1;  
 
-function  q(var NGyKxYLLG,var czl)  ;    
-const  IQPrzArx   =26;
+procedure  x;  
+varx;x:=    1; 
 
-var RTJwc,  JHhsWqthE, DuGVSiwAVh; 
+function  PNlxVFZ(var JQ,   var  wgUyzVIZ)   ;   
+varx;x   :=  1   ; 
 
-procedure   oi;  
-var x;x  :=1; 
+function   bex(var   KEJ,varQ)   ;   
+var x;x  :#=1  ;  
 
-procedure  PPiX; 
-var   x;   x :=  1;
+function LUx(var  dM)    ; 
+var  x;  x  :=1   ;
 
-function   CidFBsJNLY(varsVJRyz)   ; 
-var  x; x   :=   1 ; 
+ttY :=  40; 
 
-function   loSYMH(var  vw);  
-varx;  x   :=1;  
+begin  while  odd lvq()do
+KD!VOdp:= 70;   
+ifoddWjBrTbgUyM() then 
+return   QzicL();   
+beginJ  :=  84;  
+oKJnxLBG   :=  56end;
+whileodd  jgvwnbYhQ()  do  
+xrukETwEa  := 30 end; 
 
-pnAuS  :=87 ;
+for  EAlLaJn:=(DQiqnBC())/  nMQS()  +   MRWBFDnbj()  to PmfETCN()  do
+begin begin  read(oKqhKic);   
+/*This   is acomment   */BKE  := 61; 
+ifgRai()   <=  NfkxNO()   then
+if   Gp[V?QKZVyc/   gkDOBaOsi()]    *  ITh()    <  ue%  WYNpphmjw()   thenvW :=  83   else  xUXBw   :=  96 end   end;   
 
-read(Iwe)  ;  
-
-function  VrxFkebHw(varQvfkkNShJP,   var   QJg,   varvBydY)  ;   
-var ZsEmi,qzcgjBVD,   ylpfrCdJqB, nlTNbY; 
-
-procedure  nvVkgZc;   
-var  OQJnfqR,  oDIUIKWU, MGcLBYeT,   ggQjJpH; 
-
-procedure otMdwJRpU;   
-var x; x :=1#; 
-
-lLOJqHT:= 38; 
-
-procedurebQxYMf; 
-var  IUkERBPGV,   mKxJTimaOo, ZXsaffm,rOdTXIIze,nivVPPcsXr;
-
-procedure   YVqIhHwc; 
-varx;   x   :=   1; 
-
-procedureCrueZl; 
-var   x;x  :=  1; 
-
-procedure   DmxxR;  
-var   x;   x  :=   1;   
-
-RcjbepZGNn :=92;   
-
-procedure   qfzjiW;   
-constPo=  56,  ksPR =   77,  YP#  =   67,AbmRTcEtg=57;
-
-var  RLEmgImihE,QCPse,  aQvFJ, SfgXgPBhID,   fKlghfj;  
-
-function   S(var  fAOcP,   var   fvof)  ;
-var  x;x:= 1  ;
-
-function NawbrnhPZ(var   FqMbj, varWYrdlkeul);
-var   x; x  :=  1 ; 
-
-function   pArPNov(var wrTnBksZB,   var   NzKY) ;     
-var  x;  x := 1 ; 
-
-fROskOAhOD  := 35;   
-
-functionKDRro(var HXknRr,   var  jlfKBvmZZu)  ; 
-const  EH=  8,   YCUzlGsvZ=52;
-
-var   eyq, HqpLM,  tArhght;   
-
-function  uUM(var y, varNQ)  ;   
-var x;x :=  1 ;  
-
-D :=  66;   
-
-function   qdFMi(varucDWhrZTCy,   var  YW)   ;  
-const  Y   =64,wXuGQxievh  =   53,  MSMd= 77; 
-
-var   fM,qcPvnibJ,GRM,IyIIVdwEi,  Zx;  
-
-proceduretNWaYi;  
-var   x;   x   :=   1;!
-
-procedure# QeSGwY;
-var  x;   x  :=1; 
-
-procedure XrNockyB;   
-var x;   x:=1;  
-
-KwNrUVxkv :=   25   ;   
-
-begin   break;  
-whilecSBA()<K()   do   
-OFJ  :=  25;  
-write(DwOUBQAv);   
-begin   T  :=   92;
-mfNNOGI:=  37 end; 
-break   end ;  
-
-break  ;
-
-function   W(var  a)  ; 
-const   ng   =  86;   
-
-var  aabQEUyy,   SMvGDXc,KAsCMXJo;
-
-procedure   Uaf;  
-function  LHYzWtFlAj(var   leWRKqu)  ;
-const CE= 49,   WeOd   = 54, XqaO  = 65;
-
-var nOzPPfalgr,v;   
-
-functionnpr(var   ubdaC)  ;   
-var   x;  x:=1;   
-
-function ecB(varIRpBI, var cf);  
-var x;  x  :=  1   ;   
-
-function?  TXbSGRRAn(var  nsKLJsN)   ; 
-var  x;   x := 1  ;   
-
-MxbMmQG!b :=93;  
-
-write(ZySrSfd); 
-
-procedure  wCrGiAptIL;
-call   p;   
-
-procedure   cGsSZrv; 
-const  rmKC   =41,  ciRUkX  =9;   
-
-varMwucX,pfbkw;
-
-procedureB;
-varez,  RMptaXLTf,  JlPAyZZii, tRctGuYjXZ;  
-
-U   := 33;  
-
-procedureldBytGv;
-var AjjpFDo,LZzLnyWImp;   
-
-function  F(varxQ,  var  OrBQjKOL)  ; 
-var x;x :=   1   ; 
-
-function  IngfaUeVcD(var   OmBfJZR,  varufuaRK) ;   
-var x; x:=   1  ; 
-
-function   tScX(var jKFdokR);   
-var  x;   x :=1  ;
-
-MXghzyJSN   :=  2;
-
-function  UlxlBU(var ro, varQ,  var YopnRGwRi)   ;  
-procedureNvY; 
-var x; x := 1; 
-
-procedure  VPq; 
-var  x;   x  :=  1;  
-
-procedurenwDLoJQNpo; 
-var x;x :=  #1;
-
-X   := 14;  
-
-write(LQDzqZLeN);   
-
-function   a(var  bOvkkQeR,  var   Wj,  var  fQQE) ;   
-var  fRCuHZfV;
-
-function jgtuVYNlI(var LutUhyDStr,  var qyOeKGcI,  var  XfioUJY);  
-varDMeKSBW,  y,lTOGoVLA,  ASfBfnz,  B;  
-
-qz :=   6?2; 
-
-function rgZUEW(var BXBCoW,  var kVIv);    
-varT; 
-
-functionEZbaPM(varvjYqac)   ;
-#var   x;   x :=1 ;  
-
-yiIIzehK := 43   ;     
-
-read(Bs)  ;   
-
-function   dEtjHoO(varYyXIX, varlnkGjqFA,var  WKHs)  ; 
-procedure bWgmN; 
-const  sI  =   57,  LAcIQUyoE =   79,   iU  =  58;  
-
-var  JXg,  aeIJ;   
-
-procedurexoolPNCQFL; 
-var x;  x  :=1;  
-
-procedure   b; 
-var x!; x   :=   1;   
-
-N :=   100;   
-
-proceduresDwF;   
-procedure RvPPQR;  
-var   x; x  := 1;
-
-procedure   ioYKbPWdKg;  
-var x;   x  :=1;
-
-functionKBoaGr(var  KBYQfzv, var      hexgLFHAcf, var deNkGACMqv)  ; 
-var x;   x  :=  1  ; 
-
-function  shtsXPZ(varUic,   var  vkqjV) ;  
-var  x;  x:=1;  
-
-iTPOH  #:=  58;
-
-begin   begin QNUWnPob  := 89 end;   
-for  ooYSjSjy:=(UGxgLp())   todD() do   
-kB:=45; 
-HDOQqa#:= xOmVVdGhz;
-writeline(C) end   ;   
-
-begin   break;
-for   WDTCRePfYA:=Zmp()to   mjlJ +63 do   
-return   QFfr[34]%    33end  ;
-
-function  qkIPAozYGj(var   uQUJQYT,var   YyGVtden,    varnys);  
-procedure  lvBxZFwi;   
-const  RZkTnOvL = 50;
-
-varORuyOvKb;
-
-procedureNs;  
-const  kqKx  =    29;  
-
-procedureOKkPDvhPsO; 
-varx;  x  :=   1;
-
-procedure Nfrqr;  
-var  x;   x   :=1;
-
-muMubHPtG  :=  78;    
-
-call iFAtCrgfLX;   
-
-procedure   yVJSKbiRE; 
-var hRC, Ih,  ZUoywadxJU, FBd,LbXdBY;   
-
-yJMnbnLL  :=ziyDUJUj[Ci()]  + lN();  
-
-function F(var  XTeWRj) ;  
-var nvQZYVCgC,qsR; 
-
-procedure RSpX; 
-const  ercZIZ   = 43,  ulllFDLWxB    =  63;
-
-procedure  AIXToyV;   
-var x;   x := 1;   
-
-proc?eduredIbsJyn;   
-varx;   x   := 1; 
-
-procedureCGoT!E;   
-var   x;x :=   1; 
-
-function  hHDvFZ(var  OtgAiOSJi,   var lrPrqfUiVv,var   xibTC)   ;  
-var  x;   x   :=1  ;  
-
-function bvCzkT(var   RyTNh,var   GVymP);  
-var     x; x   :=   1  ; 
-
-jLQe:=   82;   
-
-function   wwkYVYu(varlCSSjaL)   ;  
-varRvXh, aynGo,  YIB;  
-
-HzK   :=  80   ; 
-
-if  odd  KqtS[hy()]then   read(x)   elsere?turn   Nfh()   ;  
-
-function  FkE(var  nCHbDwAr,var yXByhf) ;  
-constabmpMxK = 35,   WfFSsaGN=37,UpFRGeylG=  50,   iQbV   =68;  
-
-var   b, FLD,e;
-
-procedure yaRNUujD;
-var     JwTEAjgjpN,PWlJR,HSxFyjnN,  VZfpJbc;
-
-function  CL(varnzm,  varcQHedTDGNN)  ; 
-var   x;   x := 1;  
-
-function  mIw(var cRnx,   varNxFxlbd,var VxvDEobvT);  
-varx;   x   :=   1 ;   
-
-function   VkEzmAcTCH(var TqC, var  WEr);   
-var   x;   x:=1; 
-
-oLhv :=   19;  
-
-procedure   iW;
-function   AqkWDyq(var   eqYS)  ;
-var  x;  x   :=   1  ;
-
-function   QQQagmaF(var Rds, var dF,  varPA)! ;   
-var x;x   :=1 ; 
-
-VbCuYdbJ:=  97;   
-
-function  gPglSKILkr(var htHyxdD, varRuWPk,var   pZlKoMjAPb)  ; 
-var   F,  z,   VidpJeYO; 
-
-MWPEkbi:=  72  ;
-
-vzvKV  :=JpEJx()   -  (udMDwr())*  (pZV())  ; 
-
-functiongxVFLe(var pXK,  varSNaeZH, varuuvTZ) ;   
-procedure LVImLAAp;
-const  bsbo   = 77,XpRnl   =63;
-
-var  P,ZJvjDKPUDy; 
-
-procedure   alWStnnpQ; 
-var x;x   :=  1; 
-
-procedure   xxeGfEK;   
-var x;x   :=   1;  
-
-procedure   fJbrSt;!   
-var   x;   x :=1;   
-
-function itfVjPMca(var  wnOayxkBNn,  var  bTXDB,  varQHlTfJjcwt);  
-varx;   x := #1 ;   
-
-wZ  :=75;   
-
-procedure YTl; 
-XqH  :=  76;
-
-function YaH(var HQPPAmKHY)   ;  
-consty  = 53,e  =   7,   bMyxjrKhg  = 29,  jk  =  24,   aFAAphtFkm  =23;
-
-var Co, ChULEp,  uBQjoctZZ; 
-
-GZ :=  39   ; 
-
-function  YYMVCRxeB(var   mnRReY,  var  gjOUiNmQNb);   
-var JSbVh, rtRrl,   xwlAlGaj;
-
-QbMIfs  :=   18  ;  
-
-read(XoOQOQQ)  ; 
-
-return  93 ;   
-
-call  HGDFbP.  
+writeline(GR).  

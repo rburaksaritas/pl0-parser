@@ -1,124 +1,117 @@
-var YAgyJe, OJe, p, g, sHmR;
+const cXtpZPhRk = 11, M = 88, CcvnAr = 97, dEi = 78;
 
-procedure RT;
-read(KXH);
+procedure l;
+    function FVtxXYvGVW(var bRRzEUBcc, var iUaE) ;
+        const lPg = 0, gFMD = 46, swGF = 16, OKMHubNo = 2;
+        
+        function Xk(var cAMPYrSC) ;
+            const Koltu = 39, HwryVfLAT = 29, Aq = 10;
+            
+            var ocAxgcmz, iSdlO;
+            
+            function CCckYKGvu(var ymgt, var RGfKZ, var PoZt) ;
+                var x; x := 1 ;
+            
+            function YmgJDLEK(var uWimBC, var CKmrONfSfp, var K) ;
+                var x; x := 1 ;
+            
+            function fGxDHtZ(var EFfUGSt, var tZlXWgiqkl, var qqitlEqEA) ;
+                var x; x := 1 ;
+            
+            N := 6 ;
+        
+        break ;
+    
+    function fcoSjn(var mKECgiVkGF, var gTxEsKWhH) ;
+        var F, fgNGj, WOHSDtJay;
+        
+        function Ja(var paMsoJqzxD, var ahwvQHdd) ;
+            const JmtTnFg = 72, wWav = 66;
+            
+            procedure d;
+                var x; x := 1;
+            
+            function HeeoxmtsU(var LezFnuQ, var FqeG) ;
+                var x; x := 1 ;
+            
+            tELyYQ := 79 ;
+        
+        function ctyKc(var aN) ;
+            const pFCZaZPzbs = 3;
+            
+            procedure RFOql;
+                var x; x := 1;
+            
+            function OrR(var ZONYeO) ;
+                var x; x := 1 ;
+            
+            function ZhTe(var cWomtFf, var A) ;
+                var x; x := 1 ;
+            
+            K := 22 ;
+        
+        function PfuQ(var g, var GKRzdVNdnW, var FXPUJknB) ;
+            var bsXuoTSR, HYisUswQ, AOF;
+            
+            procedure peBdHSziR;
+                var x; x := 1;
+            
+            nsxobV := 40 ;
+        
+        write(hUCehxUnC) ;
+    
+    if iOsNxp[(TMhh()) * GQTk[BRsO()]] + (muEFeBizdN()) * 62 >= (etubcWqkfO) - Xntr[Pzhrn] % iY() then 
+    if odd Kh() then if odd 77 then while OWn() < gYe * (73) do 
+    if mfr() <= (Qusp()) then 
+    if 15 >= smQDeyz() then zYb := 1 else kpRaXAsh := 40 else write(tivIqlFL) else write(fd);
 
-procedure hHwcoV;
-const a = 19, DMIMuV = 74, j = 60, cLlsNVOIf = 85;
+procedure KkDeEp;
+    function cNy(var M, var e) ;
+        while qpkKCie > eoN[yNi[m[fgDEXBXSw()]]] do 
+        break ;
+    
+    function LD(var q, var E, var n) ;
+        read(hCovAoybjA) ;
+    
+    function XxXWCTgLk(var pRzJi, var ftOHCGx, var xkEDSM) ;
+        var MjYOOGTFvO;
+        
+        procedure qIk;
+            procedure nZR;
+                var x; x := 1;
+            
+            procedure ioRYP;
+                var x; x := 1;
+            
+            SxucC := 27;
+        
+        procedure ybiS;
+            const IuPDL = 88, YfE = 70, Nnmjv = 57, fwigGwML = 42, RspnERFCBu = 55;
+            
+            var vrBLTRC, gjx, shFfmveef, lNE, gJljxKcA;
+            
+            procedure Zg;
+                var x; x := 1;
+            
+            procedure DWyhIP;
+                var x; x := 1;
+            
+            procedure solPXB;
+                var x; x := 1;
+            
+            HSbOdJVLF := 11;
+        
+        procedure VwUSk;
+            procedure pNUFvX;
+                var x; x := 1;
+            
+            UgdqIZGJD := 92;
+        
+        if odd ChKVZV() then 
+        if 50 >= QfcGXFA then 
+        write(i) ;
+    
+    for D:=bP * tdIAutjoto() - xFNhCdAq[uqqQTaxCzD()] to sQjg() do 
+    call kAKoPfF;
 
-var rklBjv, Ciz, WFiWrns;
-
-procedure MdWL;
-procedure qMWVRm;
-const RExAeUMxE = 58, jGs = 22;
-
-procedure CIpQ;
-var x; x := 1;
-
-procedure IMthroACjD;
-var x; x := 1;
-
-procedure psVSuXJi;
-var x; x := 1;
-
-function hcap(var Jx) ; var x; x := 1 ;
-ocjz := 74;
-
-procedure UMKVNx;
-var jeOMGdI, z;
-
-procedure SNYSv;
-var x; x := 1;
-
-TveXPBRiKp := 36;
-
-function PRrwosvAGW(var PZ, var ZXmH, var utqtJ) ; const LnscQPdTTx = 92, b = 46;
-
-var urYJYDeXpp, XkJMd, ffmLKup, KTAtF;
-
-function z(var XKYz, var UPeHF, var tLvAdxPFtt) ; var x; x := 1 ;
-function QiChYivtI(var TwisFEl, var Lt, var UrxZaX) ; var x; x := 1 ;
-iwEisMVRa := 77 ;
-function Ut(var JJbAPvyTxz, var bVv) ; const y = 32, x = 57;
-
-function KRoD(var bo, var lZNEIvjTVS) ; var x; x := 1 ;
-bkq := 56 ;
-function m(var jwG, var lzetXQwh, var YSIgt) ; const Anml = 80, MIODYzsKI = 81, lha = 99;
-
-var aMsVv;
-
-procedure Vkujtjs;
-var x; x := 1;
-
-LmesHf := 92 ;
-while odd 7 % ((qTMN % (QoChCh % VyLIGsn()) % RfXZOvkr())) * (KQmICIF()) / tCc() do 
-while odd (Egx()) / 28 * oNwQOvojFi() do 
-Rs := 18;
-
-function etpMfcXUIq(var Gsd) ; const GYmlyGlp = 17, eZjpV = 18, TnwMvk = 33, fWjZOyo = 43;
-
-writeline(TXGaU) ;
-function Lv(var I) ; begin call VYjPnqB;
-zxeCYH := xlmNZP % (QuEMm());
-read(q);
-while JIB() <= E() do 
-gtC := 44;
-read(CjucnR) end ;
-function umQI(var aHH) ; const ubcdfqgNBB = 10, xOXYwl = 85;
-
-var rFkg, HL;
-
-procedure NhcwJhOx;
-const LIOcfUH = 73, LPwn = 62;
-
-var eauSudw, dn;
-
-ebnIv := 1;
-
-writeline(LAIn) ;
-if odd 2 * cxkPZ() + kXMmxmvUG[faeCmZl()] then for W:=FPI * SrpSyKzMM() to 99 do 
-if odd h() then writeline(ntJc) else while odd RgMijD * (((DHk()) % k())) do 
-okZzE := 57 else write(IsgfnkMH);
-
-procedure lkeqfECm;
-procedure JSSBeZ;
-procedure yVLI;
-const epvdLQJoK = 77, of = 72;
-
-function DOyOmFHk(var MYRONWi, var zDO, var jCSKZU) ; var x; x := 1 ;
-afkyPjaAu := 7;
-
-procedure Avz;
-const bgTeNx = 1, aqsyDQbEK = 60;
-
-procedure hi;
-var x; x := 1;
-
-ntvxoSS := 79;
-
-procedure Vkp;
-const GYhsNGymr = 36, jkDwgPDZib = 31, iDCp = 69;
-
-function DEHSw(var dFBtPTj, var Patrsgt, var lMxHvPIUUK) ; var x; x := 1 ;
-function XpkkMpYK(var qMWOQwVuWl, var zKi, var G) ; var x; x := 1 ;
-function BEqZT(var SKgycQcF) ; var x; x := 1 ;
-FyMBr := 33;
-
-function CnWy(var ONsdKkNlv, var Dho, var WDpHChgjeB) ; var RVqDmtXmly, gSNzwtxf, YbeorWbYq, aNph, oBHkahQoz;
-
-Uiwh := 67 ;
-break;
-
-procedure kejGguc;
-const m = 29, oeIieOJMdT = 18, qaUiDGC = 0, wwURJeCud = 50, KK = 16;
-
-call NsPYexez;
-
-procedure cKr;
-var UJubcDxX, OnPz, IZudH, BeGqzx;
-
-DoOdpcChs := YCEnKOgs * HCVPmXRVd() - FwGXW();
-
-return GmVTvUd[ic()];
-
-rMjHhI := Q() + jWFJK().
+break.

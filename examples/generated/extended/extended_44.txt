@@ -1,5 +1,21 @@
-const yHKPCpq = 25, bYIfnIC = 95, baDxx = 65, GnRvU = 74;
+const TxclTaXt = 7, nTHfMEg = 77;
 
-var TK, IUxP;
+var cmBUakcKzm, ayvuF, YHFv, VEMK;
 
-call aFjF.
+function ScT(var kKObfLRlof) ;
+    var MGkwqZxoi;
+    
+    for p:=dqfB() to 100 - (sdGwo()) * fdz[P()] % pASfaXc() do 
+    begin writeline(LpAiVOJzE);
+    writeline(QANMXY);
+    call UNVcmOIkLh;
+    call kYseTTdl;
+    break end ;
+
+function ibsqbpm(var MTqVesTq, var ZvuZh, var HaO) ;
+    var PNY, gzwvtsos, mXACYjSnbL;
+    
+    call FMBueDJ ;
+
+while IJBgNEw() - mVXJzZ() < dll() do 
+/* This is a comment */ugcLXmKg := 66.

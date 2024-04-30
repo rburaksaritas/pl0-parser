@@ -1,30 +1,5 @@
-varTcdEp,  UPHLje, fxttDVFSWm,Z,   JSPtlbCpd;  
+constcGkVg=  71,  S =  97,  La  =61,  hOYazXp  =  18;   
 
-procedure  cRUhOq;   
-const z   = 66; 
+var  XDDQW,jHBIGX;   
 
-begin   for  AqMVejiPO:=D() to   V()?+ ddhj()   do   
-read(uaCFmdd);  
-LvTZ  :=  jLr(); 
-while48+ 75   >=Va[uYKI[deIjYCML()]]  %   EuMAuvKYVm()  do  
-whileodd iqtImNdkth()  do 
-call Y;   
-begin   for   QGPcUfrNm:=ac() -  (EsTygg())toQVxW()do   
-write(BiDGhOw);
-if  ZoKpJB() =   onLjf()  thenGnQR  := yeD()else writeline(fGUZygtQKc)end end;   
-
-procedure  kp;   
-var pJ,Ly, iNICMHvnzL;  
-
-write(zkuS);  
-
-begin   if oddhWFunhjDq  *!   tjNI[wgJLzHWv()]  then   
-whileZ   + YHTCdUYUO()  >   qTkvGQn() +  yLUomX() do 
-begin if   wJVxl[(ZB())]   /  U %  GrqoFUaQNa(#)>=   ljbdiyKDW[(D()) * ZgyKh()]   /  HyxAc%  HG()thenfJB   :=bHx()   else   if   odd lVX()  then
-call PDPruQd;   
-SrqRIVQ  :#= IfFpSz();
-wr?iteline(IYUWW);   
-whileJKyyrC *fItqeIPvK() +   oOX() >=lfyTIMLNy() +  (jWuFzgnY())   do
-return   mNMOEdAc()  +ackWrUiZjj()  e?nd;  
-for  WOEIhlKmu:=xZSIjetE() toRjdj[dmnd()] *   EoOz()  do  
-return  97-  (RQGx[(FB())]) e#nd.   
+call   vYfDf.   

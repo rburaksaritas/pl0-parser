@@ -1,4 +1,3 @@
-function IAy(var GqnsKJ, var pGINHlDhKv, var E) ; var J, omV, gFcBWjKRlW, pmSKejN, zy;
+const Ys = 98, mofFJixxWL = 46, zFLqOmyYxw = 14, YmcKGkG = 50;
 
-writeline(pI) ;
-break.
+return FfS().

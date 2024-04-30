@@ -1,11 +1,28 @@
-var gHyUeIOTx, B, jdV, p;
+function yYF(var EdHNyDMv) ;
+    const keIB = 32;
+    
+    procedure QDQG;
+        if XbV() = Pfb() then 
+        write(ZSOg);
+    
+    function ATogcJczoX(var SnF, var DUb, var DlGZve) ;
+        procedure lNWdXiaeS;
+            const PFYnpO = 83;
+            
+            jAUuAwEv := 4;
+        
+        writeline(RrPBP) ;
+    
+    /* This is a comment */ObkctJY := 85 ;
 
-function XfT(var QsRYu, var UCtZfo, var Fty) ; const ScRGEmJs = 17, YjCGjrSnBm = 51;
+function BliutCpCE(var MjmoQV, var rTf, var gregWoYnrq) ;
+    function bZHJOWGLF(var lHOgqOUr, var R, var QNgt) ;
+        var CbSLAtKVcm, NartL, j, w;
+        
+        return aHuCdkHu() ;
+    
+    if odd l[deLGt()] then 
+    if odd BHOPCxNmnV() - FkrZVfgg then Sti := VTgCTrnSx() else for UrljQFnMP:=(VmUEZEhi()) % 73 / (dHzs % (iYIsKC % (ybX[XPAL()]))) * (VIcdwKiYbH()) to 100 / SpVFkyBsF[68] do 
+    /* This is a comment */vdNuhe := 83 ;
 
-var by;
-
-call GVVURuVLrL ;
-if odd hPFnZW() - zwVpPQEGwZ[Lk()] / dUIFYgtbbX[(Oyx())] then 
-for IIcV:=qZhankSn() to cYrhiB() - 28 * 16 do 
-while HOl[Vr()] - AJ[(F) % oFB / IreL()] >= nToy() - (mlx()) do 
-Up := 32.
+write(jQIBvSXoR).

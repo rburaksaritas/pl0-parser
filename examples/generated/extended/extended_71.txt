@@ -1,186 +1,219 @@
-function EtdMZddr(var BPS, var I, var tAQU) ;
-    break ;
+var FwWQtx, A, lmcrHLh, sr, OkmJaYS;
 
-function XBcyqcN(var y, var PvaPQ) ;
-    procedure fPOxIq;
-        const SoYJJcwO = 57, PMhiParOvL = 88, WlTkqYhKo = 59, hqLIvf = 34, G = 49;
+procedure eYClugr;
+    procedure yVpAZvdujo;
+        const zjWci = 8, Q = 46, AXVuvVNtdg = 99, zy = 72, mX = 0;
         
-        procedure Cextj;
-            const duLYDB = 28;
-            
-            function cgDvc(var rccHENUU) ;
-                var x; x := 1 ;
-            
-            LEJjCIp := 22;
+        var tnj, fBPLQOQy, dBXx;
         
-        uYNBvYtiq := RSBWptTfM();
+        function wyhTF(var u, var veJSMeK, var g) ;
+            procedure ulQdtVMta;
+                var x; x := 1;
+            
+            procedure TQoWHKg;
+                var x; x := 1;
+            
+            izUTciLLMX := 95 ;
+        
+        /* This is a comment */UENIm := 62;
     
-    procedure OgHL;
-        function IbWktFCyS(var Em) ;
-            var QV, XC, d, QuvKvYMR, hG;
-            
-            procedure UUUkUx;
-                var x; x := 1;
-            
-            function cXLDbu(var z, var GjemAXZ) ;
-                var x; x := 1 ;
-            
-            function mYGxcTJu(var bQAXAO, var yGunI, var Ogn) ;
-                var x; x := 1 ;
-            
-            function rKm(var mqPoNfLp, var m) ;
-                var x; x := 1 ;
-            
-            TAVwnqCC := 68 ;
-        
-        function QMBCZgA(var WxfkOuaAv, var XOAuwCBKs) ;
-            const srDkdq = 29;
-            
-            var HICoX, MQWZAAX, njS, zSUSvAYrj;
-            
-            procedure mJHr;
-                var x; x := 1;
-            
-            procedure KhuAJx;
-                var x; x := 1;
-            
-            rwaLMic := 25 ;
-        
-        function Hui(var RTew, var Lxh, var hIIRbco) ;
-            var uMzL;
-            
-            procedure JQbLRAi;
-                var x; x := 1;
-            
-            MaZJ := 46 ;
-        
-        call bwczml;
+    procedure wnXukcVkDQ;
+        writeline(LiwzKbFE);
     
-    procedure Lfoabhk;
-        read(n);
-    
-    function PW(var OWriX) ;
-        var L, e;
+    procedure XmFtfGbwJ;
+        const NBpBGJ = 83;
         
-        procedure fNfzJIW;
-            const GbOKJL = 14, ZdgKEwYKe = 69, AeXXDGy = 68;
+        procedure tN;
+            const M = 21, IVvln = 67, Or = 54, XOpGdTJhi = 78, fsp = 58;
             
-            procedure COLaTkOp;
-                var x; x := 1;
-            
-            procedure EMZxRISb;
-                var x; x := 1;
-            
-            XIMcfb := 13;
+            HruKP := 56;
         
-        procedure rL;
-            const ucOE = 57, ILuHVvrUc = 22, OKNst = 38, T = 44, XhPv = 14;
+        function a(var OiEnzh, var NgcKBP, var uuBvYPHc) ;
+            const KQVJbYkMy = 35, gTbZMfYQ = 58, n = 42;
             
-            var IZniMyE, YkYCkYDez, TslLEYvSf, wewaYmMp;
+            var WqwM, GHrEPMTeSN;
             
-            procedure h;
-                var x; x := 1;
-            
-            function cNgzE(var nWhTpMbAn) ;
+            function p(var uS, var fdNtNNmo) ;
                 var x; x := 1 ;
             
-            x := 76;
+            oFFv := 72 ;
         
-        procedure bIwLYSmRfM;
-            var u, DtTXElxH;
+        function Ovc(var gasEK, var gPcC) ;
+            procedure k;
+                var x; x := 1;
             
-            function vVHSIpHvK(var Z) ;
+            nHZ := 12 ;
+        
+        /* This is a comment */sUQvxHExFD := 96;
+    
+    function mlk(var sDxmcXRTAa, var qAs, var nKpBLPc) ;
+        var xnthU, Vt;
+        
+        procedure gwAa;
+            const BJpETSMK = 64, JxcJLcm = 46;
+            
+            var EvLJV, uBbYVUznEm, lk;
+            
+            function pFFElV(var FUEuyDjRKD, var bKsR, var GUNVtvTpD) ;
                 var x; x := 1 ;
             
-            k := 86;
-        
-        function ofrGwJOdZV(var q, var VBsK, var JQQfEZdH) ;
-            procedure AOof;
-                var x; x := 1;
+            function vsgMru(var nC, var rCCBjoJ, var YSdtKB) ;
+                var x; x := 1 ;
             
-            hGUzN := 70 ;
-        
-        function rNseWN(var waq, var uASPxwDIq, var HpPZSznj) ;
-            procedure SWMl;
-                var x; x := 1;
+            function cPJC(var Qjzv) ;
+                var x; x := 1 ;
             
-            pmeqSRa := 57 ;
+            QynxhnPea := 32;
         
-        if YDGm / HmYDVf() < uKmH() then read(Hptf) else KKrVXJRA := fcmSOlksqK[iqOqoLB] ;
+        for acbhtdiNx:=gatZTwc() + prN[94] / 10 to X() do 
+        if 52 >= oFnWOEul() then 
+        for dyIngyfhK:=hZ() to BprSPwct() do 
+        S := 35 ;
     
-    if odd CTCffa() - IRAJTr() then 
-    if (IYVkI()) - jfofZSA() > vpRjRCcee() then if odd HjjYDSYC() + sUfT() then 
-    write(sVI) else begin begin write(eIflRpCIxB);
-    while 6 % 65 % w() = FkyRc() do 
-    MoaCWZv := 20 end;
-    call pfqZoaFNF;
-    writeline(V) end ;
+    return jszZSgOBqg;
 
-function lhXUNDfn(var Afdo, var vfgxeVb) ;
-    var sg;
+procedure beSgbiEm;
+    var clSyBngG, mOz, wnpAAavMT, IuLq;
     
-    procedure YN;
-        const VtcvIzXh = 6, vBfnpM = 39, n = 39, oQUxniBV = 30, VDERP = 72;
+    function eGdKt(var ECUPnxTHd, var sNhsaOWb, var LYztl) ;
+        procedure XYpmID;
+            var XGRXsGXbrt, LJsWWGWLcN, G, Kc;
+            
+            XYYCgNob := 36;
         
-        break;
+        procedure rrxBzQM;
+            W := 56;
+        
+        break ;
     
-    procedure cjT;
-        procedure U;
-            procedure vHRYVCa;
-                var x; x := 1;
-            
-            function yovJ(var Zn, var rKCBQYz) ;
-                var x; x := 1 ;
-            
-            function pCiYumoJ(var fYqp) ;
-                var x; x := 1 ;
-            
-            function FOsu(var OoRNVYls, var FakB, var QRUGqVxZ) ;
-                var x; x := 1 ;
-            
-            wJQaCQmf := 16;
+    function jbyGMmXvqw(var vTNehJ, var AzWRHScY, var i) ;
+        var xWRY, nQ, yZ, JPULH, ejqON;
         
-        procedure IGMPolW;
-            const negQCmDkn = 88, igRRH = 96, uliYiTE = 9, YeeOYGdgW = 61;
-            
-            var CLQfYnkWG, dJmkzrTInO, klXDhmwsi, UOJpc;
-            
-            procedure Fwgmqfv;
-                var x; x := 1;
-            
-            procedure OskNmX;
-                var x; x := 1;
-            
-            procedure ATm;
-                var x; x := 1;
-            
-            function CV(var PSp, var RPuisry, var gXCnYM) ;
+        procedure JGXTe;
+            function sCuEU(var uwXn) ;
                 var x; x := 1 ;
             
-            function on(var w, var WgXauAhMXC) ;
+            function OQpUKkUct(var Zj) ;
                 var x; x := 1 ;
             
-            msPGp := 81;
+            function tlH(var pVKcX, var w, var VMLKw) ;
+                var x; x := 1 ;
+            
+            sOsQ := 81;
         
-        procedure nuetMXaQZF;
-            const oncomUib = 28, WmKPtu = 41, JgqFoEz = 36;
+        procedure mQ;
+            var i;
             
-            function ILhLtGe(var PzFxfxMkj, var GFLHUJqr) ;
+            function hxRRfoXXp(var v, var Wn, var KgIULULtta) ;
                 var x; x := 1 ;
             
-            function GVJMaT(var iGvIRBU, var eZ) ;
+            function hbM(var zLcGd) ;
                 var x; x := 1 ;
             
-            function U(var eCCwN, var zzWZWt) ;
+            function WTC(var d, var ScGVXMlOl, var YRjtJ) ;
                 var x; x := 1 ;
             
-            mxP := 48;
+            lNyuipCwc := 85;
         
-        function gEwGs(var iwa) ;
-            IVSJ := 86 ;
+        procedure O;
+            const eP = 75, Jcu = 99, IkokyG = 91, h = 40;
+            
+            function xIVK(var YChDXecdDG, var NyFWQRBk) ;
+                var x; x := 1 ;
+            
+            function UiRTvyw(var VXVhZS, var tpY, var yduFrX) ;
+                var x; x := 1 ;
+            
+            function iQnN(var STEiQbV, var NeTlKEG) ;
+                var x; x := 1 ;
+            
+            TyPLNQ := 82;
         
-        write(zNcYHTGmK);
+        read(k) ;
     
-    if odd xMs() then read(mhTZnmn) else read(MSRyElqh) ;
+    function HhxK(var HHe, var aY, var VC) ;
+        const teiTZh = 28, t = 28, gueILjisl = 81, Nwegb = 32;
+        
+        procedure isDC;
+            const PLjbg = 65, bhN = 91, KnrBEut = 25;
+            
+            procedure KMNVCtsU;
+                var x; x := 1;
+            
+            procedure g;
+                var x; x := 1;
+            
+            NwF := 86;
+        
+        while JkyQeRGX() >= sILbMSQdQQ() do 
+        return AqxfSoUNUD[tGbGDdbm()] ;
+    
+    /* This is a comment */ytFnEhok := 28;
 
-return whIjqeT() + bWqPV().
+function aRXcFwD(var znjQgj) ;
+    begin writeline(sFcwdB) end ;
+
+function DY(var HcKzPnA, var fcpSHDU) ;
+    procedure HxjtKkaCl;
+        var zaogGytkN, RRkTWw, YaITWW;
+        
+        return mDMtOL() + FSZQR();
+    
+    function gHglkhOqw(var WKePiew) ;
+        var VVTBmgZUvG;
+        
+        read(dYoDmQSAB) ;
+    
+    function sOEdIFge(var Hea, var PzyP) ;
+        var gjbLWjiLv, dqKtzvgItU, qqtdbI, cVmN, MBOfqHwsx;
+        
+        procedure QBUdskiZTQ;
+            var zcdzLCS, JrMFC, nkaZPW, KwXTSlU;
+            
+            function mnb(var XV, var GoYgRSbqbZ, var MhjYR) ;
+                var x; x := 1 ;
+            
+            pUUYdsChL := 58;
+        
+        procedure zuAaz;
+            const Nd = 81, ggcopDADG = 6;
+            
+            var OXVUVk, LoYb;
+            
+            procedure uGKUSYBU;
+                var x; x := 1;
+            
+            CitOVPxiRB := 65;
+        
+        function KYVtpLC(var rz, var i) ;
+            Hc := 63 ;
+        
+        function Kv(var LPpEPbOSTc, var qYDcUgQylP, var hFd) ;
+            var yaexr;
+            
+            function FRNrMlY(var UkMU, var Bpt, var YNGE) ;
+                var x; x := 1 ;
+            
+            pVVZeGH := 84 ;
+        
+        function OpyMG(var MKpo) ;
+            const qliOwEi = 40;
+            
+            var HU, vTsCuHS, KbAqHkUr, HXvKQSr, LWpyVsul;
+            
+            procedure eUUaRu;
+                var x; x := 1;
+            
+            procedure MPtmrO;
+                var x; x := 1;
+            
+            LaREnGaDKh := 99 ;
+        
+        call TFpYNl ;
+    
+    while odd 50 do 
+    begin write(O);
+    break;
+    return pjjRrTP() end ;
+
+/* This is a comment */fcT := 75.

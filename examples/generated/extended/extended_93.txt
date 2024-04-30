@@ -1,7 +1,3 @@
-const YYZfNvZm = 39, uYrQtETvx = 81, hakJyR = 26;
+var MGnT, AZoIkvxc, pDmTVj, aRzR;
 
-var kcHBt, qSacON, otif, mk, tKL;
-
-if LmTtleEp() < (NfDvmT() - btuyabFGw()) * fepWNVT - (jQ()) then 
-if uf[19] < qRQqcWnrMU() then while odd 30 + ENlK do 
-break else return LU() + 73 % hrfo / HpiKI().
+read(Ycbezdfq).

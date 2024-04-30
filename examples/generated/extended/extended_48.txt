@@ -1,1 +1,1 @@
-return SsRiC() + ADQMZ().
+if odd 17 then writeline(OkmkJ) else writeline(y).

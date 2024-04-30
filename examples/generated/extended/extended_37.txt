@@ -1,7 +1,3 @@
-const GnEWMF = 38, VRzeVWZpDE = 4;
+var VHq, SUUhDxrj, hyP;
 
-var wbXRoGxH, XgB, o, IRXKIZoEIb, uo;
-
-if odd (bxZhLIEc + qsaY()) / ZUrVLMWJs() - NpGKxMhjF() then 
-for BkOEHivtw:=(eiwyyFTwA() + p()) to 45 + jS() do 
-break.
+write(uBGPrVtnq).
