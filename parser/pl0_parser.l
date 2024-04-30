@@ -22,6 +22,7 @@ int read_identifier(const char* identifier_text) {
     return IDENTIFIER;
 }
 
+int lexer_error_count = 0;
 %}
 
 %%
@@ -71,7 +72,7 @@ int read_identifier(const char* identifier_text) {
 
 [ \t\r]+               { printf("%s", yytext); /* ignore whitespace */ }
 \n                     { ++yylineno; printf("\n line %d: ", yylineno); /* increment line number on new line */ }
-.                      { printf("%s", yytext); fprintf(stderr, ANSI_COLOR_RED "Lexer Error at line %d: invalid character %s\n" ANSI_COLOR_RESET, yylineno, yytext); }
+.                      { printf("%s", yytext); lexer_error_count++; fprintf(stderr, ANSI_COLOR_RED "Lexer Error at line %d: invalid character %s\n" ANSI_COLOR_RESET, yylineno, yytext); }
 %%
 
 int yywrap() {
