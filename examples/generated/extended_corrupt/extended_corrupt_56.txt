@@ -1,0 +1,3 @@
+constCMTAGEd   =   79,hOfT   =  25;   
+
+writeline(CFvh).

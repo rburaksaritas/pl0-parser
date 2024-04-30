@@ -1,0 +1,4 @@
+function IAy(var GqnsKJ, var pGINHlDhKv, var E) ; var J, omV, gFcBWjKRlW, pmSKejN, zy;
+
+writeline(pI) ;
+break.

@@ -1,0 +1,42 @@
+procedure nlOsZFkt;
+function xBXsQvQZZD(var nrQPy, var i, var Nh) ; const C = 74, KaYXtjJibr = 66;
+
+var CiF, AYDlz, pLg;
+
+function ULMuAJmU(var oRPVYTIgx) ; function iEi(var M) ; var x; x := 1 ;
+function CRLkL(var YkAhCMwlj, var kVt, var wPCJeRZKH) ; var x; x := 1 ;
+function zCb(var zn) ; var x; x := 1 ;
+mHL := 9 ;
+return Wdl() - Zirv ;
+writeline(g);
+
+procedure Y;
+const I = 72;
+
+var itmpdx, JPGPB, THf, DldxCykItJ;
+
+function ls(var cfR) ; var ZBUZbFBMD, BGYgFIrkC, wFOJP;
+
+procedure PJmXHHBXp;
+const WjIz = 76, IkJEPVOGvy = 86, hrw = 72, vz = 58, ubkqOEJQXZ = 63;
+
+var iWpqU, xkQUJCxDXT;
+
+function qygyVBVVwV(var jCIZBMKB, var ogdupzhpLU) ; var x; x := 1 ;
+function TJfclo(var qdVez) ; var x; x := 1 ;
+UHidYetJ := 10;
+
+procedure DwWloZP;
+const P = 0;
+
+function NywCWg(var cC, var sx, var iyrSf) ; var x; x := 1 ;
+function UgNU(var ehclCYqMRE, var zSRH, var bVAzi) ; var x; x := 1 ;
+rD := 30;
+
+for tVqgmTpLW:=iZgCBNFUT() to rF() do 
+Xbkqy := (45) * qgRs[43] ;
+begin for O:=H() - Hk() to b() do 
+break;
+writeline(EwsSzZfBoi) end;
+
+return (Do()) % mXaTfGHj().

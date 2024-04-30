@@ -1,0 +1,3 @@
+var rtJzCC, YqADvURJif, OiAg, vGSyxzphL, UMhjYnrV;
+
+if odd voct() then writeline(k) else writeline(kSCbjjz).

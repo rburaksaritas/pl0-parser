@@ -1,0 +1,242 @@
+const   t=50,  !xH   =  54,Tys   =  83; 
+
+procedure  V;
+const Gxxd=  65, HtEfPL  =  18,      OtXPLU  =   74,  mp   =  87, LVNp =   88;
+
+read(CRjmN);   
+
+procedure   rsR;
+const saJJcrYU =95,   U= 72;  
+
+var   FHOkFwQwU, DUmfgxdH,   Jobjp;   
+
+procedure  PU;
+const   heKNewJ =17, VfQazqWa= 100,yzJWrzcFRs  = 72; 
+
+var WKtGN,   kaffq,   pfVW,  AKHJipAFPH,TC; 
+
+procedure    QZugtRAz;  
+HnHnv := 72; 
+
+functionUMVCRHFj(var   TaswD,  var  PgnwovBhL)  ; 
+procedurejMoRjoF;  
+var x;  x   :=   1;   
+
+function  WrbwKDqMX(var ewuH) ;  
+varx; x :=1#  ;   
+
+function FqN(varrQYGF)  ; 
+var   x;x  := 1   ;  
+
+function  iUfKPwtnun(varw,   var   dRfBi, var   SJwjpwFMfH)  ;  
+var   x; x:= 1;
+
+tAYsVSa :=34   ;   
+
+function   VeV(var tWkDXb)   ; 
+procedure  UAtMGvC; 
+varx;   x  :=1;
+
+procedure   AGPj;   
+varx;   x   :=  1;   
+
+procedure  EybKtFmEZ;  
+varx; x:=1;  
+
+function  lteLnuh(varEnThDSxaA,   varaznSRj,varVcUxSwlbi) ;  
+var   x;  x  :=   1   ;  
+
+NzqOI   :=   71;   
+
+functionq(var qiTbb)   ;  
+const  ZLanyE = 12, Z=53;
+
+var rEIWt,   HjjFybC#Cz,  oGnmFDZf,NgBTkmW; 
+
+procedure   JmliGWjz;
+varx;x  := 1;
+
+procedure tlLWKhY;   
+var   x;  x  :=  1;   
+
+function   EXhkrNKAXG(var   QXENeyd,var  Zv!MU, varKpvsAf);  
+var  x;x   := 1  ;   
+
+eiZ:= 46  ;
+
+p   := NCRkFIGywR()-  TGeAibXiwg();   
+
+procedure dOvP;   
+procedure   SoH;   
+const  YGrMF   = 53,jGL?ThDTVMM   =  19,GqB  =   92;
+
+procedureDDfZXCGnB;   
+var   x; x:=   1;
+
+?proceduretmooVKv;  
+var   x;   x := 1;
+
+function   XRewjbyLTy(var   j,  vardYHSoSEMTw)   ; 
+var  x;   x   :=  1  ;  
+
+YrfNwMoeY :=20;   
+
+function ub(var   gijCFw, var   xnHPNbJ)   ; 
+var W?GBvYSjh,   CqFFgx,MXaNggVis,   b,W;  
+
+procedure GnREsYaDIq;
+varx; x   :=  1;   
+
+procedurevGirf;  
+var x;x   :=   1; 
+
+function  zZnBp(var  ehAeIr,var  AipaRv)   ;   
+varx;   x:=   1   ;  
+
+TIvEwCWmeW   :=  78 ; 
+
+functionqmpZ(var  cOUkxlh)  ; 
+procedure  WnnVP; 
+var  x;x  :=   1; 
+
+HvmnFlNVjg  :=  67  ;
+
+read(sB); 
+
+function fgyuQ(var  FocFQ,var NzLcGRZqf, var   aShR);
+constslwdMa=  11,  tzVbOjelBj  =48;
+
+var PCjepTDD, PvfyJcIqRF;
+
+functioneF(varepRnKpd,   varXYMcnO,   variaWpIDUAy);  
+const  d    =   35;   
+
+var YvTWlK, izstQoxnj,MOYxFvi, zVmidaiG,   CPBadwgoQ;
+
+oyPjeeKoR := 20      ;
+
+functionRM(var  bpwtzfDX,   var wAjyX)   ;
+const  Q   =  37,   gbKra=  25,UmqKqnkT  = 8,  bHucavfid =   89;
+
+procedure joC;   
+var   x;x  :=   1;  
+
+procedure   yWDD;   
+var x; x:=   1;
+
+functionW(var   JxeoZdLSY,var LBDOYURYQ,varcd)  ;  
+var   x;  x:=  1 ; 
+
+function  jErPgdrQQt(varYapvs) ;
+var x;   x   :=1  ; 
+
+TmawUGGGX   :=  2 ;   
+
+write(IBccjBf) ;
+
+read(anPPhPJEg); 
+
+functionUfWu(?var KTfhZnE,  var  WbQUsT,   varxmv) ;  
+const   Ac =5,pyBO  =6,   o=0,      QW = 86;  
+
+var gvV,   TN,SlYXtDmn,  izUBja; 
+
+procedure   UltUbhzsoq;   
+function  nOzm(varSkYO)  ;?
+K   := 68;  
+
+function    S(var BA) ;   
+constYFqITIsdlt#=  79,  qlOXpp =89,jdbeJMxkNg=  2,  EP =55; 
+
+var  X,KkifYtGQEo,  Ibt;
+
+procedureibylHpG;
+var   x; x   :=  1;   
+
+function   U(var hslPvS,  var   WyWaxsE,  var   RXMDAqtiNI) ;  
+var  x;x   :=   1;   
+
+function   F?T(varbAxPIXcYyQ,  var kZBiUWXOg)  ;
+var   x;  x  :=1 ;  
+
+function syNwFsDNvK(varXfXOlkP,  var  wegJh); 
+var x; x :=  1  ; 
+
+cSDVRXO :=  64 ;  
+
+function iJKyRoX(varwpys) ;   
+const  ?h=47,   LmxjBwEdm  =94,elfndWe= 47,  qYjPMdeJYQ = 63;   
+
+procedure   AUAm;  
+var  x;x  := 1#;  
+
+p#rocedure  nKpJqo; 
+varx; x:= 1;
+
+function  tKDkJfqQ(var ZjnJAUlOf,  varIuUjjX,   var fIjoDi) ;   
+var x; x :=   1  ;   
+
+function  FXg(var   kKdMvm)  ; 
+var  x; x  := 1  ; 
+
+function   AdIYny(varfaxDws,var   zFx) ;     
+var x;x   :=  1 ;   
+
+twQxrcZt :=   6 ;  
+
+write(GRuoQLvAR);
+
+procedureWTCntRx;   
+var GHE,uvYAAvvTm,  dKCDXPfCS;  
+
+procedureU;
+var      DWoifFKD, rS,  HiES, V,LqrcYX;   
+
+In  :=   55; 
+
+kkmJ   := mjlruDwxDS(); 
+
+procedure  cxlPgPDy;
+const  bOsaTIesh  =82;  
+
+var  aRbvvI;
+
+functionONvaBspN(var I,?   varm)  ;   
+vartTj,  R,?qRqVKYGG,   QtBVnWsUHU;   
+
+function HjzhVCGa(var  Q!);  
+var  x;  x :=1 ; 
+
+AyVPDt  :=80   ;
+
+function  TQVVVO(var   feYBejUR); 
+const  dNx  = 84; 
+
+procedure  wcYmZ;  
+var  x;x:= 1;   
+
+DqbbynZ :=   73 ; 
+
+function   u(var  KgRLHO) ;
+#const  eXUFGq =   26,   gbVF =38,  Aea= 40,  CiifmjBuZ = 80;
+
+var LPXuJKwdLf,   aB,  DMzoeFYHGX;   
+
+procedureU;
+var  x;  x  :=1;
+
+procedure   JAXDQz;  
+varx;   x:=  1;   
+
+GSLX   :=  17;   
+
+ifoddRiCfnZGeq  then  while   MtCS()  =  lMCXxC[LATIt()]  %   nFmyiITH() do 
+uKANYPxjb   :=  22   else   writeline(venZVZkH);  
+
+writeline(a); 
+
+begin if odd  u(#)+   SBBxf()  then
+writeline(GGCvHtIw);   
+writeline(TcsHRvNac);  
+read(vEJCfv);
+read(toIh) end.   

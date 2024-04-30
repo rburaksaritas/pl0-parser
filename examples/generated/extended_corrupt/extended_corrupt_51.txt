@@ -1,0 +1,44 @@
+const x  =   4?4; 
+
+var  jZUCWOopZ,  XrKLlIv,   tl; 
+
+procedure  OyTyL;  
+const  CA  =   49,  SALJAHUbH=42,  ZETaKZQhQY   =  56;
+
+function dHAyuSwP(varHbxMU, varwYWGRyP)  ;   
+var Edii,     XNj, UmVBN,      hwbGwuWNJU, eK;    
+
+if pZoOURUtj[xWewl?EQjWC()]   % bdU()  >SvqOP[yHOuspo()] then  begin   uBIoTEaU   :=38;  
+gGBho :=   76;  
+eX:=65;   
+dKD:= 12end else  break  ;
+
+function   bZjGgbYY(varAS);  
+var  QihJs,#   Ld, CBttruLoLG,  YE,ceQVj;   
+
+procedure   uhIJk;
+const  kGgDBCjS =   55,  erbq  =21,   rWUe  =  57;  
+
+varlcNM,   i, fFcJCMnRD,sYL,   lxWY;   
+
+function uD(var IPPwqjtxsD,  var OJHkOQQ)  ; 
+var  x;x := 1;
+
+T:=   26;  
+
+procedure jEX;   
+var  zamaJhr, HDlSeVH;
+
+evApqPi #:=   59;
+
+if  odd   LI() then 
+for  KMLBgH:=(JnfG())  *   SvzMbA() to (JQVCzMSfcV())*   Wn() - BfOyikwOZ   d#o
+writeline(UKjx)  ;   
+
+fort:=SfvaxHye()   + LNDi()to (igjUdaG/   tMZG)   %  Mp() - JuNMfuBK()do 
+ifodd   t()  then  
+for Iug:=(WlrRgN())   /49 *pDREmt -   rcOYc()   to  66   /   tlvHCyHXz()-lUow()do  
+for  vrUzShsJ:=tV()-   QLVXc  toJh?fCXquHNH()   do
+writeline(TLSxETei);
+
+writeline(MybIoRKfrs).   

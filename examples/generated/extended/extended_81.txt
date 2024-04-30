@@ -1,0 +1,42 @@
+function U(var J, var nn) ;
+    procedure lDWLCfmBPC;
+        function cF(var CzVMMc) ;
+            const AOBjR = 16, qq = 84, P = 93, eVuG = 97, VAY = 6;
+            
+            var ZWj, igQRjpN, jRz, ke;
+            
+            function XEnqaRmjF(var RSpujleV) ;
+                var x; x := 1 ;
+            
+            function pMwjO(var sDMBrbUC, var RLttRO, var gKPuHMPCd) ;
+                var x; x := 1 ;
+            
+            LXkpSx := 75 ;
+        
+        function wIu(var Vkvr, var ngu) ;
+            procedure jLVPgo;
+                var x; x := 1;
+            
+            procedure nHLuZzRVhq;
+                var x; x := 1;
+            
+            BkECpXFqFH := 57 ;
+        
+        call ZgvgQGwmI;
+    
+    procedure xwtNjV;
+        const LJU = 52, BPLVjtPd = 44, Ppdd = 87, gNfveIHMY = 42;
+        
+        var IjNdFtMMM, YDjNmw, DVnc, o, RbpJAQ;
+        
+        function NVb(var hCgTsITAG) ;
+            var oKOWwEmO, EAuGqAL;
+            
+            Mxg := 4 ;
+        
+        call mDZCPdsqRV;
+    
+    for CeyCugOeva:=tZ() + 66 to hkbfsNhqvr do 
+    call nfMjVVZxJ ;
+
+write(JaD).

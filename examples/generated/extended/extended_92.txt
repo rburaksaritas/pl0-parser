@@ -1,0 +1,3 @@
+const jeBws = 6, N = 93, lkdYz = 18, kYyWjAyXA = 46;
+
+write(Isp).

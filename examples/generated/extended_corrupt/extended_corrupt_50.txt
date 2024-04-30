@@ -1,0 +1,145 @@
+const tNPBg=  65;
+
+procedure  gTfVBzA;
+procedureXtbG;  
+function xvy(varOe,  var eAYeplP)   ;  
+const  SmFYjKB =52;
+
+var aoJmheb;  
+
+function  fNaSV(var   IyyUoh) ;  
+var x;   x:= 1;
+
+function BOnVHyxvi(var  GE)  ;
+var x; x :=  1 ; 
+
+vZkPpoK :=   32  ;   
+
+fu#nction gtpDb(var OoLB, var   JOMf)  ;
+constnIggXIzaTQ =  19;   
+
+rB  :=  14  ;
+
+write(ofb); 
+
+procedure  ysb; 
+var  EGS,   oASotUqfL;
+
+procedure    HECBpf;# 
+consttyJPPw   = 56,Ee?q   =85, QYq = 77,   jsJOCGv =  14;   
+
+vardBqsnmYTY; 
+
+procedure  ezxBXdsb; 
+var   x;x ?:=  1;  
+
+procedureJTEhcilbk;   
+var   x;  x  :=  1; 
+
+uEacjq:= 98;   
+
+procedure  BqmsTMnAe;
+const  nFTN=   82; 
+
+functionx(var   YS)   ; 
+var  x;  x :=1   ;   
+
+N  :=89;  
+
+procedured;  
+const GB#N=  97, lNmaNIeG=7,   vtXhgqF  = 85; 
+
+var   BnAWDRC,oKSxtRGJ;  
+
+procedureIF;   
+var   x; x := 1;   
+
+procedure  ZQdYdc;   
+var   x;  x:=  1;
+
+procedure   ePzkCdicl;   
+var x;x   :=   1;  
+
+function bxjGAwGfm(var  uN)  ;#  
+v!arx;x :=1 ;   
+
+functionvSkFNwbE(var   kaoYPlOP#oy, var  DjU);   
+var  x;x :=  1    ; 
+
+function  c(var  LKYBjkq, varin)  ; 
+var  x;   x:=  1 ;   
+
+JFXP  := 41;  
+
+functioneuAJiWd(var WT) ; 
+const XOlUjyWSJI= 17, gnwH  =  89,  oToJ   =  87, nHcIQ=   92,p=98;   
+
+procedure  oZz;
+var x;x:=1;  
+
+procedure    wbe!HpGVMPF;
+varx;x   := 1;
+
+function   lpvw(var Z)   #;   
+var   x; x  :=   1  ; 
+
+function  ThXOGe(var y,   vard,  var  TMXJE)   ;   
+varx; x :=1   ;   
+
+NRNILVESw:=  83   ;
+
+OYS   :=KBXbKZK();
+
+procedure fzcZl;   
+constrlJ= 77;
+
+var   ZhTZNCN, YMXC,  R, uSdLyN!cH, x;  
+
+procedureBzEJ;
+var lIKZD,   dgAadZNtRz,T,  orf,   cikozVhXA;
+
+procedure kr;
+var x;x:= 1;   
+
+CFwaMWaNMR:= 80; 
+
+procedure giSke; 
+procedure   MrY;   
+varx; x:=1#; 
+
+functionbsF(var   SiyIDohLv, var NaJGAg) ; 
+varx;   x := 1   ;  
+
+function X(var p, var  iRjGEFHXI)  ?;   
+varx; x:=  1;  
+
+GekPGPhY   := 12;  
+
+procedure  VvDuwcOH;  
+var  eeMDH, pQtwKHAh,!N,  HhHskVensM,  AM;   
+
+XgIMCc   :=   14;
+
+function oKLqqwfMv(var  NbCMf,  var   TvTsvgx)  ;  
+z   :=84 ;
+
+function  HXPLxozqzz(var DMyJBYYlYK)  ; 
+qLliVESYJ  :=100  ;   
+
+function yYoivmhk(var  MnBLUI, var   w)   ;  
+function   FlemKa(var lkaNxqq)   ;  
+var   x;x  :=1   ;   
+
+unh  :=33;  
+
+begin   jEctJF  := jHzN[oYgQZ()]  *  zd(); 
+while odd   53do 
+YaJ   :=   45;  
+VRkIp:=   CUaBuhRug; 
+if   13   %   UliZKlt()  =86   then q:=88   else   t   :=  81end;  
+
+if   odd   KDoQIP()   +   93thenwriteline(y)  else   returnTpfSdxUi[jRC]+   XCAIrYDq?(); 
+
+for  VbegBjcrMA:=exJzbi()  to   qES[JtwQJkzu() -m()]do  
+if  odd eJlHCVMSGG()- VFsJFFI[xkyufVwGt()]then  
+read(LIUrNOT).  

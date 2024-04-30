@@ -1,0 +1,15 @@
+const qwe=1;
+var num x;
+var numbers[a]; 
+
+begin
+  for i := 0 to 9 
+    numbers[i] := i * i;
+  ?
+  for i := 0 to 9 do
+    begin
+      num : numbers[i];
+      write(102);
+    end;
+end
+.

@@ -1,0 +1,3 @@
+var MSgzTxcELW, IdSnCDUrcR;
+
+read(PkbLFXXV).

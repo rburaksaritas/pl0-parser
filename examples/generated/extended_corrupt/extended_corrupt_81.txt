@@ -1,0 +1,3 @@
+var  FEX,PUBl;   
+
+read(bBCtGD).   

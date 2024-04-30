@@ -1,0 +1,11 @@
+const DHr = 32;
+
+function Y(var lsPwp, var yNIKSED, var wPKn) ;
+    const ZzuLuji = 22;
+    
+    var bQoTLGDhF, DJip;
+    
+    write(joYlZQU) ;
+
+if (80 + CjGWu()) < Fv + iNhGpte() then 
+writeline(SbIHSt).

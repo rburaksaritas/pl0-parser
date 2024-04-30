@@ -1,0 +1,56 @@
+var QV,   uAKT;  
+
+functionFF(var BszpPuxZa, varQx,   var cxliZVLytv)   ;
+const VKyooaFyhE=  3#3,bq = 5;
+
+functiontVErXXqEBK(var  vixwVcx,  var NCW) ; 
+const   eSR   =   9; 
+
+var iN,  Aj,  uxx,   yNFkz,   oxKWdh;   
+
+function  h(var  ZjWQZ,var Gx,   var   sALYiCkB) ;   
+var Q,   kSDan,  pOThyPNEgu,   hRFq;
+
+procedure aSo;     
+varx;x  := 1;   
+
+procedure  lexndyGCOA;
+var   x;   x  :=1;
+
+function dTHQc(var   oveMl,varTEEcf)   ;   
+var  x;x  :=1;  
+
+function YtSkm(var POWMQjR) ; 
+varx;   x   :=  1 ;  
+
+functionR(var  v);
+var  x;x:=1 ;   
+
+lnZCKeE  :=   96 ;  
+
+function  gCmgPb(var   auBLtgcEGs, var  eAwOuku) ;   
+function  ptgKRhrJh(var  AYWPCQ, varLKISg,  var   LjkICUtLXh) ; 
+var  x;  x   :=1 ;   
+
+Yshq   :=   33 ; 
+
+funct#ionuwVe(var  OeXRIhym) ;
+constACvg=19,rvaaD   =  2,   E=  10; 
+
+procedure   FNQEjjb; 
+varx;x   :=  1;   
+
+procedureSuj; 
+var   x;  x:=1;
+
+procedureSyzSFR;   
+var   x;   x  :=1; 
+
+UXgMVDc   :=  90;   
+
+read(hollJjqRym)  ; 
+
+begin call Ybc;  
+writeline(UgRP) end   ;  
+
+writeline(uDt?Qw).  

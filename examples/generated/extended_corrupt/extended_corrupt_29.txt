@@ -1,0 +1,4 @@
+!var   OfPnY;   
+
+for   yyoU:=H  toGuEl  + aCgSnSIt() do  
+write(pb).  

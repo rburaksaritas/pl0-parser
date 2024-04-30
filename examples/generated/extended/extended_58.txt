@@ -1,0 +1,4 @@
+var AEEQbBwCLM;
+
+if CM() - bCv > 38 % k() then 
+break.
