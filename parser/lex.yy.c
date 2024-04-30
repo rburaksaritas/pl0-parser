@@ -515,8 +515,30 @@ char *yytext;
 #line 2 "pl0_parser.l"
 #include <stdio.h>
 #include "pl0_parser.tab.h"
-#line 518 "lex.yy.c"
-#line 519 "lex.yy.c"
+#define ANSI_COLOR_RED "\x1b[31m"
+#define ANSI_COLOR_GREEN "\x1b[32m"
+#define ANSI_COLOR_RESET "\x1b[0m"
+
+int read_token(const char* token_name, int token_value) {
+    printf("%s", token_name);
+    return token_value;
+}
+
+int read_number(const char* number_text) {
+    printf("%s", number_text);
+    yylval.num = atoi(number_text);
+    return NUMBER;
+}
+
+int read_identifier(const char* identifier_text) {
+    printf("%s", identifier_text);
+    yylval.str = strdup(identifier_text);
+    return IDENTIFIER;
+}
+
+int lexer_error_count = 0;
+#line 540 "lex.yy.c"
+#line 541 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -733,10 +755,10 @@ YY_DECL
 		}
 
 	{
-#line 6 "pl0_parser.l"
+#line 28 "pl0_parser.l"
 
 
-#line 739 "lex.yy.c"
+#line 761 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -795,237 +817,237 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 8 "pl0_parser.l"
-{ printf("TOKEN: CONST\n"); return CONST; }
+#line 30 "pl0_parser.l"
+{ return read_token("const", CONST); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 9 "pl0_parser.l"
-{ printf("TOKEN: VAR\n"); return VAR; }
+#line 31 "pl0_parser.l"
+{ return read_token("var", VAR); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 10 "pl0_parser.l"
-{ printf("TOKEN: PROCEDURE\n"); return PROCEDURE; }
+#line 32 "pl0_parser.l"
+{ return read_token("procedure", PROCEDURE); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 11 "pl0_parser.l"
-{ printf("TOKEN: FUNCTION\n"); return FUNCTION; }
+#line 33 "pl0_parser.l"
+{ return read_token("function", FUNCTION); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 12 "pl0_parser.l"
-{ printf("TOKEN: T_BEGIN\n"); return T_BEGIN; }
+#line 34 "pl0_parser.l"
+{ return read_token("begin", T_BEGIN); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 13 "pl0_parser.l"
-{ printf("TOKEN: T_END\n"); return T_END; }
+#line 35 "pl0_parser.l"
+{ return read_token("end", T_END); }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 14 "pl0_parser.l"
-{ printf("TOKEN: CALL\n"); return CALL; }
+#line 36 "pl0_parser.l"
+{ return read_token("call", CALL); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 15 "pl0_parser.l"
-{ printf("TOKEN: IF\n"); return IF; }
+#line 37 "pl0_parser.l"
+{ return read_token("if", IF); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 16 "pl0_parser.l"
-{ printf("TOKEN: THEN\n"); return THEN; }
+#line 38 "pl0_parser.l"
+{ return read_token("then", THEN); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 17 "pl0_parser.l"
-{ printf("TOKEN: ELSE\n"); return ELSE; }
+#line 39 "pl0_parser.l"
+{ return read_token("else", ELSE); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 18 "pl0_parser.l"
-{ printf("TOKEN: WHILE\n"); return WHILE; }
+#line 40 "pl0_parser.l"
+{ return read_token("while", WHILE); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 19 "pl0_parser.l"
-{ printf("TOKEN: DO\n"); return DO; }
+#line 41 "pl0_parser.l"
+{ return read_token("do", DO); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 20 "pl0_parser.l"
-{ printf("TOKEN: FOR\n"); return FOR; }
+#line 42 "pl0_parser.l"
+{ return read_token("for", FOR); }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 21 "pl0_parser.l"
-{ printf("TOKEN: BREAK\n"); return BREAK; }
+#line 43 "pl0_parser.l"
+{ return read_token("break", BREAK); }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 22 "pl0_parser.l"
-{ printf("TOKEN: READ\n"); return READ; }
+#line 44 "pl0_parser.l"
+{ return read_token("read", READ); }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 23 "pl0_parser.l"
-{ printf("TOKEN: WRITE\n"); return WRITE; }
+#line 45 "pl0_parser.l"
+{ return read_token("write", WRITE); }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 24 "pl0_parser.l"
-{ printf("TOKEN: WRITELINE\n"); return WRITELINE; }
+#line 46 "pl0_parser.l"
+{ return read_token("writeline", WRITELINE); }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 25 "pl0_parser.l"
-{ printf("TOKEN: RETURN\n"); return RETURN; }
+#line 47 "pl0_parser.l"
+{ return read_token("return", RETURN); }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 26 "pl0_parser.l"
-{ printf("TOKEN: ODD\n"); return ODD; }
+#line 48 "pl0_parser.l"
+{ return read_token("odd", ODD); }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 27 "pl0_parser.l"
-{ printf("TOKEN: TO\n"); return TO; }
+#line 49 "pl0_parser.l"
+{ return read_token("to", TO); }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 28 "pl0_parser.l"
-{ printf("TOKEN: EQ\n"); return EQ; }
+#line 50 "pl0_parser.l"
+{ return read_token("=", EQ); }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 29 "pl0_parser.l"
-{ printf("TOKEN: NE\n"); return NE; }
+#line 51 "pl0_parser.l"
+{ return read_token("<>", NE); }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 30 "pl0_parser.l"
-{ printf("TOKEN: LT\n"); return LT; }
+#line 52 "pl0_parser.l"
+{ return read_token("<", LT); }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 31 "pl0_parser.l"
-{ printf("TOKEN: GT\n"); return GT; }
+#line 53 "pl0_parser.l"
+{ return read_token(">", GT); }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 32 "pl0_parser.l"
-{ printf("TOKEN: LE\n"); return LE; }
+#line 54 "pl0_parser.l"
+{ return read_token("<=", LE); }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 33 "pl0_parser.l"
-{ printf("TOKEN: GE\n"); return GE; }
+#line 55 "pl0_parser.l"
+{ return read_token(">=", GE); }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 34 "pl0_parser.l"
-{ printf("TOKEN: LPAREN\n"); return LPAREN; }
+#line 56 "pl0_parser.l"
+{ return read_token("(", LPAREN); }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 35 "pl0_parser.l"
-{ printf("TOKEN: RPAREN\n"); return RPAREN; }
+#line 57 "pl0_parser.l"
+{ return read_token(")", RPAREN); }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 36 "pl0_parser.l"
-{ printf("TOKEN: LBRACKET\n"); return LBRACKET; }
+#line 58 "pl0_parser.l"
+{ return read_token("[", LBRACKET); }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 37 "pl0_parser.l"
-{ printf("TOKEN: RBRACKET\n"); return RBRACKET; }
+#line 59 "pl0_parser.l"
+{ return read_token("]", RBRACKET); }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 38 "pl0_parser.l"
-{ printf("TOKEN: COMMA\n"); return COMMA; }
+#line 60 "pl0_parser.l"
+{ return read_token(",", COMMA); }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 39 "pl0_parser.l"
-{ printf("TOKEN: SEMICOLON\n"); return SEMICOLON; }
+#line 61 "pl0_parser.l"
+{ return read_token(";", SEMICOLON); }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 40 "pl0_parser.l"
-{ printf("TOKEN: ASSIGN\n"); return ASSIGN; }
+#line 62 "pl0_parser.l"
+{ return read_token(":=", ASSIGN); }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 41 "pl0_parser.l"
-{ printf("TOKEN: ADD\n"); return ADD; }
+#line 63 "pl0_parser.l"
+{ return read_token("+", ADD); }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 42 "pl0_parser.l"
-{ printf("TOKEN: SUB\n"); return SUB; }
+#line 64 "pl0_parser.l"
+{ return read_token("-", SUB); }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 43 "pl0_parser.l"
-{ printf("TOKEN: MUL\n"); return MUL; }
+#line 65 "pl0_parser.l"
+{ return read_token("*", MUL); }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 44 "pl0_parser.l"
-{ printf("TOKEN: DIV\n"); return DIV; }
+#line 66 "pl0_parser.l"
+{ return read_token("/", DIV); }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 45 "pl0_parser.l"
-{ printf("TOKEN: MOD\n"); return MOD; }
+#line 67 "pl0_parser.l"
+{ return read_token("%", MOD); }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 46 "pl0_parser.l"
-{ printf("TOKEN: DOT\n"); return DOT; }
+#line 68 "pl0_parser.l"
+{ return read_token(".", DOT); }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 47 "pl0_parser.l"
-{ printf("TOKEN: NUMBER (%s)\n", yytext); yylval.num = atoi(yytext); return NUMBER; }
+#line 69 "pl0_parser.l"
+{ return read_number(yytext); }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 48 "pl0_parser.l"
-{ printf("TOKEN: IDENTIFIER (%s)\n", yytext); yylval.str = strdup(yytext); return IDENTIFIER; }
+#line 70 "pl0_parser.l"
+{ return read_identifier(yytext); }
 	YY_BREAK
 case 42:
 /* rule 42 can match eol */
 YY_RULE_SETUP
-#line 49 "pl0_parser.l"
+#line 71 "pl0_parser.l"
 { /* ignore comments */ }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 51 "pl0_parser.l"
-{ /* ignore whitespace */ }
+#line 73 "pl0_parser.l"
+{ printf("%s", yytext); /* ignore whitespace */ }
 	YY_BREAK
 case 44:
 /* rule 44 can match eol */
 YY_RULE_SETUP
-#line 52 "pl0_parser.l"
-{ ++yylineno; /* increment line number on new line */ }
+#line 74 "pl0_parser.l"
+{ ++yylineno; printf("\n line %d: ", yylineno); /* increment line number on new line */ }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 53 "pl0_parser.l"
-{ fprintf(stderr, "Invalid character: %s\n", yytext); }
+#line 75 "pl0_parser.l"
+{ printf("%s", yytext); lexer_error_count++; fprintf(stderr, ANSI_COLOR_RED "Lexer Error at line %d: invalid character %s\n" ANSI_COLOR_RESET, yylineno, yytext); }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 55 "pl0_parser.l"
+#line 76 "pl0_parser.l"
 ECHO;
 	YY_BREAK
-#line 1028 "lex.yy.c"
+#line 1050 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2030,7 +2052,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 55 "pl0_parser.l"
+#line 76 "pl0_parser.l"
 
 
 int yywrap() {
