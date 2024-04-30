@@ -63,46 +63,49 @@ void yyerror(const char *s) {
 %%
 
 program : block DOT
-        | block SEMICOLON { yyerror("invalid statement"); }
 
 block : constDecl varDecl procDecl funcDecl statement
 
 constDecl : CONST constAssignmentList SEMICOLON
-          | error constAssignmentList SEMICOLON { yyerror("invalid constant declaration"); }
           | /* empty */
-          | CONST error SEMICOLON { yyerror("invalid constant assigment list"); }
-                                 
+
 constAssignmentList : IDENTIFIER EQ NUMBER
                     | constAssignmentList COMMA IDENTIFIER EQ NUMBER
+                    | error { yyerror("invalid constant assigment list"); yyclearin; }
 
 varDecl : VAR identifierList SEMICOLON varDecl
         | VAR arrayDecl SEMICOLON varDecl
         | /* empty */
-        | VAR error SEMICOLON { yyerror("invalid variable declaration"); }
+        | error identifierList SEMICOLON { yyerror("invalid statement"); }
+        | error arrayDecl SEMICOLON { yyerror("invalid statement"); }
 
 identifierList : IDENTIFIER
-               | identifierList COMMA IDENTIFIER
+                | identifierList COMMA IDENTIFIER
 
 arrayDecl : IDENTIFIER LBRACKET NUMBER RBRACKET
-          | IDENTIFIER LBRACKET error { yyerror("invalid array declaration"); }
+           | IDENTIFIER LBRACKET error RBRACKET { yyerror("invalid array declaration"); }
 
-procDecl : procDecl PROCEDURE IDENTIFIER SEMICOLON block SEMICOLON
+procDecl : PROCEDURE IDENTIFIER SEMICOLON block SEMICOLON procDecl
          | /* empty */
 
-funcDecl : funcDecl FUNCTION IDENTIFIER LPAREN paramList RPAREN SEMICOLON block SEMICOLON
+funcDecl : FUNCTION IDENTIFIER LPAREN paramList RPAREN SEMICOLON block SEMICOLON funcDecl
          | /* empty */
 
 paramList : paramDecl
-          | paramList COMMA paramDecl
-          | /* empty */
+           | paramList COMMA paramDecl
+           | /* empty */
 
 paramDecl : VAR IDENTIFIER
 
 statementList : statement
               | statementList SEMICOLON statement
+              | error SEMICOLON statement { yyerror("invalid statement"); yyclearin; }
 
 statement : matched_statement
-          | unmatched_statement
+           | unmatched_statement
+           | IF error THEN { yyerror("invalid if statement"); yyclearin; } statement
+           | WHILE error DO { yyerror("invalid while loop statement"); yyclearin;  } statement
+           | FOR error DO { yyerror("invalid for loop statement"); yyclearin; } statement
 
 matched_statement : IF condition THEN matched_statement ELSE matched_statement
                   | non_if_statement
@@ -113,6 +116,7 @@ unmatched_statement : IF condition THEN statement
                     | IF condition THEN matched_statement ELSE unmatched_statement
                     | WHILE condition DO unmatched_statement
                     | FOR IDENTIFIER ASSIGN expression TO expression DO unmatched_statement
+
 
 non_if_statement : IDENTIFIER ASSIGN expression
                  | CALL IDENTIFIER
@@ -132,13 +136,13 @@ readWriteStmt : readStmt
               | writeLineStmt
 
 readStmt : READ LPAREN IDENTIFIER RPAREN
-         | READ error RPAREN { yyerror("invalid read statement") }
+         | READ error RPAREN { yyerror("invalid read statement"); yyclearin; }
 
 writeStmt : WRITE LPAREN IDENTIFIER RPAREN
-          | WRITE error RPAREN { yyerror("invalid write statement") }
+          | WRITE error RPAREN { yyerror("invalid write statement"); yyclearin; }
 
 writeLineStmt : WRITELINE LPAREN IDENTIFIER RPAREN
-          | WRITELINE error RPAREN { yyerror("invalid writeline statement") }
+          | WRITELINE error RPAREN { yyerror("invalid writeline statement"); yyclearin; }
 
 condition : ODD expression
           | expression EQ expression
@@ -156,21 +160,20 @@ expression : term|ADD term|SUB term
 funcCall : IDENTIFIER LPAREN argList RPAREN
 
 argList : expression
-        | argList COMMA expression
-        | /* empty */
-        
-term : factor
-     | term MUL factor
-     | term DIV factor
-     | term MOD factor
+         | argList COMMA expression
+         | /* empty */
 
+term : factor
+      | term MUL factor
+      | term DIV factor
+      | term MOD factor
 
 factor : IDENTIFIER
-       | NUMBER
-       | LPAREN expression RPAREN
-       | arrayIndex
-       | funcCall
-       
+        | NUMBER
+        | LPAREN expression RPAREN
+        | arrayIndex
+        | funcCall
+
 arrayIndex : IDENTIFIER LBRACKET expression RBRACKET
         
 %%
